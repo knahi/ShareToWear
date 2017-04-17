@@ -29,14 +29,14 @@ class MySTWViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        guard let destinationvc = segue.destination as?
-            AboutViewController else{
-            fatalError("Connecting to the wrong type of view controller")
-            }
-
-        guard let identifier = segue.identifier else{
-            fatalError("Segue had no identifier")
-        }
+//        guard let destinationvc = segue.destination as?
+//            AboutViewController else{
+//            fatalError("Connecting to the wrong type of view controller")
+//            }
+//
+//        guard let identifier = segue.identifier else{
+//            fatalError("Segue had no identifier")
+//        }
     }
 
 }

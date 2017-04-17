@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		167DB2731EA44AC60084D985 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 167DB2721EA44AC60084D985 /* home.png */; };
+		167DB2751EA50A2F0084D985 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 167DB2741EA50A2F0084D985 /* Info.png */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
 		EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB881EA3F52D002F3FEC /* ViewController.swift */; };
 		EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */; };
 		EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8D1EA3F52D002F3FEC /* Assets.xcassets */; };
 		EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8F1EA3F52D002F3FEC /* LaunchScreen.storyboard */; };
-		EF9AFB9D1EA3FF00002F3FEC /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB9C1EA3FF00002F3FEC /* Home.png */; };
 		EF9AFB9F1EA3FF82002F3FEC /* Dress.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB9E1EA3FF82002F3FEC /* Dress.png */; };
 		EF9AFBA11EA3FFED002F3FEC /* Hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFBA01EA3FFED002F3FEC /* Hearts.png */; };
 		EF9AFBA31EA4003C002F3FEC /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFBA21EA4003C002F3FEC /* MySTW.png */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		167DB2721EA44AC60084D985 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../home.png; sourceTree = "<group>"; };
+		167DB2741EA50A2F0084D985 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Info.png; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AFB881EA3F52D002F3FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +31,6 @@
 		EF9AFB8D1EA3F52D002F3FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF9AFB901EA3F52D002F3FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF9AFB921EA3F52D002F3FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF9AFB9C1EA3FF00002F3FEC /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = ../../../Home.png; sourceTree = "<group>"; };
 		EF9AFB9E1EA3FF82002F3FEC /* Dress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dress.png; path = ../../Dress.png; sourceTree = "<group>"; };
 		EF9AFBA01EA3FFED002F3FEC /* Hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hearts.png; path = ../../Hearts.png; sourceTree = "<group>"; };
 		EF9AFBA21EA4003C002F3FEC /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../MySTW.png; sourceTree = "<group>"; };
@@ -82,7 +84,8 @@
 		EF9AFBA81EA41601002F3FEC /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				EF9AFB9C1EA3FF00002F3FEC /* Home.png */,
+				167DB2741EA50A2F0084D985 /* Info.png */,
+				167DB2721EA44AC60084D985 /* home.png */,
 				EF9AFBA21EA4003C002F3FEC /* MySTW.png */,
 				EF9AFBA01EA3FFED002F3FEC /* Hearts.png */,
 				EF9AFB9E1EA3FF82002F3FEC /* Dress.png */,
@@ -149,13 +152,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF9AFB9D1EA3FF00002F3FEC /* Home.png in Resources */,
 				EF9AFBA31EA4003C002F3FEC /* MySTW.png in Resources */,
 				EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */,
 				EF9AFBA11EA3FFED002F3FEC /* Hearts.png in Resources */,
+				167DB2731EA44AC60084D985 /* home.png in Resources */,
 				EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */,
 				EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */,
 				EF9AFB9F1EA3FF82002F3FEC /* Dress.png in Resources */,
+				167DB2751EA50A2F0084D985 /* Info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +335,7 @@
 				EF9AFB971EA3F52D002F3FEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

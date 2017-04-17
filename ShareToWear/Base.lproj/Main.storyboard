@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="euC-ih-oYo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="euC-ih-oYo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,7 +27,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UM-dq-Xh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="618"/>
+            <point key="canvasLocation" x="2604" y="617.54122938530736"/>
         </scene>
         <!--Home-->
         <scene sceneID="dha-xy-ibv">
@@ -40,9 +40,16 @@
                     <view key="view" contentMode="scaleToFill" id="sTC-mc-3KV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-nG-4ge">
+                                <rect key="frame" x="255" y="58" width="79" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Info.png"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home.png" id="kjT-CA-fyi"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="kjT-CA-fyi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5KV-eP-74n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +68,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="R0E-08-eU7">
-                                <rect key="frame" x="10" y="60" width="355" height="538"/>
+                                <rect key="frame" x="10" y="104" width="355" height="543"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgK-aw-2DN">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
@@ -70,23 +77,23 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3E-K0-ipQ">
-                                        <rect key="frame" x="0.0" y="25" width="351" height="300"/>
-                                        <mutableString key="text">​Share to Wear was founded in the summer of 2016 by Middlebury students Linley Shaw ('17) and Charlotte Reider-Smith ('19).
+                                        <rect key="frame" x="0.0" y="25" width="351" height="303"/>
+                                        <string key="text">​Share to Wear was founded in the summer of 2016 by Middlebury students Linley Shaw ('17) and Charlotte Reider-Smith ('19).
 
 Linley and Charlotte met after participating in MiddCORE, Middlebury's leadership and entrepreneurship program.
-Linley first came up with the idea of Share to Wear during her MiddCORE experience during the summer of 2015, when thinking about all of the excess dresses that she never wore. Charlotte came up with the same idea during her MiddCORE experience in 2016, inspired by inefficient system of students constantly borrowing each other's clothing on campus. The two were put in touch and met for the first time in San Francisco to discuss. Since the summer of 2016, Share to Wear took off on Middlebury's campus and is constantly expanding.</mutableString>
+Linley first came up with the idea of Share to Wear during her MiddCORE experience during the summer of 2015, when thinking about all of the excess dresses that she never wore. Charlotte came up with the same idea during her MiddCORE experience in 2016, inspired by inefficient system of students constantly borrowing each other's clothing on campus. The two were put in touch and met for the first time in San Francisco to discuss. Since the summer of 2016, Share to Wear took off on Middlebury's campus and is constantly expanding.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bet-fa-a54">
-                                        <rect key="frame" x="0.0" y="325" width="97.5" height="25"/>
+                                        <rect key="frame" x="0.0" y="328" width="97.5" height="25.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMG-Sp-FOR">
-                                        <rect key="frame" x="0.0" y="350" width="355" height="188"/>
+                                        <rect key="frame" x="0.0" y="353.5" width="355" height="189.5"/>
                                         <string key="text">Share to Wear stems from the idea: What if we could borrow clothes from every Middlebury student on campus?
 
  Share to Wear is a peer to platform clothing rental service with Middlebury students supplying the rental clothes. We're creating one large, accessible, fashionable, and affordable closet for all Middkids.
@@ -98,16 +105,6 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6D-t5-10x">
-                                <rect key="frame" x="10" y="10" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="BackButt:" destination="ivz-dz-tas" eventType="touchUpInside" id="uxt-og-Aiu"/>
-                                    <action selector="BackButton:" destination="ivz-dz-tas" eventType="touchUpInside" id="WqS-k9-cgb"/>
-                                    <segue destination="5ah-tm-814" kind="unwind" unwindAction="BackButtonWithSegue:" id="dxz-Iv-sRX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -117,13 +114,13 @@ We aim to foster community, inclusivity, and sustainability.</string>
                             <constraint firstItem="k8k-sx-Jvj" firstAttribute="top" secondItem="R0E-08-eU7" secondAttribute="bottom" constant="20" id="vQ8-1p-mJc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3SC-GG-1rZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rT-dM-Ajs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="5ah-tm-814" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="94" y="1775"/>
+            <point key="canvasLocation" x="1972" y="1774.3628185907048"/>
         </scene>
-        <!--My STW-->
+        <!--MySTW View Controller-->
         <scene sceneID="Kwy-E9-BFu">
             <objects>
                 <viewController id="Ksw-Ub-Ypx" customClass="MySTWViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,21 +133,21 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="OgC-7U-K8V">
-                                <rect key="frame" x="26" y="80" width="323" height="518"/>
+                                <rect key="frame" x="26" y="124" width="323" height="474"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baV-l1-QnT">
-                                        <rect key="frame" x="0.0" y="0.0" width="323" height="101"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="92.5"/>
                                         <color key="backgroundColor" red="0.3462076882916667" green="0.72876520287222224" blue="0.97414822048611116" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="About ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="ivz-dz-tas" kind="show" id="fvv-Ie-Wuv"/>
+                                            <segue destination="ivz-dz-tas" kind="show" id="vQl-Rf-vZn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1G-l4-oq6">
-                                        <rect key="frame" x="0.0" y="104" width="323" height="101.5"/>
+                                        <rect key="frame" x="0.0" y="95.5" width="323" height="92.5"/>
                                         <color key="backgroundColor" red="0.34509803921568627" green="0.72941176470588232" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Dresses Rented">
@@ -158,7 +155,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmk-Ug-udZ">
-                                        <rect key="frame" x="0.0" y="208.5" width="323" height="101"/>
+                                        <rect key="frame" x="0.0" y="191" width="323" height="92"/>
                                         <color key="backgroundColor" red="0.34509803921568627" green="0.72941176470588232" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Dresses Shared">
@@ -166,7 +163,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVc-oe-PXv">
-                                        <rect key="frame" x="0.0" y="312.5" width="323" height="101.5"/>
+                                        <rect key="frame" x="0.0" y="286" width="323" height="92.5"/>
                                         <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Share a Dress">
@@ -174,7 +171,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW8-IE-dUz">
-                                        <rect key="frame" x="0.0" y="417" width="323" height="101"/>
+                                        <rect key="frame" x="0.0" y="381.5" width="323" height="92.5"/>
                                         <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Logout">
@@ -192,11 +189,11 @@ We aim to foster community, inclusivity, and sustainability.</string>
                             <constraint firstItem="Lmb-YT-4aB" firstAttribute="top" secondItem="OgC-7U-K8V" secondAttribute="bottom" constant="20" id="m1E-8a-OUG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="My STW" image="MySTW.png" id="T7s-Vb-5kR"/>
+                    <navigationItem key="navigationItem" id="1Fy-6I-Ngi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="onX-be-89M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="1029"/>
+            <point key="canvasLocation" x="1032.8" y="1028.6356821589206"/>
         </scene>
         <!--Home-->
         <scene sceneID="2bA-OS-Cyh">
@@ -211,7 +208,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         <segue destination="2H5-en-oLo" kind="relationship" relationship="viewControllers" id="cg8-EH-dBV"/>
                         <segue destination="yTE-IT-Qu7" kind="relationship" relationship="viewControllers" id="Zzj-IR-28H"/>
                         <segue destination="SEf-Xh-aS1" kind="relationship" relationship="viewControllers" id="TCr-gF-e4X"/>
-                        <segue destination="Ksw-Ub-Ypx" kind="relationship" relationship="viewControllers" id="OCW-cE-Nwb"/>
+                        <segue destination="ToO-v9-jdH" kind="relationship" relationship="viewControllers" id="OCW-cE-Nwb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIn-Ck-KXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -235,13 +232,33 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m01-z0-nzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="1029"/>
+            <point key="canvasLocation" x="1812" y="1028.6356821589206"/>
+        </scene>
+        <!--My STW-->
+        <scene sceneID="UeQ-Is-vaw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ToO-v9-jdH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My STW" image="MySTW.png" id="T7s-Vb-5kR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5q-IP-APy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ksw-Ub-Ypx" kind="relationship" relationship="rootViewController" id="Zeq-uf-q5t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N24-lT-cy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="1028.6356821589206"/>
         </scene>
     </scenes>
     <resources>
         <image name="Dress.png" width="25" height="25"/>
         <image name="Hearts.png" width="25" height="25"/>
-        <image name="Home.png" width="25" height="25"/>
+        <image name="Info.png" width="25" height="25"/>
         <image name="MySTW.png" width="25" height="25"/>
+        <image name="home.png" width="25" height="25"/>
     </resources>
 </document>
