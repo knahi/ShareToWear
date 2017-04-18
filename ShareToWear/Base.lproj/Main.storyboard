@@ -42,9 +42,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpH-nG-4ge">
-                                <rect key="frame" x="255" y="58" width="79" height="25"/>
+                                <rect key="frame" x="297" y="39" width="79" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Info.png"/>
+                                <connections>
+                                    <segue destination="dbt-aL-iOW" kind="presentation" id="fNb-eo-32j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,6 +255,95 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N24-lT-cy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93.599999999999994" y="1028.6356821589206"/>
+        </scene>
+        <!--ModalAbout-->
+        <scene sceneID="fXQ-qV-vzY">
+            <objects>
+                <viewController title="ModalAbout" id="i2n-Dr-DaP" customClass="AboutViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FhF-3L-4fY"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3q-Fs-IxF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w9r-wS-amN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="VWd-aH-8YZ">
+                                <rect key="frame" x="10" y="104" width="355" height="543"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="499-ar-sZL">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jeo-Id-hLl">
+                                        <rect key="frame" x="0.0" y="25" width="351" height="303"/>
+                                        <string key="text">​Share to Wear was founded in the summer of 2016 by Middlebury students Linley Shaw ('17) and Charlotte Reider-Smith ('19).
+
+Linley and Charlotte met after participating in MiddCORE, Middlebury's leadership and entrepreneurship program.
+Linley first came up with the idea of Share to Wear during her MiddCORE experience during the summer of 2015, when thinking about all of the excess dresses that she never wore. Charlotte came up with the same idea during her MiddCORE experience in 2016, inspired by inefficient system of students constantly borrowing each other's clothing on campus. The two were put in touch and met for the first time in San Francisco to discuss. Since the summer of 2016, Share to Wear took off on Middlebury's campus and is constantly expanding.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gY-1a-qaT">
+                                        <rect key="frame" x="0.0" y="328" width="97.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqw-Ev-LmG">
+                                        <rect key="frame" x="0.0" y="353.5" width="355" height="189.5"/>
+                                        <string key="text">Share to Wear stems from the idea: What if we could borrow clothes from every Middlebury student on campus?
+
+ Share to Wear is a peer to platform clothing rental service with Middlebury students supplying the rental clothes. We're creating one large, accessible, fashionable, and affordable closet for all Middkids.
+
+We aim to foster community, inclusivity, and sustainability.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VWd-aH-8YZ" firstAttribute="top" secondItem="FhF-3L-4fY" secondAttribute="bottom" constant="40" id="8Rn-iM-A9n"/>
+                            <constraint firstItem="VWd-aH-8YZ" firstAttribute="leading" secondItem="w9r-wS-amN" secondAttribute="leading" constant="10" id="IUd-lE-uiC"/>
+                            <constraint firstAttribute="trailing" secondItem="VWd-aH-8YZ" secondAttribute="trailing" constant="10" id="PDs-Ei-emF"/>
+                            <constraint firstItem="b3q-Fs-IxF" firstAttribute="top" secondItem="VWd-aH-8YZ" secondAttribute="bottom" constant="20" id="lUA-t9-NGX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qkd-c1-dcT">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="oiZ-BZ-Rky">
+                            <connections>
+                                <action selector="done:" destination="i2n-Dr-DaP" id="SZj-DL-er5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHV-Al-tjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3924" y="-58.020989505247378"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pFk-9M-Jvr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dbt-aL-iOW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P9A-cE-aC4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i2n-Dr-DaP" kind="relationship" relationship="rootViewController" id="YNd-dL-7vU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywa-ZZ-Lhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2984.8000000000002" y="-58.020989505247378"/>
         </scene>
     </scenes>
     <resources>
