@@ -58,70 +58,41 @@
             </objects>
             <point key="canvasLocation" x="1666" y="-37"/>
         </scene>
-        <!--About View Controller-->
-        <scene sceneID="9tg-Tx-wPO">
+        <!--Dresses Shared View Controller-->
+        <scene sceneID="EhH-my-vfV">
             <objects>
-                <viewController id="ivz-dz-tas" customClass="AboutViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4lu-ZE-Ozo" customClass="DressesSharedViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XZZ-Xt-Qem"/>
-                        <viewControllerLayoutGuide type="bottom" id="k8k-sx-Jvj"/>
+                        <viewControllerLayoutGuide type="top" id="ir2-TM-dBa"/>
+                        <viewControllerLayoutGuide type="bottom" id="5X9-QI-dyR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4h4-pW-SQH">
+                    <view key="view" contentMode="scaleToFill" id="Lw7-1W-sTb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="R0E-08-eU7">
-                                <rect key="frame" x="10" y="104" width="355" height="543"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgK-aw-2DN">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3E-K0-ipQ">
-                                        <rect key="frame" x="0.0" y="25" width="351" height="303"/>
-                                        <string key="text">​Share to Wear was founded in the summer of 2016 by Middlebury students Linley Shaw ('17) and Charlotte Reider-Smith ('19).
-
-Linley and Charlotte met after participating in MiddCORE, Middlebury's leadership and entrepreneurship program.
-Linley first came up with the idea of Share to Wear during her MiddCORE experience during the summer of 2015, when thinking about all of the excess dresses that she never wore. Charlotte came up with the same idea during her MiddCORE experience in 2016, inspired by inefficient system of students constantly borrowing each other's clothing on campus. The two were put in touch and met for the first time in San Francisco to discuss. Since the summer of 2016, Share to Wear took off on Middlebury's campus and is constantly expanding.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bet-fa-a54">
-                                        <rect key="frame" x="0.0" y="328" width="97.5" height="25.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMG-Sp-FOR">
-                                        <rect key="frame" x="0.0" y="353.5" width="355" height="189.5"/>
-                                        <string key="text">Share to Wear stems from the idea: What if we could borrow clothes from every Middlebury student on campus?
-
- Share to Wear is a peer to platform clothing rental service with Middlebury students supplying the rental clothes. We're creating one large, accessible, fashionable, and affordable closet for all Middkids.
-
-We aim to foster community, inclusivity, and sustainability.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="R0E-08-eU7" firstAttribute="top" secondItem="XZZ-Xt-Qem" secondAttribute="bottom" constant="40" id="A3L-x7-MTY"/>
-                            <constraint firstItem="R0E-08-eU7" firstAttribute="leading" secondItem="4h4-pW-SQH" secondAttribute="leading" constant="10" id="UDs-Ci-5vD"/>
-                            <constraint firstAttribute="trailing" secondItem="R0E-08-eU7" secondAttribute="trailing" constant="10" id="oGy-P1-QXB"/>
-                            <constraint firstItem="k8k-sx-Jvj" firstAttribute="top" secondItem="R0E-08-eU7" secondAttribute="bottom" constant="20" id="vQ8-1p-mJc"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3SC-GG-1rZ"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3rT-dM-Ajs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNo-lU-3m3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1972" y="1774.3628185907048"/>
+            <point key="canvasLocation" x="842" y="1972"/>
+        </scene>
+        <!--Dresses Rented View Controller-->
+        <scene sceneID="nZa-Xg-EHX">
+            <objects>
+                <viewController id="fb7-U5-9A8" customClass="DressesRentedViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ix2-Ko-qw3"/>
+                        <viewControllerLayoutGuide type="bottom" id="snv-ua-wtf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f14-SU-7Vx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6a-h5-9pa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="1829"/>
         </scene>
         <!--MySTW View Controller-->
         <scene sceneID="Kwy-E9-BFu">
@@ -138,48 +109,27 @@ We aim to foster community, inclusivity, and sustainability.</string>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="OgC-7U-K8V">
                                 <rect key="frame" x="26" y="124" width="323" height="474"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baV-l1-QnT">
-                                        <rect key="frame" x="0.0" y="0.0" width="323" height="92.5"/>
-                                        <color key="backgroundColor" red="0.3462076882916667" green="0.72876520287222224" blue="0.97414822048611116" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="About ">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="ivz-dz-tas" kind="show" id="vQl-Rf-vZn"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1G-l4-oq6">
-                                        <rect key="frame" x="0.0" y="95.5" width="323" height="92.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="235.5"/>
                                         <color key="backgroundColor" red="0.34509803921568627" green="0.72941176470588232" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Dresses Rented">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="fb7-U5-9A8" kind="show" id="uN8-Fm-Hie"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmk-Ug-udZ">
-                                        <rect key="frame" x="0.0" y="191" width="323" height="92"/>
+                                        <rect key="frame" x="0.0" y="238.5" width="323" height="235.5"/>
                                         <color key="backgroundColor" red="0.34509803921568627" green="0.72941176470588232" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Dresses Shared">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVc-oe-PXv">
-                                        <rect key="frame" x="0.0" y="286" width="323" height="92.5"/>
-                                        <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Share a Dress">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW8-IE-dUz">
-                                        <rect key="frame" x="0.0" y="381.5" width="323" height="92.5"/>
-                                        <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <state key="normal" title="Logout">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                        <connections>
+                                            <segue destination="4lu-ZE-Ozo" kind="show" id="8o5-L8-Dbk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
