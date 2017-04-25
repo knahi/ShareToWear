@@ -25,11 +25,16 @@ class SizeFilterViewController: UIViewController {
     @IBOutlet weak var sizeXL: UISwitch!
     
     
-//    [self.mySlider addTarget:self
-//    action:@selector(myAction:)
-//    forControlEvents:UIControlEventValueChanged];
+    @IBAction func size2OnOff(_ sender: UISwitch) {
+        //set universal state of size2 filter
+        UserDefaults.standard.set(sender.isOn, forKey: "switch2State")
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        //makes size2 filter value persist when view is reloaded
+        size2.isOn = UserDefaults.standard.bool(forKey: "switch2State")
 
         // Do any additional setup after loading the view.
     }

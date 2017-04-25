@@ -1,21 +1,33 @@
 //
-//  BrowseViewController.swift
+//  ColorFilterViewController.swift
 //  ShareToWear
 //
-//  Created by Lily Taub on 4/24/17.
+//  Created by Lily Taub on 4/25/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
 
 import UIKit
 
-class BrowseViewController: UIViewController {
+class ColorFilterViewController: UIViewController {
+    
+    @IBOutlet weak var white: UISwitch!
+    @IBOutlet weak var blue: UISwitch!
+    @IBOutlet weak var yellow: UISwitch!
+    @IBOutlet weak var pink: UISwitch!
+    @IBOutlet weak var red: UISwitch!
+    @IBOutlet weak var black: UISwitch!
+    @IBOutlet weak var green: UISwitch!
+    @IBOutlet weak var orange: UISwitch!
+    @IBOutlet weak var purple: UISwitch!
+    @IBOutlet weak var gray: UISwitch!
+    
+    @IBAction func whiteOnOff(_ sender: UISwitch) {
+        UserDefaults.standard.set(sender.isOn, forKey: "whiteSwitchState")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //trying to access boolean filter values set in filter views
-        print(UserDefaults.standard.bool(forKey: "switch2State"))
-        print(UserDefaults.standard.bool(forKey: "whiteSwitchState"))
-
+        white.isOn = UserDefaults.standard.bool(forKey: "whiteSwitchState")
 
         // Do any additional setup after loading the view.
     }
