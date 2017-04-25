@@ -17,6 +17,7 @@ class PriceFilterViewController: UIViewController {
         let val = Int(priceSlider.value)
         priceLabel.text = "$" + String(val)
         priceSlider.setValue(Float(val), animated: true)
+        FilterModel.price = val
     }
     @IBAction func done(_ sender: UIBarButtonItem) {
         if presentingViewController is UITabBarController{
@@ -31,7 +32,8 @@ class PriceFilterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        priceSlider.value = Float(FilterModel.price)
+        priceLabel.text = "$"+String(FilterModel.price)
         // Do any additional setup after loading the view.
     }
 

@@ -20,15 +20,34 @@ class ColorFilterViewController: UIViewController {
     @IBOutlet weak var orange: UISwitch!
     @IBOutlet weak var purple: UISwitch!
     @IBOutlet weak var gray: UISwitch!
+    @IBOutlet weak var doneButton: UIBarButtonItem!
     
-    @IBAction func whiteOnOff(_ sender: UISwitch) {
-        UserDefaults.standard.set(sender.isOn, forKey: "whiteSwitchState")
+    @IBAction func colorFilterUpdate(_ sender: UISwitch) {
+        FilterModel.white = white.isOn
+        FilterModel.blue = blue.isOn
+        FilterModel.yellow = yellow.isOn
+        FilterModel.pink = pink.isOn
+        FilterModel.red = red.isOn
+        FilterModel.black = black.isOn
+        FilterModel.green = green.isOn
+        FilterModel.orange = orange.isOn
+        FilterModel.purple = purple.isOn
+        FilterModel.gray = gray.isOn
     }
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        white.isOn = UserDefaults.standard.bool(forKey: "whiteSwitchState")
-
+        white.isOn = FilterModel.white
+        blue.isOn = FilterModel.blue
+        yellow.isOn = FilterModel.yellow
+        pink.isOn = FilterModel.pink
+        red.isOn = FilterModel.red
+        black.isOn = FilterModel.black
+        green.isOn = FilterModel.green
+        orange.isOn = FilterModel.orange
+        purple.isOn = FilterModel.purple
+        gray.isOn = FilterModel.gray
         // Do any additional setup after loading the view.
     }
 
@@ -36,7 +55,16 @@ class ColorFilterViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func done(_ sender: UIBarButtonItem) {
+        if presentingViewController is UITabBarController{
+            dismiss(animated: true, completion: nil)
+        }else if let owningNavController = navigationController{
+            owningNavController.popViewController(animated: true)
+        }else{
+            fatalError("view is not contained by a navigation controller")
+        }
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -29,47 +29,36 @@ class SizeFilterViewController: UIViewController {
     @IBOutlet weak var sizeXL: UISwitch!
     
     //UPDATE MODEL VALUES
-    @IBAction func size2Update(_ sender: UISwitch) {
+    @IBAction func sizeFilterUpdate(_ sender: UISwitch) {
         FilterModel.size2 = size2.isOn
-    }
-    @IBAction func size4Update(_ sender: UISwitch) {
         FilterModel.size4 = size4.isOn
-    }
-    @IBAction func size8Update(_ sender: UISwitch) {
-        FilterModel.size8 = size8.isOn
-    }
-    @IBAction func size6Update(_ sender: UISwitch) {
         FilterModel.size6 = size6.isOn
-    }
-    @IBAction func size10Update(_ sender: UISwitch) {
+        FilterModel.size8 = size8.isOn
         FilterModel.size10 = size10.isOn
-    }
-    @IBAction func size12Update(_ sender: UISwitch) {
         FilterModel.size12 = size12.isOn
-    }
-    @IBAction func size14Update(_ sender: UISwitch) {
         FilterModel.size14 = size14.isOn
-    }
-    @IBAction func sizeXSUpdate(_ sender: UISwitch) {
         FilterModel.sizeXS = sizeXS.isOn
-    }
-    @IBAction func sizeSUpdate(_ sender: UISwitch) {
         FilterModel.sizeS = sizeS.isOn
-    }
-    @IBAction func sizeMUpdate(_ sender: UISwitch) {
         FilterModel.sizeM = sizeM.isOn
-    }
-    @IBAction func sizeLUpdate(_ sender: UISwitch) {
         FilterModel.sizeL = sizeL.isOn
-    }
-    @IBAction func sizeXLUpdate(_ sender: UISwitch) {
         FilterModel.sizeXL = sizeXL.isOn
     }
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        size2.isOn = FilterModel.size2
+        size4.isOn = FilterModel.size4
+        size6.isOn = FilterModel.size6
+        size8.isOn = FilterModel.size8
+        size10.isOn = FilterModel.size10
+        size12.isOn = FilterModel.size12
+        size14.isOn = FilterModel.size14
+        sizeXS.isOn = FilterModel.sizeXS
+        sizeS.isOn = FilterModel.sizeS
+        sizeM.isOn = FilterModel.sizeM
+        sizeL.isOn = FilterModel.sizeL
+        sizeXL.isOn = FilterModel.sizeXL
         // Do any additional setup after loading the view.
     }
 

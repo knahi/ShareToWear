@@ -19,7 +19,7 @@ class BrowseViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool){
-        print(FilterModel.size2)
+      //apply filters in here
         
     }
 
