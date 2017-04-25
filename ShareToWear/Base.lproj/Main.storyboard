@@ -106,32 +106,50 @@
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="46"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <action selector="size2OnOff:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="LJ5-bb-dAK"/>
+                                            <action selector="size2Update:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="8aC-1q-Y77"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e5M-1V-DQ7">
                                         <rect key="frame" x="0.0" y="46" width="51" height="46.5"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="size4Update:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="9lP-OI-ESt"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HTZ-Yz-Bku">
                                         <rect key="frame" x="0.0" y="92.5" width="51" height="46"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="size6Update:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="abw-Hp-ol5"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YB8-P7-7mR">
                                         <rect key="frame" x="0.0" y="138.5" width="51" height="46"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="size8Update:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="WMf-gf-dtt"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OAm-Js-MRX">
                                         <rect key="frame" x="0.0" y="184.5" width="51" height="46"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="size10Update:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="cFf-nh-NY9"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xEw-Ri-o2I">
                                         <rect key="frame" x="0.0" y="230.5" width="51" height="46.5"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="size12Update:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="W5Y-ld-krQ"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yoI-6Y-NJi">
                                         <rect key="frame" x="0.0" y="277" width="51" height="46"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="size14Update:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="Xih-9b-2qD"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -141,22 +159,37 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z0Z-7M-NLK">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="45.5"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="sizeXSUpdate:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="441-9X-BT2"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qWg-lh-0PQ">
                                         <rect key="frame" x="0.0" y="45.5" width="51" height="45.5"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="sizeSUpdate:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="iOn-89-GmW"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kW9-pu-U0e">
                                         <rect key="frame" x="0.0" y="91" width="51" height="46"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="sizeMUpdate:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="pxe-9L-Pn4"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bWs-bv-Ns0">
                                         <rect key="frame" x="0.0" y="137" width="51" height="45.5"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="sizeLUpdate:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="Kj5-i8-dKg"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rt5-Sj-UUO">
                                         <rect key="frame" x="0.0" y="182.5" width="51" height="45.5"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="sizeXLUpdate:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="jL9-Nt-khQ"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -267,6 +300,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="doneButton" destination="rjC-tK-wTz" id="CDB-47-eyW"/>
                         <outlet property="size10" destination="OAm-Js-MRX" id="0gc-b5-ZWu"/>
                         <outlet property="size12" destination="xEw-Ri-o2I" id="q0v-7R-21D"/>
                         <outlet property="size14" destination="yoI-6Y-NJi" id="oys-nO-50x"/>
@@ -825,6 +859,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <!--Browse-->
         <scene sceneID="FVh-te-IfR">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6e-JV-3Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j6k-mn-vKJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Browse" image="Dress.png" id="CCq-y8-3qO"/>
                     <toolbarItems/>
@@ -837,7 +872,6 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         <segue destination="yTE-IT-Qu7" kind="relationship" relationship="rootViewController" id="q59-C1-cId"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l6e-JV-3Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2604" y="617.54122938530736"/>
         </scene>

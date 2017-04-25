@@ -9,15 +9,18 @@
 import UIKit
 
 class BrowseViewController: UIViewController {
+    
+    private var filter: FilterModel = FilterModel()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //trying to access boolean filter values set in filter views
-        print(UserDefaults.standard.bool(forKey: "switch2State"))
-        print(UserDefaults.standard.bool(forKey: "whiteSwitchState"))
-
-
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool){
+        print(FilterModel.size2)
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -10,7 +10,11 @@ import UIKit
 
 class SizeFilterViewController: UIViewController {
     
+    //var filters:FilterModel = FilterModel()
     
+    
+
+    @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var size2: UISwitch!
     @IBOutlet weak var size4: UISwitch!
     @IBOutlet weak var size6: UISwitch!
@@ -24,17 +28,47 @@ class SizeFilterViewController: UIViewController {
     @IBOutlet weak var sizeL: UISwitch!
     @IBOutlet weak var sizeXL: UISwitch!
     
-    
-    @IBAction func size2OnOff(_ sender: UISwitch) {
-        //set universal state of size2 filter
-        UserDefaults.standard.set(sender.isOn, forKey: "switch2State")
+    //UPDATE MODEL VALUES
+    @IBAction func size2Update(_ sender: UISwitch) {
+        FilterModel.size2 = size2.isOn
+    }
+    @IBAction func size4Update(_ sender: UISwitch) {
+        FilterModel.size4 = size4.isOn
+    }
+    @IBAction func size8Update(_ sender: UISwitch) {
+        FilterModel.size8 = size8.isOn
+    }
+    @IBAction func size6Update(_ sender: UISwitch) {
+        FilterModel.size6 = size6.isOn
+    }
+    @IBAction func size10Update(_ sender: UISwitch) {
+        FilterModel.size10 = size10.isOn
+    }
+    @IBAction func size12Update(_ sender: UISwitch) {
+        FilterModel.size12 = size12.isOn
+    }
+    @IBAction func size14Update(_ sender: UISwitch) {
+        FilterModel.size14 = size14.isOn
+    }
+    @IBAction func sizeXSUpdate(_ sender: UISwitch) {
+        FilterModel.sizeXS = sizeXS.isOn
+    }
+    @IBAction func sizeSUpdate(_ sender: UISwitch) {
+        FilterModel.sizeS = sizeS.isOn
+    }
+    @IBAction func sizeMUpdate(_ sender: UISwitch) {
+        FilterModel.sizeM = sizeM.isOn
+    }
+    @IBAction func sizeLUpdate(_ sender: UISwitch) {
+        FilterModel.sizeL = sizeL.isOn
+    }
+    @IBAction func sizeXLUpdate(_ sender: UISwitch) {
+        FilterModel.sizeXL = sizeXL.isOn
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //makes size2 filter value persist when view is reloaded
-        size2.isOn = UserDefaults.standard.bool(forKey: "switch2State")
 
         // Do any additional setup after loading the view.
     }
@@ -56,14 +90,15 @@ class SizeFilterViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }

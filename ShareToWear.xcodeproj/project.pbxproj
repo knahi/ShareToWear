@@ -13,6 +13,7 @@
 		167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */; };
 		16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */; };
 		16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */; };
+		16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */; };
 		16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF66051EAED3B5006AB387 /* BrowseViewController.swift */; };
 		16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesRentedViewController.swift; sourceTree = "<group>"; };
 		16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceFilterViewController.swift; sourceTree = "<group>"; };
+		16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
 		16DF66051EAED3B5006AB387 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeFilterViewController.swift; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */,
+				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
 				EF9AFB881EA3F52D002F3FEC /* ViewController.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
 				167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */,
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */,
+				16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */,
 				16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */,
 				16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */,
 				EF9AFBA51EA40D56002F3FEC /* MySTWViewController.swift in Sources */,
