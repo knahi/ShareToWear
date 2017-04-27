@@ -17,6 +17,8 @@ class DressDetailViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var availableLabel: UILabel!
     @IBOutlet weak var dressImage: UIImageView!
+    @IBOutlet weak var notAvailableLabel: UILabel!
+    @IBOutlet weak var rentButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -46,6 +48,8 @@ class DressDetailViewController: UIViewController {
             priceLabel.text = "$25"
             availableLabel.text = "No"
             dressImage.image = UIImage(named: "IMG_2422.jpg")
+            rentButton?.isHidden = true
+            notAvailableLabel.text = "Sorry, this dress is not available for rent"
         }
     }
 
