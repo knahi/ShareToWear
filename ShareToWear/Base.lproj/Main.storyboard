@@ -1479,7 +1479,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qkd-c1-dcT">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="oiZ-BZ-Rky">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="oiZ-BZ-Rky">
                             <connections>
                                 <action selector="done:" destination="i2n-Dr-DaP" id="SZj-DL-er5"/>
                             </connections>
@@ -1949,6 +1949,10 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <scene sceneID="jma-ac-mgN">
             <objects>
                 <viewController id="Eeq-Mo-eiX" customClass="ShareViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aPc-XA-ICy"/>
+                        <viewControllerLayoutGuide type="bottom" id="R8f-Yu-Ub5"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vqq-yW-5L9">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
