@@ -11,8 +11,23 @@ import UIKit
 class BrowseViewController: UIViewController {
     
     private var filter: FilterModel = FilterModel()
-
+//    private let dresses = DressCollection()
+    @IBOutlet weak var blackDress: UIButton!
+    @IBOutlet weak var redDress: UIButton!
     
+    @IBAction func blackDress(_ sender: UIButton) {
+        DressButton.myButtonPressed = "black"
+    }
+    @IBAction func redDress(_ sender: UIButton) {
+        DressButton.myButtonPressed = "red"
+    }
+    @IBAction func blueDress(_ sender: UIButton) {
+        DressButton.myButtonPressed = "blue"
+    }
+    
+    @IBAction func yellowDress(_ sender: UIButton) {
+        DressButton.myButtonPressed = "yellow"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

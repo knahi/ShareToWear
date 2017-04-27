@@ -11,20 +11,14 @@ import UIKit
 
 class SubmitInfo{
     
+    
     static var type:String = ""
-    
     static var dressTitle:String = ""
-    
     static var userName:String = ""
-    
     static var bannerWebID:String = ""
-    
     static var brand:String = ""
-    
     static var originalPrice:String = ""
-    
     static var preferredPrice:String = ""
-    
     
     //sizes
     static var size2:Bool = false
@@ -51,6 +45,19 @@ class SubmitInfo{
     static var orange:Bool = false
     static var purple:Bool = false
     static var gray:Bool = false
+    
+    
+    //DRESS RENTAL INFO
+    static var name:String = ""
+    static var email:String = ""
+    static var pickUp:Bool = false
+    static var dropOff:Bool = false
+    static var building:String = ""
+    static var roomNum:String = ""
+    static var time:String = ""
+    static var date:String = ""
+    static var dressColor:String = ""
+    
     
     
 }

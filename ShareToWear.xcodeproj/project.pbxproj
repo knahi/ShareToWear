@@ -15,6 +15,19 @@
 		1681D3F11EB156E800BEEC4D /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3F01EB156E800BEEC4D /* ShareViewController.swift */; };
 		1681D3F31EB15F3D00BEEC4D /* SubmitInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */; };
 		1681D3F51EB1664C00BEEC4D /* SubmitReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */; };
+		1681D4041EB17F9200BEEC4D /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D4031EB17F9200BEEC4D /* UserInfoModel.swift */; };
+		1681D40C1EB1918200BEEC4D /* BrowseDressListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D40B1EB1918100BEEC4D /* BrowseDressListing.swift */; };
+		1681D40E1EB1928E00BEEC4D /* DressCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D40D1EB1928E00BEEC4D /* DressCollection.swift */; };
+		1681D4101EB1983700BEEC4D /* DressDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */; };
+		1681D4161EB199E500BEEC4D /* IMG_2535.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1681D4111EB199E500BEEC4D /* IMG_2535.jpg */; };
+		1681D4171EB199E500BEEC4D /* IMG_2422.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1681D4121EB199E500BEEC4D /* IMG_2422.jpg */; };
+		1681D4181EB199E500BEEC4D /* IMG_2395.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1681D4131EB199E500BEEC4D /* IMG_2395.jpg */; };
+		1681D4191EB199E500BEEC4D /* IMG_2379.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1681D4141EB199E500BEEC4D /* IMG_2379.jpg */; };
+		1681D41A1EB199E500BEEC4D /* IMG_2339.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1681D4151EB199E500BEEC4D /* IMG_2339.jpg */; };
+		1681D41C1EB19B4900BEEC4D /* DressButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */; };
+		1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */; };
+		1681D4201EB1A32000BEEC4D /* DropOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */; };
+		1681D4221EB1A90E00BEEC4D /* RentReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */; };
 		16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */; };
 		16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */; };
 		16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */; };
@@ -41,7 +54,20 @@
 		1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ShareToWear/HomeViewController.swift; sourceTree = "<group>"; };
 		1681D3F01EB156E800BEEC4D /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitInfoModel.swift; sourceTree = "<group>"; };
-		1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmitReviewViewController.swift; path = ShareToWear/SubmitReviewViewController.swift; sourceTree = "<group>"; };
+		1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitReviewViewController.swift; sourceTree = "<group>"; };
+		1681D4031EB17F9200BEEC4D /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		1681D40B1EB1918100BEEC4D /* BrowseDressListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseDressListing.swift; sourceTree = "<group>"; };
+		1681D40D1EB1928E00BEEC4D /* DressCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressCollection.swift; sourceTree = "<group>"; };
+		1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressDetailViewController.swift; sourceTree = "<group>"; };
+		1681D4111EB199E500BEEC4D /* IMG_2535.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2535.jpg; path = "../../../../Downloads/Photos (1)/IMG_2535.jpg"; sourceTree = "<group>"; };
+		1681D4121EB199E500BEEC4D /* IMG_2422.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2422.jpg; path = "../../../../Downloads/Photos (1)/IMG_2422.jpg"; sourceTree = "<group>"; };
+		1681D4131EB199E500BEEC4D /* IMG_2395.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2395.jpg; path = "../../../../Downloads/Photos (1)/IMG_2395.jpg"; sourceTree = "<group>"; };
+		1681D4141EB199E500BEEC4D /* IMG_2379.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2379.jpg; path = "../../../../Downloads/Photos (1)/IMG_2379.jpg"; sourceTree = "<group>"; };
+		1681D4151EB199E500BEEC4D /* IMG_2339.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2339.jpg; path = "../../../../Downloads/Photos (1)/IMG_2339.jpg"; sourceTree = "<group>"; };
+		1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressButtonModel.swift; sourceTree = "<group>"; };
+		1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentDressViewController.swift; sourceTree = "<group>"; };
+		1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropOffViewController.swift; sourceTree = "<group>"; };
+		1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentReviewViewController.swift; sourceTree = "<group>"; };
 		16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
@@ -73,10 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1681D3F61EB17BA400BEEC4D /* Dresses */ = {
+			isa = PBXGroup;
+			children = (
+				1681D4111EB199E500BEEC4D /* IMG_2535.jpg */,
+				1681D4121EB199E500BEEC4D /* IMG_2422.jpg */,
+				1681D4131EB199E500BEEC4D /* IMG_2395.jpg */,
+				1681D4141EB199E500BEEC4D /* IMG_2379.jpg */,
+				1681D4151EB199E500BEEC4D /* IMG_2339.jpg */,
+			);
+			name = Dresses;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		EF9AFB7A1EA3F52D002F3FEC = {
 			isa = PBXGroup;
 			children = (
-				1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */,
 				16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */,
 				1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */,
 				EF9AFB851EA3F52D002F3FEC /* ShareToWear */,
@@ -95,10 +133,20 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
+				1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */,
+				1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */,
+				1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */,
+				1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */,
+				1681D40B1EB1918100BEEC4D /* BrowseDressListing.swift */,
+				1681D40D1EB1928E00BEEC4D /* DressCollection.swift */,
+				1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */,
+				1681D3F61EB17BA400BEEC4D /* Dresses */,
 				EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */,
 				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
 				EF9AFB881EA3F52D002F3FEC /* ViewController.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
+				1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */,
+				1681D4031EB17F9200BEEC4D /* UserInfoModel.swift */,
 				1681D3F01EB156E800BEEC4D /* ShareViewController.swift */,
 				1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */,
 				167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */,
@@ -188,14 +236,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1681D4161EB199E500BEEC4D /* IMG_2535.jpg in Resources */,
+				1681D4171EB199E500BEEC4D /* IMG_2422.jpg in Resources */,
 				EF9AFBA31EA4003C002F3FEC /* MySTW.png in Resources */,
 				EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */,
+				1681D4191EB199E500BEEC4D /* IMG_2379.jpg in Resources */,
 				EF9AFBA11EA3FFED002F3FEC /* Hearts.png in Resources */,
 				167DB2731EA44AC60084D985 /* home.png in Resources */,
+				1681D4181EB199E500BEEC4D /* IMG_2395.jpg in Resources */,
 				EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */,
 				EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */,
 				EF9AFB9F1EA3FF82002F3FEC /* Dress.png in Resources */,
 				167DB2751EA50A2F0084D985 /* Info.png in Resources */,
+				1681D41A1EB199E500BEEC4D /* IMG_2339.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,17 +262,25 @@
 				1681D3F51EB1664C00BEEC4D /* SubmitReviewViewController.swift in Sources */,
 				1681D3F11EB156E800BEEC4D /* ShareViewController.swift in Sources */,
 				167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */,
+				1681D4221EB1A90E00BEEC4D /* RentReviewViewController.swift in Sources */,
 				16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */,
+				1681D4041EB17F9200BEEC4D /* UserInfoModel.swift in Sources */,
 				16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */,
+				1681D41C1EB19B4900BEEC4D /* DressButtonModel.swift in Sources */,
 				16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */,
+				1681D4201EB1A32000BEEC4D /* DropOffViewController.swift in Sources */,
+				1681D40C1EB1918200BEEC4D /* BrowseDressListing.swift in Sources */,
 				EF9AFBA51EA40D56002F3FEC /* MySTWViewController.swift in Sources */,
 				EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */,
 				16868CEE1EAFE8B100ED32C9 /* AvailabilityViewController.swift in Sources */,
 				EF9AFBA71EA414F3002F3FEC /* AboutViewController.swift in Sources */,
 				167DB27A1EA6FB030084D985 /* DressesSharedViewController.swift in Sources */,
 				EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */,
+				1681D40E1EB1928E00BEEC4D /* DressCollection.swift in Sources */,
 				16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */,
 				1681D3F31EB15F3D00BEEC4D /* SubmitInfoModel.swift in Sources */,
+				1681D4101EB1983700BEEC4D /* DressDetailViewController.swift in Sources */,
+				1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */,
 				1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */,
 				16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */,
 			);

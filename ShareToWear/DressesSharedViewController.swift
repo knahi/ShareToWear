@@ -9,10 +9,97 @@
 import UIKit
 
 class DressesSharedViewController: UIViewController {
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
 
+    @IBOutlet weak var prefPriceLabel: UILabel!
+    @IBOutlet weak var origPriceLabel: UILabel!
+    @IBOutlet weak var brandLabel: UILabel!
+    @IBOutlet weak var sizeLabel: UILabel!
+    @IBOutlet weak var colorLabel: UILabel!
+    @IBOutlet weak var bannerWebIDLabel: UILabel!
+    @IBOutlet weak var userNameLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        typeLabel.text = SubmitInfo.type
+        titleLabel.text = SubmitInfo.dressTitle
+        prefPriceLabel.text = SubmitInfo.preferredPrice
+        origPriceLabel.text = SubmitInfo.originalPrice
+        brandLabel.text = SubmitInfo.brand
+        var colorString = ""
+        if SubmitInfo.red{
+            colorString = "Red "
+        }
+        if SubmitInfo.blue{
+            colorString += "Blue "
+        }
+        if SubmitInfo.yellow{
+            colorString += "Yellow "
+        }
+        if SubmitInfo.pink{
+            colorString += "Pink "
+        }
+        if SubmitInfo.white{
+            colorString += "White "
+        }
+        if SubmitInfo.black{
+            colorString += "Black "
+        }
+        if SubmitInfo.green{
+            colorString += "Green "
+        }
+        if SubmitInfo.orange{
+            colorString += "Orange "
+        }
+        if SubmitInfo.purple{
+            colorString += "Purple "
+        }
+        if SubmitInfo.gray{
+            colorString += "Gray "
+        }
+        colorLabel.text = colorString
+        
+        //Size
+        if SubmitInfo.size2{
+            sizeLabel.text = "2"
+        }
+        if SubmitInfo.size4{
+            sizeLabel.text = "4"
+        }
+        if SubmitInfo.size6{
+            sizeLabel.text = "6"
+        }
+        if SubmitInfo.size8{
+            sizeLabel.text = "8"
+        }
+        if SubmitInfo.size10{
+            sizeLabel.text = "10"
+        }
+        if SubmitInfo.size12{
+            sizeLabel.text = "12"
+        }
+        if SubmitInfo.size14{
+            sizeLabel.text = "14"
+        }
+        if SubmitInfo.sizeXS{
+            sizeLabel.text = "XS"
+        }
+        if SubmitInfo.sizeS{
+            sizeLabel.text = "S"
+        }
+        if SubmitInfo.sizeM{
+            sizeLabel.text = "M"
+        }
+        if SubmitInfo.sizeL{
+            sizeLabel.text = "L"
+        }
+        if SubmitInfo.sizeXL{
+            sizeLabel.text = "XL"
+        }
+        bannerWebIDLabel.text = SubmitInfo.bannerWebID
+        userNameLabel.text = SubmitInfo.userName
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +107,23 @@ class DressesSharedViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//    override func numberOfSections(in tableView: UITableView) -> Int{
+//        return 1
+//    }
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        guard let cell = tableView.dequeueReusableCell(withIdentfier: "DressListingCell", for: indexPath) as? DressListingCell else{
+//            fatalError("Can't get cell of the right kind")
+//        }
+//        
+//        // Configure the cell...
+//
+//        let sharedDresses = UserInfo.dressesShared[indexPath.row]
+//        print(sharedDresses)
+//        cell.configureCell(sharedDresses: sharedDresses)
+//
+//        return cell
+//    }
     
 
     /*

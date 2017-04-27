@@ -9,6 +9,8 @@
 import UIKit
 
 class SubmitReviewViewController: UIViewController {
+    
+    //var collection = [dressShared]()
 
     @IBOutlet weak var done: UIBarButtonItem!
     @IBOutlet weak var typeLabel: UILabel!
@@ -21,14 +23,6 @@ class SubmitReviewViewController: UIViewController {
     @IBOutlet weak var originalPriceLabel: UILabel!
     @IBOutlet weak var preferredPriceLabel: UILabel!
    
-   
-    
-    
-    
-    
-    
-    
-    
     @IBAction func donePressed(_ sender: UIBarButtonItem) {
         
         if presentingViewController is UITabBarController{
@@ -121,6 +115,19 @@ class SubmitReviewViewController: UIViewController {
         brandLabel.text = SubmitInfo.brand
         originalPriceLabel.text = SubmitInfo.originalPrice
         preferredPriceLabel.text = SubmitInfo.preferredPrice
+        
+//        init(){
+//            collection += [
+//                dressShared(type: typeLabel.text!, title: dressTitleLabel.text!, userName: userNameLabel.text!, bannerWebID: bannerwebIDLabel.text!, color: colorLabel.text!, size: sizeLabel.text!, brand: brandLabel.text!, originalPrice: originalPriceLabel.text!, preferredPrice: preferredPriceLabel.text!)
+//            ]
+//        }
+        
+//        let shared = dressShared(type: typeLabel.text!, title: dressTitleLabel.text!, userName: userNameLabel.text!, bannerWebID: bannerwebIDLabel.text!, color: colorLabel.text!, size: sizeLabel.text!, brand: brandLabel.text!, originalPrice: originalPriceLabel.text!, preferredPrice: preferredPriceLabel.text!)
+//        
+//        UserInfo.sharedCollection.append(shared)
+//        print("dress added to collection")
+//        print(UserInfo.sharedCollection.count)
+        
 
         // Do any additional setup after loading the view.
     }
