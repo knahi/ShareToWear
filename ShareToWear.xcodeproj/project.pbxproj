@@ -11,6 +11,10 @@
 		167DB2751EA50A2F0084D985 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 167DB2741EA50A2F0084D985 /* Info.png */; };
 		167DB27A1EA6FB030084D985 /* DressesSharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */; };
 		167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */; };
+		1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */; };
+		1681D3F11EB156E800BEEC4D /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3F01EB156E800BEEC4D /* ShareViewController.swift */; };
+		1681D3F31EB15F3D00BEEC4D /* SubmitInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */; };
+		1681D3F51EB1664C00BEEC4D /* SubmitReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */; };
 		16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */; };
 		16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */; };
 		16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */; };
@@ -34,6 +38,10 @@
 		167DB2741EA50A2F0084D985 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Info.png; sourceTree = "<group>"; };
 		167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesSharedViewController.swift; sourceTree = "<group>"; };
 		167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesRentedViewController.swift; sourceTree = "<group>"; };
+		1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ShareToWear/HomeViewController.swift; sourceTree = "<group>"; };
+		1681D3F01EB156E800BEEC4D /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitInfoModel.swift; sourceTree = "<group>"; };
+		1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmitReviewViewController.swift; path = ShareToWear/SubmitReviewViewController.swift; sourceTree = "<group>"; };
 		16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
@@ -68,7 +76,9 @@
 		EF9AFB7A1EA3F52D002F3FEC = {
 			isa = PBXGroup;
 			children = (
+				1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */,
 				16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */,
+				1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */,
 				EF9AFB851EA3F52D002F3FEC /* ShareToWear */,
 				EF9AFB841EA3F52D002F3FEC /* Products */,
 			);
@@ -89,6 +99,8 @@
 				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
 				EF9AFB881EA3F52D002F3FEC /* ViewController.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
+				1681D3F01EB156E800BEEC4D /* ShareViewController.swift */,
+				1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */,
 				167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */,
 				167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */,
 				16DF66051EAED3B5006AB387 /* BrowseViewController.swift */,
@@ -194,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1681D3F51EB1664C00BEEC4D /* SubmitReviewViewController.swift in Sources */,
+				1681D3F11EB156E800BEEC4D /* ShareViewController.swift in Sources */,
 				167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */,
 				16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */,
 				16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */,
@@ -205,6 +219,8 @@
 				167DB27A1EA6FB030084D985 /* DressesSharedViewController.swift in Sources */,
 				EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */,
 				16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */,
+				1681D3F31EB15F3D00BEEC4D /* SubmitInfoModel.swift in Sources */,
+				1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */,
 				16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
