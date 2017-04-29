@@ -65,39 +65,43 @@ class DressesSharedViewController: UIViewController {
         if SubmitInfo.size2{
             sizeLabel.text = "2"
         }
-        if SubmitInfo.size4{
+        else if SubmitInfo.size4 {
             sizeLabel.text = "4"
         }
-        if SubmitInfo.size6{
+        else if SubmitInfo.size6{
             sizeLabel.text = "6"
         }
-        if SubmitInfo.size8{
+        else if SubmitInfo.size8{
             sizeLabel.text = "8"
         }
-        if SubmitInfo.size10{
+        else if SubmitInfo.size10{
             sizeLabel.text = "10"
         }
-        if SubmitInfo.size12{
+        else if SubmitInfo.size12{
             sizeLabel.text = "12"
         }
-        if SubmitInfo.size14{
+        else if SubmitInfo.size14{
             sizeLabel.text = "14"
         }
-        if SubmitInfo.sizeXS{
+        else if SubmitInfo.sizeXS{
             sizeLabel.text = "XS"
         }
-        if SubmitInfo.sizeS{
+        else if SubmitInfo.sizeS{
             sizeLabel.text = "S"
         }
-        if SubmitInfo.sizeM{
+        else if SubmitInfo.sizeM{
             sizeLabel.text = "M"
         }
-        if SubmitInfo.sizeL{
+        else if SubmitInfo.sizeL{
             sizeLabel.text = "L"
         }
-        if SubmitInfo.sizeXL{
+        else if SubmitInfo.sizeXL{
             sizeLabel.text = "XL"
         }
+        else {
+            sizeLabel.text = ""
+        }
+        
         bannerWebIDLabel.text = SubmitInfo.bannerWebID
         userNameLabel.text = SubmitInfo.userName
         // Do any additional setup after loading the view.

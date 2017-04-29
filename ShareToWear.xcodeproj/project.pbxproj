@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		167DB2731EA44AC60084D985 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 167DB2721EA44AC60084D985 /* home.png */; };
-		167DB2751EA50A2F0084D985 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 167DB2741EA50A2F0084D985 /* Info.png */; };
 		167DB27A1EA6FB030084D985 /* DressesSharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */; };
 		167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */; };
 		1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */; };
@@ -16,7 +14,6 @@
 		1681D3F31EB15F3D00BEEC4D /* SubmitInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */; };
 		1681D3F51EB1664C00BEEC4D /* SubmitReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */; };
 		1681D4041EB17F9200BEEC4D /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D4031EB17F9200BEEC4D /* UserInfoModel.swift */; };
-		1681D40C1EB1918200BEEC4D /* BrowseDressListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D40B1EB1918100BEEC4D /* BrowseDressListing.swift */; };
 		1681D40E1EB1928E00BEEC4D /* DressCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D40D1EB1928E00BEEC4D /* DressCollection.swift */; };
 		1681D4101EB1983700BEEC4D /* DressDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */; };
 		1681D4161EB199E500BEEC4D /* IMG_2535.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1681D4111EB199E500BEEC4D /* IMG_2535.jpg */; };
@@ -34,21 +31,24 @@
 		16868CEE1EAFE8B100ED32C9 /* AvailabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */; };
 		16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF66051EAED3B5006AB387 /* BrowseViewController.swift */; };
 		16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */; };
+		EF02EE6D1EB25DA6006CFECD /* ShareToWear - 151.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF02EE6C1EB25DA6006CFECD /* ShareToWear - 151.jpg */; };
+		EF02EE6F1EB25F41006CFECD /* ShareToWear - 125.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF02EE6E1EB25F40006CFECD /* ShareToWear - 125.jpg */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
 		EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB881EA3F52D002F3FEC /* ViewController.swift */; };
 		EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */; };
 		EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8D1EA3F52D002F3FEC /* Assets.xcassets */; };
 		EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8F1EA3F52D002F3FEC /* LaunchScreen.storyboard */; };
-		EF9AFB9F1EA3FF82002F3FEC /* Dress.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB9E1EA3FF82002F3FEC /* Dress.png */; };
-		EF9AFBA11EA3FFED002F3FEC /* Hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFBA01EA3FFED002F3FEC /* Hearts.png */; };
-		EF9AFBA31EA4003C002F3FEC /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFBA21EA4003C002F3FEC /* MySTW.png */; };
 		EF9AFBA51EA40D56002F3FEC /* MySTWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFBA41EA40D56002F3FEC /* MySTWViewController.swift */; };
 		EF9AFBA71EA414F3002F3FEC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFBA61EA414F3002F3FEC /* AboutViewController.swift */; };
+		EFB7F3A61EB238D500EA2E02 /* Dress1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB7F3A21EB238D400EA2E02 /* Dress1.png */; };
+		EFB7F3A71EB238D500EA2E02 /* Hearts1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB7F3A31EB238D500EA2E02 /* Hearts1.png */; };
+		EFB7F3A81EB238D500EA2E02 /* Home1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB7F3A41EB238D500EA2E02 /* Home1.png */; };
+		EFB7F3A91EB238D500EA2E02 /* MySTW1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB7F3A51EB238D500EA2E02 /* MySTW1.png */; };
+		EFB7F3AB1EB239BD00EA2E02 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB7F3AA1EB239BD00EA2E02 /* Info.png */; };
+		EFB7F3AD1EB23D0700EA2E02 /* BrowseDressListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB7F3AC1EB23D0700EA2E02 /* BrowseDressListing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		167DB2721EA44AC60084D985 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../home.png; sourceTree = "<group>"; };
-		167DB2741EA50A2F0084D985 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Info.png; sourceTree = "<group>"; };
 		167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesSharedViewController.swift; sourceTree = "<group>"; };
 		167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesRentedViewController.swift; sourceTree = "<group>"; };
 		1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ShareToWear/HomeViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,6 @@
 		1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitInfoModel.swift; sourceTree = "<group>"; };
 		1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitReviewViewController.swift; sourceTree = "<group>"; };
 		1681D4031EB17F9200BEEC4D /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
-		1681D40B1EB1918100BEEC4D /* BrowseDressListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseDressListing.swift; sourceTree = "<group>"; };
 		1681D40D1EB1928E00BEEC4D /* DressCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressCollection.swift; sourceTree = "<group>"; };
 		1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressDetailViewController.swift; sourceTree = "<group>"; };
 		1681D4111EB199E500BEEC4D /* IMG_2535.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2535.jpg; path = "../../../../Downloads/Photos (1)/IMG_2535.jpg"; sourceTree = "<group>"; };
@@ -74,6 +73,8 @@
 		16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityViewController.swift; sourceTree = "<group>"; };
 		16DF66051EAED3B5006AB387 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeFilterViewController.swift; sourceTree = "<group>"; };
+		EF02EE6C1EB25DA6006CFECD /* ShareToWear - 151.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ShareToWear - 151.jpg"; path = "../Images/ShareToWear - 151.jpg"; sourceTree = "<group>"; };
+		EF02EE6E1EB25F40006CFECD /* ShareToWear - 125.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ShareToWear - 125.jpg"; path = "../Images/ShareToWear - 125.jpg"; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AFB881EA3F52D002F3FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,11 +82,14 @@
 		EF9AFB8D1EA3F52D002F3FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF9AFB901EA3F52D002F3FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF9AFB921EA3F52D002F3FEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF9AFB9E1EA3FF82002F3FEC /* Dress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dress.png; path = ../../Dress.png; sourceTree = "<group>"; };
-		EF9AFBA01EA3FFED002F3FEC /* Hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hearts.png; path = ../../Hearts.png; sourceTree = "<group>"; };
-		EF9AFBA21EA4003C002F3FEC /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../MySTW.png; sourceTree = "<group>"; };
 		EF9AFBA41EA40D56002F3FEC /* MySTWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySTWViewController.swift; sourceTree = "<group>"; };
 		EF9AFBA61EA414F3002F3FEC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		EFB7F3A21EB238D400EA2E02 /* Dress1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dress1.png; path = ../../Icons/Dress1.png; sourceTree = "<group>"; };
+		EFB7F3A31EB238D500EA2E02 /* Hearts1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hearts1.png; path = ../../Icons/Hearts1.png; sourceTree = "<group>"; };
+		EFB7F3A41EB238D500EA2E02 /* Home1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home1.png; path = ../../Icons/Home1.png; sourceTree = "<group>"; };
+		EFB7F3A51EB238D500EA2E02 /* MySTW1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW1.png; path = ../../Icons/MySTW1.png; sourceTree = "<group>"; };
+		EFB7F3AA1EB239BD00EA2E02 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Icons/Info.png; sourceTree = "<group>"; };
+		EFB7F3AC1EB23D0700EA2E02 /* BrowseDressListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseDressListing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 		1681D3F61EB17BA400BEEC4D /* Dresses */ = {
 			isa = PBXGroup;
 			children = (
+				EF02EE6E1EB25F40006CFECD /* ShareToWear - 125.jpg */,
+				EF02EE6C1EB25DA6006CFECD /* ShareToWear - 151.jpg */,
 				1681D4111EB199E500BEEC4D /* IMG_2535.jpg */,
 				1681D4121EB199E500BEEC4D /* IMG_2422.jpg */,
 				1681D4131EB199E500BEEC4D /* IMG_2395.jpg */,
@@ -137,7 +143,7 @@
 				1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */,
 				1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */,
 				1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */,
-				1681D40B1EB1918100BEEC4D /* BrowseDressListing.swift */,
+				EFB7F3AC1EB23D0700EA2E02 /* BrowseDressListing.swift */,
 				1681D40D1EB1928E00BEEC4D /* DressCollection.swift */,
 				1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */,
 				1681D3F61EB17BA400BEEC4D /* Dresses */,
@@ -168,11 +174,11 @@
 		EF9AFBA81EA41601002F3FEC /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				167DB2741EA50A2F0084D985 /* Info.png */,
-				167DB2721EA44AC60084D985 /* home.png */,
-				EF9AFBA21EA4003C002F3FEC /* MySTW.png */,
-				EF9AFBA01EA3FFED002F3FEC /* Hearts.png */,
-				EF9AFB9E1EA3FF82002F3FEC /* Dress.png */,
+				EFB7F3AA1EB239BD00EA2E02 /* Info.png */,
+				EFB7F3A21EB238D400EA2E02 /* Dress1.png */,
+				EFB7F3A31EB238D500EA2E02 /* Hearts1.png */,
+				EFB7F3A41EB238D500EA2E02 /* Home1.png */,
+				EFB7F3A51EB238D500EA2E02 /* MySTW1.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 				TargetAttributes = {
 					EF9AFB821EA3F52D002F3FEC = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = H383N4F5AA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -236,18 +243,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB7F3A81EB238D500EA2E02 /* Home1.png in Resources */,
 				1681D4161EB199E500BEEC4D /* IMG_2535.jpg in Resources */,
 				1681D4171EB199E500BEEC4D /* IMG_2422.jpg in Resources */,
-				EF9AFBA31EA4003C002F3FEC /* MySTW.png in Resources */,
+				EFB7F3A71EB238D500EA2E02 /* Hearts1.png in Resources */,
 				EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */,
+				EF02EE6D1EB25DA6006CFECD /* ShareToWear - 151.jpg in Resources */,
+				EFB7F3AB1EB239BD00EA2E02 /* Info.png in Resources */,
 				1681D4191EB199E500BEEC4D /* IMG_2379.jpg in Resources */,
-				EF9AFBA11EA3FFED002F3FEC /* Hearts.png in Resources */,
-				167DB2731EA44AC60084D985 /* home.png in Resources */,
+				EF02EE6F1EB25F41006CFECD /* ShareToWear - 125.jpg in Resources */,
 				1681D4181EB199E500BEEC4D /* IMG_2395.jpg in Resources */,
 				EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */,
 				EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */,
-				EF9AFB9F1EA3FF82002F3FEC /* Dress.png in Resources */,
-				167DB2751EA50A2F0084D985 /* Info.png in Resources */,
+				EFB7F3A61EB238D500EA2E02 /* Dress1.png in Resources */,
+				EFB7F3A91EB238D500EA2E02 /* MySTW1.png in Resources */,
 				1681D41A1EB199E500BEEC4D /* IMG_2339.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB7F3AD1EB23D0700EA2E02 /* BrowseDressListing.swift in Sources */,
 				1681D3F51EB1664C00BEEC4D /* SubmitReviewViewController.swift in Sources */,
 				1681D3F11EB156E800BEEC4D /* ShareViewController.swift in Sources */,
 				167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */,
@@ -269,7 +279,6 @@
 				1681D41C1EB19B4900BEEC4D /* DressButtonModel.swift in Sources */,
 				16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */,
 				1681D4201EB1A32000BEEC4D /* DropOffViewController.swift in Sources */,
-				1681D40C1EB1918200BEEC4D /* BrowseDressListing.swift in Sources */,
 				EF9AFBA51EA40D56002F3FEC /* MySTWViewController.swift in Sources */,
 				EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */,
 				16868CEE1EAFE8B100ED32C9 /* AvailabilityViewController.swift in Sources */,
@@ -405,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H383N4F5AA;
 				INFOPLIST_FILE = ShareToWear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.middleburycs466.ShareToWear;
@@ -417,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H383N4F5AA;
 				INFOPLIST_FILE = ShareToWear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.middleburycs466.ShareToWear;

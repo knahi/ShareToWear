@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RentDressViewController: UIViewController {
+class RentDressViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var pickUP: UISwitch!
@@ -32,6 +32,23 @@ class RentDressViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // I added a Tap Gesture Recognizer to the view
+    // this action is fired by tapping on the view
+    // the effect is that when the keyboard is showing, tapping outside of the keyboard makes it go away
+    @IBAction func tapToDismissKeyboard(_ sender: UITapGestureRecognizer) {
+        name.resignFirstResponder() //hide the keyboard
+        email.resignFirstResponder()    //hide the keyboard
+        
+    }
+    
+    // This is a delegate method
+    // The text field will call this when the done/return/etc button is typed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() //hide the keyboard
+        return true
+    }
+
 
     /*
     // MARK: - Navigation

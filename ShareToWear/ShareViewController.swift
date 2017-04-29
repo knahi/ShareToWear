@@ -94,6 +94,20 @@ class ShareViewController: UIViewController {
         SubmitInfo.preferredPrice = preferredPrice.text!
     
     }
+    
+    // I added a Tap Gesture Recognizer to the view
+    // this action is fired by tapping on the view
+    // the effect is that when the keyboard is showing, tapping outside of the keyboard makes it go away
+    @IBAction func tapToDismissKeyboard(_ sender: UITapGestureRecognizer) {
+        dressTitle.resignFirstResponder() //hide the keyboard
+        userName.resignFirstResponder()    //hide the keyboard
+        bannerWebID.resignFirstResponder()    //hide the keyboard
+        brand.resignFirstResponder()    //hide the keyboard
+        originalPrice.resignFirstResponder()    //hide the keyboard
+        preferredPrice.resignFirstResponder()    //hide the keyboard
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
