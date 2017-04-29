@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
 class BrowseViewController: UIViewController {
+    
     
     private var filter: FilterModel = FilterModel()
 //    private let dresses = DressCollection()
@@ -30,7 +32,27 @@ class BrowseViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Database setup
+        var ref: FIRDatabaseReference!
+        ref = FIRDatabase.database().reference()
+        
+        ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
+            let collection = snapshot.value as? NSDictionary
+            print(collection?["dress10"])
+            let dress = collection?["dress10"] as? NSDictionary
+            //print(dress?["available"])
+            let avail = dress?["available"]
+            let stravail = (avail as! String)
+            print (stravail)
+            
+//            if avail {
+//                print("it worked")
+//            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool){

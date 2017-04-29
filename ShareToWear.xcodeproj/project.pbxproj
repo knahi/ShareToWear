@@ -31,8 +31,10 @@
 		16868CEE1EAFE8B100ED32C9 /* AvailabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */; };
 		16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF66051EAED3B5006AB387 /* BrowseViewController.swift */; };
 		16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */; };
+		B38A957549643A2DC79D57E4 /* Pods_ShareToWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE0686243FFF3F8C4134A8 /* Pods_ShareToWear.framework */; };
 		EF02EE6D1EB25DA6006CFECD /* ShareToWear - 151.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF02EE6C1EB25DA6006CFECD /* ShareToWear - 151.jpg */; };
 		EF02EE6F1EB25F41006CFECD /* ShareToWear - 125.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF02EE6E1EB25F40006CFECD /* ShareToWear - 125.jpg */; };
+		EF04CAAD1EB51D2200BAF21F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF04CAAC1EB51D2200BAF21F /* GoogleService-Info.plist */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
 		EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB881EA3F52D002F3FEC /* ViewController.swift */; };
 		EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */; };
@@ -73,8 +75,12 @@
 		16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityViewController.swift; sourceTree = "<group>"; };
 		16DF66051EAED3B5006AB387 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeFilterViewController.swift; sourceTree = "<group>"; };
+		3FFE0686243FFF3F8C4134A8 /* Pods_ShareToWear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareToWear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A54448C5CE3F97C2FF26A3A /* Pods-ShareToWear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareToWear.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareToWear/Pods-ShareToWear.debug.xcconfig"; sourceTree = "<group>"; };
+		724E4CBD9B6377BC4315E552 /* Pods-ShareToWear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareToWear.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShareToWear/Pods-ShareToWear.release.xcconfig"; sourceTree = "<group>"; };
 		EF02EE6C1EB25DA6006CFECD /* ShareToWear - 151.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ShareToWear - 151.jpg"; path = "../Images/ShareToWear - 151.jpg"; sourceTree = "<group>"; };
 		EF02EE6E1EB25F40006CFECD /* ShareToWear - 125.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ShareToWear - 125.jpg"; path = "../Images/ShareToWear - 125.jpg"; sourceTree = "<group>"; };
+		EF04CAAC1EB51D2200BAF21F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AFB881EA3F52D002F3FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38A957549643A2DC79D57E4 /* Pods_ShareToWear.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +125,23 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		1A3ABA9FBCCE6C11BC62CE9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FFE0686243FFF3F8C4134A8 /* Pods_ShareToWear.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		304E74428D90901E27D7DE35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A54448C5CE3F97C2FF26A3A /* Pods-ShareToWear.debug.xcconfig */,
+				724E4CBD9B6377BC4315E552 /* Pods-ShareToWear.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF9AFB7A1EA3F52D002F3FEC = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +149,8 @@
 				1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */,
 				EF9AFB851EA3F52D002F3FEC /* ShareToWear */,
 				EF9AFB841EA3F52D002F3FEC /* Products */,
+				304E74428D90901E27D7DE35 /* Pods */,
+				1A3ABA9FBCCE6C11BC62CE9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +165,7 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
+				EF04CAAC1EB51D2200BAF21F /* GoogleService-Info.plist */,
 				1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */,
 				1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */,
 				1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */,
@@ -190,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF9AFB951EA3F52D002F3FEC /* Build configuration list for PBXNativeTarget "ShareToWear" */;
 			buildPhases = (
+				50C2CA38ED1B7844EB31B89D /* [CP] Check Pods Manifest.lock */,
 				EF9AFB7F1EA3F52D002F3FEC /* Sources */,
 				EF9AFB801EA3F52D002F3FEC /* Frameworks */,
 				EF9AFB811EA3F52D002F3FEC /* Resources */,
+				9269272E51E12A4EA92BB93B /* [CP] Embed Pods Frameworks */,
+				13C5C2D2E846A975600E0287 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +282,7 @@
 				EFB7F3AB1EB239BD00EA2E02 /* Info.png in Resources */,
 				1681D4191EB199E500BEEC4D /* IMG_2379.jpg in Resources */,
 				EF02EE6F1EB25F41006CFECD /* ShareToWear - 125.jpg in Resources */,
+				EF04CAAD1EB51D2200BAF21F /* GoogleService-Info.plist in Resources */,
 				1681D4181EB199E500BEEC4D /* IMG_2395.jpg in Resources */,
 				EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */,
 				EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */,
@@ -262,6 +293,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13C5C2D2E846A975600E0287 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareToWear/Pods-ShareToWear-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50C2CA38ED1B7844EB31B89D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9269272E51E12A4EA92BB93B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShareToWear/Pods-ShareToWear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF9AFB7F1EA3F52D002F3FEC /* Sources */ = {
@@ -412,6 +491,7 @@
 		};
 		EF9AFB961EA3F52D002F3FEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A54448C5CE3F97C2FF26A3A /* Pods-ShareToWear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H383N4F5AA;
@@ -425,6 +505,7 @@
 		};
 		EF9AFB971EA3F52D002F3FEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724E4CBD9B6377BC4315E552 /* Pods-ShareToWear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H383N4F5AA;
