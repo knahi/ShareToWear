@@ -41,14 +41,10 @@ class BrowseViewController: UIViewController {
             let collection = snapshot.value as? NSDictionary
             print(collection?["dress10"])
             let dress = collection?["dress10"] as? NSDictionary
-            //print(dress?["available"])
             let avail = dress?["available"]
             let stravail = (avail as! String)
             print (stravail)
             
-//            if avail {
-//                print("it worked")
-//            }
             
         }) { (error) in
             print(error.localizedDescription)
