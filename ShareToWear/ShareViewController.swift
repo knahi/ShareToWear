@@ -27,6 +27,7 @@ class ShareViewController: UIViewController {
     @IBOutlet weak var purple: UISwitch!
     @IBOutlet weak var gray: UISwitch!
     
+    @IBOutlet weak var size0: UISwitch!
     @IBOutlet weak var size2: UISwitch!
     @IBOutlet weak var size4: UISwitch!
     @IBOutlet weak var size6: UISwitch!
@@ -62,7 +63,8 @@ class ShareViewController: UIViewController {
         SubmitInfo.purple = purple.isOn
         SubmitInfo.gray = gray.isOn
         
-       SubmitInfo.size2 = size2.isOn
+        SubmitInfo.size0 = size0.isOn
+        SubmitInfo.size2 = size2.isOn
         SubmitInfo.size4 = size4.isOn
         SubmitInfo.size6 = size6.isOn
         SubmitInfo.size8 = size8.isOn
@@ -72,7 +74,7 @@ class ShareViewController: UIViewController {
         SubmitInfo.sizeXS = sizeXS.isOn
         SubmitInfo.sizeS = sizeS.isOn
         SubmitInfo.sizeM = sizeM.isOn
-       SubmitInfo.sizeL = sizeL.isOn
+        SubmitInfo.sizeL = sizeL.isOn
         SubmitInfo.sizeXL = sizeXL.isOn
         
         if rental.isOn{

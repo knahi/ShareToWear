@@ -12,9 +12,9 @@ class SizeFilterViewController: UIViewController {
     
     //var filters:FilterModel = FilterModel()
     
-    
 
     @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var size0: UISwitch!
     @IBOutlet weak var size2: UISwitch!
     @IBOutlet weak var size4: UISwitch!
     @IBOutlet weak var size6: UISwitch!
@@ -30,6 +30,7 @@ class SizeFilterViewController: UIViewController {
     
     //UPDATE MODEL VALUES
     @IBAction func sizeFilterUpdate(_ sender: UISwitch) {
+        FilterModel.size0 = size0.isOn
         FilterModel.size2 = size2.isOn
         FilterModel.size4 = size4.isOn
         FilterModel.size6 = size6.isOn
@@ -47,6 +48,7 @@ class SizeFilterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        size0.isOn = FilterModel.size0
         size2.isOn = FilterModel.size2
         size4.isOn = FilterModel.size4
         size6.isOn = FilterModel.size6
@@ -59,7 +61,6 @@ class SizeFilterViewController: UIViewController {
         sizeM.isOn = FilterModel.sizeM
         sizeL.isOn = FilterModel.sizeL
         sizeXL.isOn = FilterModel.sizeXL
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

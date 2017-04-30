@@ -75,6 +75,9 @@ class SubmitReviewViewController: UIViewController {
         colorLabel.text = colorString
         
         //Size
+        if SubmitInfo.size0{
+            sizeLabel.text = "0"
+        }
         if SubmitInfo.size2{
             sizeLabel.text = "2"
         }
