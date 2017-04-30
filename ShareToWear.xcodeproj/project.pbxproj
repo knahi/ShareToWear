@@ -48,6 +48,13 @@
 		EFB7F3A91EB238D500EA2E02 /* MySTW1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB7F3A51EB238D500EA2E02 /* MySTW1.png */; };
 		EFB7F3AB1EB239BD00EA2E02 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB7F3AA1EB239BD00EA2E02 /* Info.png */; };
 		EFB7F3AD1EB23D0700EA2E02 /* BrowseDressListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB7F3AC1EB23D0700EA2E02 /* BrowseDressListing.swift */; };
+		EFCEFFF51EB571CC007B0C22 /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFEE1EB571CC007B0C22 /* 40.png */; };
+		EFCEFFF61EB571CC007B0C22 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFEF1EB571CC007B0C22 /* 58.png */; };
+		EFCEFFF71EB571CC007B0C22 /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFF01EB571CC007B0C22 /* 60.png */; };
+		EFCEFFF81EB571CC007B0C22 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFF11EB571CC007B0C22 /* 80.png */; };
+		EFCEFFF91EB571CC007B0C22 /* 87.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFF21EB571CC007B0C22 /* 87.png */; };
+		EFCEFFFA1EB571CC007B0C22 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFF31EB571CC007B0C22 /* 120.png */; };
+		EFCEFFFB1EB571CC007B0C22 /* 180.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFF41EB571CC007B0C22 /* 180.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +103,13 @@
 		EFB7F3A51EB238D500EA2E02 /* MySTW1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW1.png; path = ../../Icons/MySTW1.png; sourceTree = "<group>"; };
 		EFB7F3AA1EB239BD00EA2E02 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Icons/Info.png; sourceTree = "<group>"; };
 		EFB7F3AC1EB23D0700EA2E02 /* BrowseDressListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseDressListing.swift; sourceTree = "<group>"; };
+		EFCEFFEE1EB571CC007B0C22 /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40.png; sourceTree = "<group>"; };
+		EFCEFFEF1EB571CC007B0C22 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		EFCEFFF01EB571CC007B0C22 /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60.png; sourceTree = "<group>"; };
+		EFCEFFF11EB571CC007B0C22 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		EFCEFFF21EB571CC007B0C22 /* 87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 87.png; sourceTree = "<group>"; };
+		EFCEFFF31EB571CC007B0C22 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		EFCEFFF41EB571CC007B0C22 /* 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 180.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +179,7 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
+				EFCEFFED1EB570AD007B0C22 /* Logo */,
 				EF04CAAC1EB51D2200BAF21F /* GoogleService-Info.plist */,
 				1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */,
 				1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */,
@@ -208,6 +223,20 @@
 				EFB7F3A51EB238D500EA2E02 /* MySTW1.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		EFCEFFED1EB570AD007B0C22 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				EFCEFFEE1EB571CC007B0C22 /* 40.png */,
+				EFCEFFEF1EB571CC007B0C22 /* 58.png */,
+				EFCEFFF01EB571CC007B0C22 /* 60.png */,
+				EFCEFFF11EB571CC007B0C22 /* 80.png */,
+				EFCEFFF21EB571CC007B0C22 /* 87.png */,
+				EFCEFFF31EB571CC007B0C22 /* 120.png */,
+				EFCEFFF41EB571CC007B0C22 /* 180.png */,
+			);
+			name = Logo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,10 +303,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB7F3A81EB238D500EA2E02 /* Home1.png in Resources */,
+				EFCEFFFA1EB571CC007B0C22 /* 120.png in Resources */,
 				1681D4161EB199E500BEEC4D /* IMG_2535.jpg in Resources */,
 				1681D4171EB199E500BEEC4D /* IMG_2422.jpg in Resources */,
 				EFB7F3A71EB238D500EA2E02 /* Hearts1.png in Resources */,
+				EFCEFFF71EB571CC007B0C22 /* 60.png in Resources */,
+				EFCEFFF81EB571CC007B0C22 /* 80.png in Resources */,
+				EFCEFFF61EB571CC007B0C22 /* 58.png in Resources */,
 				EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */,
+				EFCEFFFB1EB571CC007B0C22 /* 180.png in Resources */,
+				EFCEFFF91EB571CC007B0C22 /* 87.png in Resources */,
+				EFCEFFF51EB571CC007B0C22 /* 40.png in Resources */,
 				EF02EE6D1EB25DA6006CFECD /* ShareToWear - 151.jpg in Resources */,
 				EFB7F3AB1EB239BD00EA2E02 /* Info.png in Resources */,
 				1681D4191EB199E500BEEC4D /* IMG_2379.jpg in Resources */,
