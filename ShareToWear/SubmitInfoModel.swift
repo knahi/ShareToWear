@@ -21,6 +21,7 @@ class SubmitInfo{
     static var preferredPrice:String = ""
     
     //sizes
+    static var size0:Bool = false
     static var size2:Bool = false
     static var size4:Bool = false
     static var size6:Bool = false

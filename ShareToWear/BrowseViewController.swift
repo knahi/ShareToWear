@@ -39,7 +39,7 @@ class BrowseViewController: UIViewController {
         
         ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
             let collection = snapshot.value as? NSDictionary
-            print(collection?["dress10"])
+            print(collection?["dress10"] ?? 0)
             let dress = collection?["dress10"] as? NSDictionary
             let avail = dress?["available"]
             let stravail = (avail as! String)

@@ -62,7 +62,10 @@ class DressesSharedViewController: UIViewController {
         colorLabel.text = colorString
         
         //Size
-        if SubmitInfo.size2{
+        if SubmitInfo.size0{
+            sizeLabel.text = "0"
+        }
+        else if SubmitInfo.size2{
             sizeLabel.text = "2"
         }
         else if SubmitInfo.size4 {
