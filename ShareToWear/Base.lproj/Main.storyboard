@@ -152,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UM-dq-Xh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3543.1999999999998" y="617.54122938530736"/>
+            <point key="canvasLocation" x="4482.3999999999996" y="617.54122938530736"/>
         </scene>
         <!--Size Filter View Controller-->
         <scene sceneID="H0n-1Q-rcs">
@@ -398,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ZM-rv-GrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5655.1999999999998" y="650.82458770614699"/>
+            <point key="canvasLocation" x="6594.3999999999996" y="650.82458770614699"/>
         </scene>
         <!--Submit Review View Controller-->
         <scene sceneID="Ibb-0P-te3">
@@ -1384,10 +1384,48 @@
             </objects>
             <point key="canvasLocation" x="1032.8" y="1028.6356821589206"/>
         </scene>
+        <!--Hearts Collection View Controller-->
+        <scene sceneID="N56-T5-obj">
+            <objects>
+                <collectionViewController id="Qf2-bp-gfZ" customClass="HeartsCollectionViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Cch-82-WJU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fJw-Kk-pm3">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DressCell" id="reM-Cf-b1n">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Qf2-bp-gfZ" id="26L-Hc-QQX"/>
+                            <outlet property="delegate" destination="Qf2-bp-gfZ" id="6g3-Sn-c6Z"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="eoX-i4-swV">
+                        <nil key="title"/>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AjO-yW-5Fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815.1999999999998" y="1060.1199400299852"/>
+        </scene>
         <!--Home-->
         <scene sceneID="2bA-OS-Cyh">
             <objects>
                 <tabBarController title="Home" id="euC-ih-oYo" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="aOd-T0-CsL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1396,41 +1434,13 @@
                     <connections>
                         <segue destination="GDM-TK-nl6" kind="relationship" relationship="viewControllers" id="cg8-EH-dBV"/>
                         <segue destination="j6k-mn-vKJ" kind="relationship" relationship="viewControllers" id="Zzj-IR-28H"/>
-                        <segue destination="SEf-Xh-aS1" kind="relationship" relationship="viewControllers" id="TCr-gF-e4X"/>
+                        <segue destination="UP9-eB-Zl0" kind="relationship" relationship="viewControllers" id="p0w-I4-Wfn"/>
                         <segue destination="ToO-v9-jdH" kind="relationship" relationship="viewControllers" id="OCW-cE-Nwb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIn-Ck-KXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="478" y="252"/>
-        </scene>
-        <!--Hearts-->
-        <scene sceneID="pO1-nq-sVD">
-            <objects>
-                <viewController id="SEf-Xh-aS1" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nng-Ze-CdL"/>
-                        <viewControllerLayoutGuide type="bottom" id="gGS-Nm-Ajc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7tO-rq-GVR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This page is under construction!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTv-s8-VBl">
-                                <rect key="frame" x="29" y="75" width="317" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Hearts" image="hearts.png" selectedImage="hearts.png" id="vFF-fF-NBY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m01-z0-nzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1812" y="1028.6356821589206"/>
         </scene>
         <!--My STW-->
         <scene sceneID="UeQ-Is-vaw">
@@ -1568,7 +1578,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFD-XD-G5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4716" y="650.82458770614699"/>
+            <point key="canvasLocation" x="5655.1999999999998" y="650.82458770614699"/>
         </scene>
         <!--Price Filter View Controller-->
         <scene sceneID="g1d-OY-1gG">
@@ -1844,7 +1854,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wzS-R8-qpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7442.3999999999996" y="1444.2278860569716"/>
+            <point key="canvasLocation" x="8381.6000000000004" y="1444.2278860569716"/>
         </scene>
         <!--Availability View Controller-->
         <scene sceneID="uwO-8n-G1T">
@@ -1914,7 +1924,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6e-JV-3Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2604" y="716"/>
+            <point key="canvasLocation" x="3543.1999999999998" y="715.59220389805103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uwP-EX-LeG">
@@ -1950,7 +1960,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77k-RX-Nye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6503.1999999999998" y="1444.2278860569716"/>
+            <point key="canvasLocation" x="7442.3999999999996" y="1444.2278860569716"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fwe-Pm-3zw">
@@ -2574,6 +2584,25 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqC-hK-yd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3966" y="3436"/>
+        </scene>
+        <!--Hearts-->
+        <scene sceneID="uti-4t-7gI">
+            <objects>
+                <navigationController title="Hearts" automaticallyAdjustsScrollViewInsets="NO" id="UP9-eB-Zl0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hearts" image="hearts.png" id="6Oa-he-bfo"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tKW-kZ-nw2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qf2-bp-gfZ" kind="relationship" relationship="rootViewController" id="DSA-ej-Kkc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V0h-cJ-9kI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="1060.1199400299852"/>
         </scene>
     </scenes>
     <resources>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1617CC061EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */; };
 		16348D8A1EB6341E005D5817 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16348D891EB6341E005D5817 /* GoogleService-Info.plist */; };
 		16348D921EB6349B005D5817 /* IMG_2379.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16348D8E1EB6349B005D5817 /* IMG_2379.jpg */; };
 		16348D931EB6349B005D5817 /* IMG_2395.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16348D8F1EB6349B005D5817 /* IMG_2395.jpg */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartsCollectionViewController.swift; sourceTree = "<group>"; };
 		16348D891EB6341E005D5817 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		16348D8E1EB6349B005D5817 /* IMG_2379.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2379.jpg; path = ../../../Images/IMG_2379.jpg; sourceTree = "<group>"; };
 		16348D8F1EB6349B005D5817 /* IMG_2395.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2395.jpg; path = ../../../Images/IMG_2395.jpg; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
+				1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */,
 				16348D891EB6341E005D5817 /* GoogleService-Info.plist */,
 				1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */,
 				1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */,
@@ -370,6 +373,7 @@
 				167DB27A1EA6FB030084D985 /* DressesSharedViewController.swift in Sources */,
 				EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */,
 				1681D40E1EB1928E00BEEC4D /* DressCollection.swift in Sources */,
+				1617CC061EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift in Sources */,
 				16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */,
 				1681D3F31EB15F3D00BEEC4D /* SubmitInfoModel.swift in Sources */,
 				1681D4101EB1983700BEEC4D /* DressDetailViewController.swift in Sources */,
