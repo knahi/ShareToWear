@@ -36,19 +36,29 @@ class BrowseViewController: UIViewController {
         //Database setup
         var ref: FIRDatabaseReference!
         ref = FIRDatabase.database().reference()
+        ref.observe(.value, with:{snapshot in
+            //var dresses: [DressListing] = []
+            for item in snapshot.children{
+                //let dress = DressListing(snapshot: item as! FIRDataSnapshot)
+                print(item)
+                //dresses.append(dress)
+            }
+            //print(dresses)
+        })
         
-        ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
-            let collection = snapshot.value as? NSDictionary
-            print(collection?["dress10"] ?? 0)
-            let dress = collection?["dress10"] as? NSDictionary
-            let avail = dress?["available"]
-            let stravail = (avail as! String)
-            print (stravail)
-            
-            
-        }) { (error) in
-            print(error.localizedDescription)
-        }
+ //       OLD WAY
+//        ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
+//            let collection = snapshot.value as? NSDictionary
+//            print(collection?["dress10"] ?? 0)
+//            let dress = collection?["dress10"] as? NSDictionary
+//            let avail = dress?["available"]
+//            let stravail = (avail as! String)
+//            print (stravail)
+//            
+//            
+//        }) { (error) in
+//            print(error.localizedDescription)
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool){
