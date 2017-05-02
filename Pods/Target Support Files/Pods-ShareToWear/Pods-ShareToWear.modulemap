@@ -1,0 +1,6 @@
+framework module Pods_ShareToWear {
+  umbrella header "Pods-ShareToWear-umbrella.h"
+
+  export *
+  module * { export * }
+}
