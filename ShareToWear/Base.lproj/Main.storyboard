@@ -1300,18 +1300,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCl-qf-Idz">
-                                <rect key="frame" x="140" y="566" width="96" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="savePressed:" destination="1lO-Na-vIv" eventType="touchUpInside" id="jOg-kY-bI2"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -1320,9 +1308,9 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="wfJ-Nw-Odn">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="82n-DQ-ShY">
+                        <barButtonItem key="leftBarButtonItem" systemItem="save" id="82n-DQ-ShY">
                             <connections>
-                                <action selector="done:" destination="1lO-Na-vIv" id="3Fo-Cd-J2t"/>
+                                <action selector="save:" destination="1lO-Na-vIv" id="PxT-eo-OiO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -2255,13 +2243,13 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGa-AB-erD">
-                                <rect key="frame" x="37" y="786" width="42" height="21"/>
+                                <rect key="frame" x="37" y="786.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rb6-oF-qXh">
-                                <rect key="frame" x="179" y="826" width="51" height="46"/>
+                                <rect key="frame" x="179" y="826" width="51" height="31"/>
                                 <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="sizeFilterUpdate:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="OMF-Ev-Quo"/>
@@ -2360,7 +2348,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-d2-qpu">
-                                <rect key="frame" x="36" y="1197" width="72" height="21"/>
+                                <rect key="frame" x="36" y="1197" width="72" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

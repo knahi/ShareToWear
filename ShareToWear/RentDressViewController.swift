@@ -21,6 +21,12 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
         SubmitInfo.dropOff = DropOff.isOn
         
     }
+    //present view controller programmatically not working
+//    @IBAction func dropOffSwitch(_ sender: Any) {
+//        let modalVC = DropOffViewController()
+//        present(modalVC, animated: true, completion: nil)
+//        
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
