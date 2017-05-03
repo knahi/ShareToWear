@@ -24,6 +24,7 @@ class DressListing{
         self.price = price
         self.size = size
     }
+    
     //NEED TO FIX THIS
     init(snapshot: FIRDataSnapshot) {
         //key = snapshot.key
