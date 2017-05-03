@@ -72,6 +72,9 @@ class SubmitReviewViewController: UIViewController {
         if SubmitInfo.gray{
             colorString += "Gray "
         }
+        if SubmitInfo.multicolor{
+            colorString += "Multicolor "
+        }
         colorLabel.text = colorString
         
         //Size
@@ -114,6 +117,10 @@ class SubmitReviewViewController: UIViewController {
         if SubmitInfo.sizeXL{
             sizeLabel.text = "XL"
         }
+        else {
+            sizeLabel.text = " "
+        }
+
         
         brandLabel.text = SubmitInfo.brand
         originalPriceLabel.text = SubmitInfo.originalPrice

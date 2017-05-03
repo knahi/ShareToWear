@@ -2061,20 +2061,29 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dress Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jny-Uw-hGb">
-                                <rect key="frame" x="35" y="188" width="82" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bannerweb ID #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-c1-GVI">
-                                <rect key="frame" x="35" y="345" width="203" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Aa6-PQ-9ee">
+                                <rect key="frame" x="36" y="191" width="233" height="171.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dress Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jny-Uw-hGb">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name + First Initial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBL-b9-Qzh">
+                                        <rect key="frame" x="0.0" y="75.5" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bannerweb ID #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-c1-GVI">
+                                        <rect key="frame" x="0.0" y="151" width="121.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="BDi-ZO-UpQ">
                                 <rect key="frame" x="36" y="434" width="281" height="751"/>
                                 <subviews>
@@ -2462,14 +2471,14 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                                                             <action selector="sizeFilterUpdate:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="z73-gk-udw"/>
                                                                         </connections>
                                                                     </switch>
-                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WiD-Qr-n7U">
+                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WiD-Qr-n7U">
                                                                         <rect key="frame" x="0.0" y="132" width="51" height="30"/>
                                                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <connections>
                                                                             <action selector="sizeFilterUpdate:" destination="Lsw-JV-Dqg" eventType="valueChanged" id="kKd-pM-RVE"/>
                                                                         </connections>
                                                                     </switch>
-                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ugh-Mx-6Fn">
+                                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ugh-Mx-6Fn">
                                                                         <rect key="frame" x="0.0" y="175" width="51" height="31"/>
                                                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <connections>
@@ -2542,25 +2551,38 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                     <constraint firstItem="Tne-9V-7h9" firstAttribute="top" secondItem="BDi-ZO-UpQ" secondAttribute="top" constant="367" id="ysz-NM-cjM"/>
                                 </constraints>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D13-ic-ofS">
-                                <rect key="frame" x="36" y="217" width="263" height="34"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWm-rq-PXs">
-                                <rect key="frame" x="36" y="295" width="263" height="34"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name + First Initial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBL-b9-Qzh">
-                                <rect key="frame" x="35" y="266" width="179" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="cA3-Fg-J1p">
+                                <rect key="frame" x="36" y="216" width="263" height="180"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D13-ic-ofS">
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="in7-UK-tla"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWm-rq-PXs">
+                                        <rect key="frame" x="0.0" y="75" width="263" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="oDb-LG-dec"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbX-fO-aEy">
+                                        <rect key="frame" x="0.0" y="150" width="263" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="3qP-bm-Dok"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IS-nL-cME">
                                 <rect key="frame" x="126" y="1480" width="83" height="30"/>
                                 <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -2572,14 +2594,8 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                     <segue destination="uLC-kW-P3f" kind="presentation" id="K5S-S9-dWy"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbX-fO-aEy">
-                                <rect key="frame" x="36" y="374" width="263" height="34"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="lOX-fu-n2o">
-                                <rect key="frame" x="36" y="1210" width="163" height="171.5"/>
+                                <rect key="frame" x="36" y="1215" width="163" height="171.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-d2-qpu">
                                         <rect key="frame" x="0.0" y="0.0" width="45.5" height="20.5"/>
@@ -2601,8 +2617,8 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2U-La-5yJ">
-                                <rect key="frame" x="36" y="1247" width="263" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2U-La-5yJ">
+                                <rect key="frame" x="36" y="1245" width="263" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -2629,7 +2645,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O2u-Hy-wKt">
-                                <rect key="frame" x="57" y="1389" width="127" height="30"/>
+                                <rect key="frame" x="58" y="1386" width="127" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2640,30 +2656,29 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="BDi-ZO-UpQ" secondAttribute="bottom" constant="815" id="1mW-Xr-EWR"/>
-                            <constraint firstItem="BDi-ZO-UpQ" firstAttribute="top" secondItem="sbX-fO-aEy" secondAttribute="bottom" constant="26" id="9en-tl-jt2"/>
+                            <constraint firstItem="cA3-Fg-J1p" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="AdT-Dp-eQH"/>
                             <constraint firstItem="BDi-ZO-UpQ" firstAttribute="top" secondItem="vqq-yW-5L9" secondAttribute="top" constant="434" id="BSz-RU-vf2"/>
-                            <constraint firstItem="kWm-rq-PXs" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="Dhw-5k-6ul"/>
+                            <constraint firstItem="Aa6-PQ-9ee" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="C23-7V-T7t"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5IS-nL-cME" secondAttribute="trailing" constant="110" id="Dog-Vq-9hQ"/>
-                            <constraint firstItem="sbX-fO-aEy" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="GFE-DY-swr"/>
                             <constraint firstItem="BDi-ZO-UpQ" firstAttribute="leading" secondItem="E2U-La-5yJ" secondAttribute="leading" id="GHt-2v-1ve"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aa6-PQ-9ee" secondAttribute="trailing" constant="50" id="HdX-Jm-ecw"/>
                             <constraint firstItem="E2U-La-5yJ" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="JOd-O0-fZ9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="D13-ic-ofS" secondAttribute="trailing" constant="20" id="RxL-Jd-7y8"/>
                             <constraint firstItem="OJ3-Va-Gv8" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="UBH-fj-k0h"/>
                             <constraint firstItem="OJ3-Va-Gv8" firstAttribute="top" secondItem="vqq-yW-5L9" secondAttribute="topMargin" constant="35" id="Udh-mT-JP9"/>
-                            <constraint firstItem="D13-ic-ofS" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="V6s-q1-ZgJ"/>
+                            <constraint firstItem="Aa6-PQ-9ee" firstAttribute="top" secondItem="wo9-vj-Emc" secondAttribute="bottom" constant="20" id="Ugi-wg-E5f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cA3-Fg-J1p" secondAttribute="trailing" constant="20" id="VpP-e7-oxJ"/>
+                            <constraint firstItem="cA3-Fg-J1p" firstAttribute="top" secondItem="wo9-vj-Emc" secondAttribute="bottom" constant="45" id="W2d-1c-pJI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E2U-La-5yJ" secondAttribute="trailing" constant="20" id="aFE-ja-euK"/>
                             <constraint firstItem="wo9-vj-Emc" firstAttribute="top" secondItem="OJ3-Va-Gv8" secondAttribute="bottom" constant="38.5" id="fJs-hG-54X"/>
                             <constraint firstItem="5IS-nL-cME" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="110" id="fgw-Nq-sZy"/>
                             <constraint firstItem="5GO-j8-52X" firstAttribute="top" secondItem="5IS-nL-cME" secondAttribute="bottom" constant="490" id="g4e-K2-thj"/>
                             <constraint firstItem="lOX-fu-n2o" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="ick-0S-RIc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="kWm-rq-PXs" secondAttribute="trailing" constant="20" id="jCe-Cf-W8b"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lOX-fu-n2o" secondAttribute="trailing" constant="120" id="jLG-Xe-74p"/>
                             <constraint firstItem="wo9-vj-Emc" firstAttribute="leading" secondItem="vqq-yW-5L9" secondAttribute="leadingMargin" constant="20" id="n8U-jv-o3T"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sbX-fO-aEy" secondAttribute="trailing" constant="20" id="pwt-XI-gzG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OJ3-Va-Gv8" secondAttribute="trailing" constant="20" id="s3R-Qz-cHn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wo9-vj-Emc" secondAttribute="trailing" constant="23" id="sRF-SC-GH1"/>
-                            <constraint firstItem="lOX-fu-n2o" firstAttribute="top" secondItem="BDi-ZO-UpQ" secondAttribute="bottom" constant="25" id="tIE-Gp-Ow3"/>
-                            <constraint firstItem="BDi-ZO-UpQ" firstAttribute="leading" secondItem="lOX-fu-n2o" secondAttribute="leading" id="wol-B4-Hkr"/>
+                            <constraint firstItem="lOX-fu-n2o" firstAttribute="top" secondItem="BDi-ZO-UpQ" secondAttribute="bottom" constant="30" id="tIE-Gp-Ow3"/>
+                            <constraint firstItem="E2U-La-5yJ" firstAttribute="top" secondItem="BDi-ZO-UpQ" secondAttribute="bottom" constant="60" id="y24-Ke-0ss"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Q4q-cA-bPa" appends="YES" id="9wd-O9-SR7"/>
@@ -2677,6 +2692,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         <outlet property="dressTitle" destination="D13-ic-ofS" id="hvq-GP-4G8"/>
                         <outlet property="gray" destination="C9a-io-ZYY" id="2KM-34-hgu"/>
                         <outlet property="green" destination="Xy0-eE-eDT" id="Fd7-W6-jid"/>
+                        <outlet property="multicolor" destination="WDa-bU-7M7" id="Syr-hH-Xuk"/>
                         <outlet property="orange" destination="eax-fO-10w" id="rEy-hQ-P7m"/>
                         <outlet property="originalPrice" destination="VcN-G6-eRd" id="oIW-S0-ZpF"/>
                         <outlet property="pink" destination="vLx-hV-hSy" id="kMH-zt-RK7"/>

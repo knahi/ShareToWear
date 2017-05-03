@@ -21,6 +21,7 @@ class ShareViewController: UIViewController {
     @IBOutlet weak var yellow: UISwitch!
     @IBOutlet weak var pink: UISwitch!
     @IBOutlet weak var red: UISwitch!
+    @IBOutlet weak var multicolor: UISwitch!
     @IBOutlet weak var black: UISwitch!
     @IBOutlet weak var green: UISwitch!
     @IBOutlet weak var orange: UISwitch!
@@ -57,6 +58,7 @@ class ShareViewController: UIViewController {
         SubmitInfo.yellow = yellow.isOn
         SubmitInfo.pink = pink.isOn
         SubmitInfo.red = red.isOn
+        SubmitInfo.multicolor = multicolor.isOn
         SubmitInfo.black = black.isOn
         SubmitInfo.green = green.isOn
         SubmitInfo.orange = orange.isOn

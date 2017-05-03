@@ -59,6 +59,9 @@ class DressesSharedViewController: UIViewController {
         if SubmitInfo.gray{
             colorString += "Gray "
         }
+        if SubmitInfo.multicolor{
+            colorString += "Multicolor "
+        }
         colorLabel.text = colorString
         
         //Size
