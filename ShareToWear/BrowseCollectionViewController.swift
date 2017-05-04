@@ -24,17 +24,44 @@ class BrowseCollectionViewController: UICollectionViewController {
         ref = FIRDatabase.database().reference()
         
         ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
-            for _ in snapshot.children{
-                self.count += 1
-            }
+            let collection = snapshot.value as? NSDictionary
+            
+            for item in collection!{
+                //self.count += 1
+                let dress = item.value as? NSDictionary
+                if FilterModel.availability{
+                    let available = dress?["availability"]
+                    if (available != nil){
+                        print("available")
+                    }else{
+                        print("nothing here")
+                    }
+                }else{
+                    print("availability filter off")
+                    self.count += 1
+                }
+            } //end of for loop
+            
+//            for item in snapshot.children{
+//                //NEXT STEP: FILTERING
+//                print(item)
+//                let dress = item as? NSDictionary
+//                print(dress)
+//                self.count += 1
+//                
+//                
+//            }
             print("getting database info...")
             print(self.count)
+            DispatchQueue.main.async{self.collectionView?.reloadData()}
+            
+            
         })
     }
-    
+    //NOT TRIGGERING WHEN MODAL VIEW DISSAPPEARS
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getCount()
         
         /* 
          IMAGE STUFF (NOT WORKING VERSION)
@@ -108,8 +135,6 @@ class BrowseCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print("in collection view cell num function")
         // #warning Incomplete implementation, return the number of items
-        getCount()
-        print(self.count)
         return self.count
     }
 
@@ -121,6 +146,8 @@ class BrowseCollectionViewController: UICollectionViewController {
     
         return cell
     }
+    
+    
 
     // MARK: UICollectionViewDelegate
 
