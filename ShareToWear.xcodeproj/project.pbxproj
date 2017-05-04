@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1617CC061EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */; };
+		1617CC2C1EBA72D200FA5A57 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 1617CC271EBA72D200FA5A57 /* Info.png */; };
+		1617CC2D1EBA72D200FA5A57 /* dress.png in Resources */ = {isa = PBXBuildFile; fileRef = 1617CC281EBA72D200FA5A57 /* dress.png */; };
+		1617CC2E1EBA72D200FA5A57 /* hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 1617CC291EBA72D200FA5A57 /* hearts.png */; };
+		1617CC2F1EBA72D200FA5A57 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1617CC2A1EBA72D200FA5A57 /* home.png */; };
+		1617CC301EBA72D200FA5A57 /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = 1617CC2B1EBA72D200FA5A57 /* MySTW.png */; };
 		16348D8A1EB6341E005D5817 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16348D891EB6341E005D5817 /* GoogleService-Info.plist */; };
 		167DB27A1EA6FB030084D985 /* DressesSharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */; };
 		167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */; };
@@ -47,15 +52,15 @@
 		EFE9A17C1EB91B720071BC94 /* IMG_2535.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1751EB91B720071BC94 /* IMG_2535.jpg */; };
 		EFE9A17D1EB91B720071BC94 /* ShareToWear - 125.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1761EB91B720071BC94 /* ShareToWear - 125.jpg */; };
 		EFE9A17E1EB91B720071BC94 /* ShareToWear - 151.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1771EB91B720071BC94 /* ShareToWear - 151.jpg */; };
-		EFE9A1841EB91C070071BC94 /* dress.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A17F1EB91C070071BC94 /* dress.png */; };
-		EFE9A1851EB91C070071BC94 /* hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1801EB91C070071BC94 /* hearts.png */; };
-		EFE9A1861EB91C070071BC94 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1811EB91C070071BC94 /* home.png */; };
-		EFE9A1871EB91C070071BC94 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1821EB91C070071BC94 /* Info.png */; };
-		EFE9A1881EB91C070071BC94 /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1831EB91C070071BC94 /* MySTW.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartsCollectionViewController.swift; sourceTree = "<group>"; };
+		1617CC271EBA72D200FA5A57 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Info.png; sourceTree = "<group>"; };
+		1617CC281EBA72D200FA5A57 /* dress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dress.png; path = ../../dress.png; sourceTree = "<group>"; };
+		1617CC291EBA72D200FA5A57 /* hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hearts.png; path = ../../hearts.png; sourceTree = "<group>"; };
+		1617CC2A1EBA72D200FA5A57 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../home.png; sourceTree = "<group>"; };
+		1617CC2B1EBA72D200FA5A57 /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../MySTW.png; sourceTree = "<group>"; };
 		16348D891EB6341E005D5817 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		167DB2791EA6FB030084D985 /* DressesSharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesSharedViewController.swift; sourceTree = "<group>"; };
 		167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesRentedViewController.swift; sourceTree = "<group>"; };
@@ -99,11 +104,6 @@
 		EFE9A1751EB91B720071BC94 /* IMG_2535.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2535.jpg; path = ../Images/IMG_2535.jpg; sourceTree = "<group>"; };
 		EFE9A1761EB91B720071BC94 /* ShareToWear - 125.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ShareToWear - 125.jpg"; path = "../Images/ShareToWear - 125.jpg"; sourceTree = "<group>"; };
 		EFE9A1771EB91B720071BC94 /* ShareToWear - 151.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ShareToWear - 151.jpg"; path = "../Images/ShareToWear - 151.jpg"; sourceTree = "<group>"; };
-		EFE9A17F1EB91C070071BC94 /* dress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dress.png; path = ../../Icons/dress.png; sourceTree = "<group>"; };
-		EFE9A1801EB91C070071BC94 /* hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hearts.png; path = ../../Icons/hearts.png; sourceTree = "<group>"; };
-		EFE9A1811EB91C070071BC94 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../Icons/home.png; sourceTree = "<group>"; };
-		EFE9A1821EB91C070071BC94 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Icons/Info.png; sourceTree = "<group>"; };
-		EFE9A1831EB91C070071BC94 /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../Icons/MySTW.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,11 +210,11 @@
 		EF9AFBA81EA41601002F3FEC /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				EFE9A17F1EB91C070071BC94 /* dress.png */,
-				EFE9A1801EB91C070071BC94 /* hearts.png */,
-				EFE9A1811EB91C070071BC94 /* home.png */,
-				EFE9A1821EB91C070071BC94 /* Info.png */,
-				EFE9A1831EB91C070071BC94 /* MySTW.png */,
+				1617CC271EBA72D200FA5A57 /* Info.png */,
+				1617CC281EBA72D200FA5A57 /* dress.png */,
+				1617CC291EBA72D200FA5A57 /* hearts.png */,
+				1617CC2A1EBA72D200FA5A57 /* home.png */,
+				1617CC2B1EBA72D200FA5A57 /* MySTW.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -282,22 +282,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1617CC301EBA72D200FA5A57 /* MySTW.png in Resources */,
 				EFE9A17A1EB91B720071BC94 /* IMG_2395.jpg in Resources */,
 				EFE9A17B1EB91B720071BC94 /* IMG_2422.jpg in Resources */,
 				EFCEFFF71EB571CC007B0C22 /* 60.png in Resources */,
 				EFCEFFF81EB571CC007B0C22 /* 80.png in Resources */,
-				EFE9A1851EB91C070071BC94 /* hearts.png in Resources */,
 				EFCEFFF61EB571CC007B0C22 /* 58.png in Resources */,
-				EFE9A1861EB91C070071BC94 /* home.png in Resources */,
+				1617CC2C1EBA72D200FA5A57 /* Info.png in Resources */,
 				EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */,
 				EFE9A17D1EB91B720071BC94 /* ShareToWear - 125.jpg in Resources */,
-				EFE9A1871EB91C070071BC94 /* Info.png in Resources */,
-				EFE9A1841EB91C070071BC94 /* dress.png in Resources */,
-				EFE9A1881EB91C070071BC94 /* MySTW.png in Resources */,
+				1617CC2D1EBA72D200FA5A57 /* dress.png in Resources */,
+				1617CC2E1EBA72D200FA5A57 /* hearts.png in Resources */,
 				EFE9A17C1EB91B720071BC94 /* IMG_2535.jpg in Resources */,
 				EFE9A1791EB91B720071BC94 /* IMG_2379.jpg in Resources */,
 				EFE9A17E1EB91B720071BC94 /* ShareToWear - 151.jpg in Resources */,
 				EFE9A1781EB91B720071BC94 /* IMG_2339.jpg in Resources */,
+				1617CC2F1EBA72D200FA5A57 /* home.png in Resources */,
 				EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */,
 				16348D8A1EB6341E005D5817 /* GoogleService-Info.plist in Resources */,
 				EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */,
