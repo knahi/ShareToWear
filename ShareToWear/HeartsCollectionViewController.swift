@@ -51,9 +51,16 @@ class HeartsCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print("in collectionView function")
+        
+        UserInfo.favorites.append(DressListing(color: "red", size: "M", availability: true, price: 20))
+        UserInfo.favorites.append(DressListing(color: "blue", size: "L", availability: true, price: 18))
+        UserInfo.favorites.append(DressListing(color: "yellow", size: "6", availability: false, price:25))
+        UserInfo.favorites.append(DressListing(color: "green", size: "4", availability: false, price: 12))
+        UserInfo.favorites.append(DressListing(color: "orange", size: "S", availability: true, price: 22))
+        
      
         // #warning Incomplete implementation, return the number of items
-        return 10
+        return UserInfo.favorites.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
