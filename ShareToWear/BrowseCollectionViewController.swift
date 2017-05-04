@@ -8,17 +8,16 @@
 
 import UIKit
 import Firebase
-import SDWebImage
 
 private let reuseIdentifier = "Cell"
 
 class BrowseCollectionViewController: UICollectionViewController {
+    
     var count: Int = 0
    
 
     func getCount() -> Void {
-        // Use Firebase library to configure APIs
-        FIRApp.configure()
+
         //Database setup
         var ref: FIRDatabaseReference!
         ref = FIRDatabase.database().reference()
@@ -60,44 +59,32 @@ class BrowseCollectionViewController: UICollectionViewController {
     }
     //NOT TRIGGERING WHEN MODAL VIEW DISSAPPEARS
     override func viewDidLoad() {
+        // Use Firebase library to configure APIs
+        FIRApp.configure()
+        
         super.viewDidLoad()
         getCount()
         
-        /* 
-         IMAGE STUFF (NOT WORKING VERSION)
-        // Get a reference to the storage service using the Firebase App
+        // Get a reference to the storage service using the default Firebase App
         let storage = FIRStorage.storage()
         
-        //Create a storage reference from the storage service
+        // Create a storage reference from our storage service
         let storageRef = storage.reference()
         
-        // Reference to an image file in Firebase Storage
-        let reference = storageRef.child("DressImages/IMG_2379.jpg")
+        // Create a reference to the file you want to download
+        let dressRef = storageRef.child("DressImages/dress81.JPG")
         
-        // Fetch the download URL
-        reference.downloadURL { url, error in
+        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+        dressRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
             if let error = error {
-                // Handle any errors
+                // Uh-oh, an error occurred!
+                print("Image is too big")
             } else {
-                // Get the download URL for 'images/stars.jpg'
+                // Data for "images/island.jpg" is returned
+                let image = UIImage(data: data!)
+                //self.viewControl.image = image
             }
         }
-        
-        // UIImageView in your ViewController
-        let imageView: UIImageView = self.viewControl
-        
-        // Placeholder image
-        let placeholderImage = UIImage(named: "dress1.jpg")
-        
-        //        let storageRef = FIRStorage.storage().reference(forURL: "gs://sharetowear-1f221.appspot.com")
-        
-        
-        let photoURL = URL(string:"gs://sharetowear-1f221.appspot.com/DressImages/IMG_2379.jpg")
-        
-        // Load the image using SDWebImage
-        imageView.sd_setImage(with: photoURL, placeholderImage: placeholderImage)
- 
-         */
         
 
         // Uncomment the following line to preserve selection between presentations
