@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="euC-ih-oYo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="euC-ih-oYo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,9 +35,6 @@
                                         <state key="normal" title="Size">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="qeq-X0-L7b" kind="presentation" id="2rn-tm-xaO"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwp-B9-aUp">
                                         <rect key="frame" x="68" y="0.0" width="44" height="30"/>
@@ -47,9 +45,6 @@
                                         <state key="normal" title="Color">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="Hn1-0m-AaK" kind="show" id="Zxz-D7-UVQ"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFe-ir-k32">
                                         <rect key="frame" x="144" y="0.0" width="87" height="30"/>
@@ -57,9 +52,6 @@
                                         <state key="normal" title="Availability">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="439-J3-2Rg" kind="presentation" id="AKR-bh-vd2"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqi-zh-jqw">
                                         <rect key="frame" x="263" y="0.0" width="60" height="30"/>
@@ -70,9 +62,6 @@
                                         <state key="normal" title="Price">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="NyT-Eg-hfr" kind="presentation" id="5IR-lj-T0G"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -157,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UM-dq-Xh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4482.3999999999996" y="617.54122938530736"/>
+            <point key="canvasLocation" x="3670" y="1504"/>
         </scene>
         <!--Size Filter View Controller-->
         <scene sceneID="H0n-1Q-rcs">
@@ -403,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ZM-rv-GrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6594.3999999999996" y="650.82458770614699"/>
+            <point key="canvasLocation" x="7533.6000000000004" y="650.82458770614699"/>
         </scene>
         <!--Submit Review View Controller-->
         <scene sceneID="Ibb-0P-te3">
@@ -1439,7 +1428,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="GDM-TK-nl6" kind="relationship" relationship="viewControllers" id="cg8-EH-dBV"/>
-                        <segue destination="j6k-mn-vKJ" kind="relationship" relationship="viewControllers" id="Zzj-IR-28H"/>
+                        <segue destination="g9A-Dk-BX1" kind="relationship" relationship="viewControllers" id="kaK-c2-RXg"/>
                         <segue destination="UP9-eB-Zl0" kind="relationship" relationship="viewControllers" id="p0w-I4-Wfn"/>
                         <segue destination="ToO-v9-jdH" kind="relationship" relationship="viewControllers" id="OCW-cE-Nwb"/>
                     </connections>
@@ -1568,6 +1557,86 @@ We aim to foster community, inclusivity, and sustainability.</string>
             </objects>
             <point key="canvasLocation" x="3924" y="-37"/>
         </scene>
+        <!--Browse Collection View Controller-->
+        <scene sceneID="f0T-r6-4Sg">
+            <objects>
+                <collectionViewController id="aYh-Ew-5is" customClass="BrowseCollectionViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="SKX-bh-bYr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="alg-rU-mof">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="0SO-oV-FgQ">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                                <size key="customSize" width="150" height="150"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="aYh-Ew-5is" id="YIe-tP-8Xa"/>
+                            <outlet property="delegate" destination="aYh-Ew-5is" id="kdd-T3-roP"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="g2g-uF-Edh">
+                        <nil key="title"/>
+                        <leftBarButtonItems>
+                            <barButtonItem style="plain" id="IhS-cG-0zV">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dDO-NS-dMq">
+                                    <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Size"/>
+                                    <connections>
+                                        <segue destination="qeq-X0-L7b" kind="presentation" id="cj5-DC-CXU"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="FEc-PR-7xK">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DVh-Z3-T1o">
+                                    <rect key="frame" x="107" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Color"/>
+                                    <connections>
+                                        <segue destination="Hn1-0m-AaK" kind="presentation" id="6dJ-qn-o3q"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="rGr-Kd-ytX">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aTS-h8-iJi">
+                                    <rect key="frame" x="198" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Availability"/>
+                                    <connections>
+                                        <segue destination="439-J3-2Rg" kind="presentation" id="uHn-HV-sFt"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="Ozq-xA-tEH">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zw1-oT-Ovf">
+                                    <rect key="frame" x="289" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Price"/>
+                                    <connections>
+                                        <segue destination="NyT-Eg-hfr" kind="presentation" id="Bep-Xa-oco"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgK-9X-wVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5068" y="697.60119940029995"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="X4C-RH-HTd">
             <objects>
@@ -1584,7 +1653,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bFD-XD-G5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5655.1999999999998" y="650.82458770614699"/>
+            <point key="canvasLocation" x="6594.3999999999996" y="650.82458770614699"/>
         </scene>
         <!--Price Filter View Controller-->
         <scene sceneID="g1d-OY-1gG">
@@ -1912,25 +1981,6 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sP2-DW-Oaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6058.3999999999996" y="2155.7721139430287"/>
-        </scene>
-        <!--Browse-->
-        <scene sceneID="FVh-te-IfR">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j6k-mn-vKJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Browse" image="dress.png" selectedImage="dress.png" id="CCq-y8-3qO"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dZh-Gc-Vhx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="yTE-IT-Qu7" kind="relationship" relationship="rootViewController" id="q59-C1-cId"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l6e-JV-3Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3543.1999999999998" y="715.59220389805103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uwP-EX-LeG">
@@ -2807,6 +2857,26 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0h-cJ-9kI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1876" y="1060.1199400299852"/>
+        </scene>
+        <!--Browse-->
+        <scene sceneID="6e3-aE-9QR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g9A-Dk-BX1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Browse" image="dress.png" selectedImage="dress.png" id="Qu3-Wd-1yg"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bAq-GG-lQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aYh-Ew-5is" kind="relationship" relationship="rootViewController" id="n0w-zy-MRj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydK-Mp-rfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4012" y="680"/>
         </scene>
     </scenes>
     <resources>
