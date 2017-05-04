@@ -136,6 +136,10 @@
                                     <segue destination="9Nb-wS-UdI" kind="show" id="VCo-pk-CCO"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oct-24-BfB">
+                                <rect key="frame" x="82" y="230" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -148,6 +152,7 @@
                     <connections>
                         <outlet property="blackDress" destination="Sq8-wM-t07" id="vj0-lC-ZlB"/>
                         <outlet property="redDress" destination="MY2-YO-fgU" id="53t-69-9Ix"/>
+                        <outlet property="viewControl" destination="Oct-24-BfB" id="Pcy-gY-fKE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UM-dq-Xh5" userLabel="First Responder" sceneMemberID="firstResponder"/>

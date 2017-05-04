@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class BrowseViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class BrowseViewController: UIViewController {
 //    private let dresses = DressCollection()
     @IBOutlet weak var blackDress: UIButton!
     @IBOutlet weak var redDress: UIButton!
+    @IBOutlet weak var viewControl: UIImageView!
     
     @IBAction func blackDress(_ sender: UIButton) {
         DressButton.myButtonPressed = "black"
@@ -33,6 +35,9 @@ class BrowseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Use Firebase library to configure APIs
+        FIRApp.configure()
+        
         //Database setup
         var ref: FIRDatabaseReference!
         ref = FIRDatabase.database().reference()
@@ -45,6 +50,40 @@ class BrowseViewController: UIViewController {
             }
             //print(dresses)
         })
+        
+        
+        // Get a reference to the storage service using the Firebase App
+        let storage = FIRStorage.storage()
+        
+        //Create a storage reference from the storage service
+        let storageRef = storage.reference()
+        
+        // Reference to an image file in Firebase Storage
+        let reference = storageRef.child("DressImages/IMG_2379.jpg")
+        
+        // Fetch the download URL
+        reference.downloadURL { url, error in
+            if let error = error {
+                // Handle any errors
+            } else {
+                // Get the download URL for 'images/stars.jpg'
+            }
+        }
+    
+        // UIImageView in your ViewController
+        let imageView: UIImageView = self.viewControl
+        
+        // Placeholder image
+        let placeholderImage = UIImage(named: "dress1.jpg")
+        
+//        let storageRef = FIRStorage.storage().reference(forURL: "gs://sharetowear-1f221.appspot.com")
+
+        
+        let photoURL = URL(string:"gs://sharetowear-1f221.appspot.com/DressImages/IMG_2379.jpg")
+        
+        // Load the image using SDWebImage
+        imageView.sd_setImage(with: photoURL, placeholderImage: placeholderImage)
+        
         
  //       OLD WAY
 //        ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
