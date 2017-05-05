@@ -36,6 +36,7 @@ class FilterModel{
     static var orange:Bool = false
     static var purple:Bool = false
     static var gray:Bool = false
+    static var multicolor:Bool = false
     
     //price
     static var price:Int = 30

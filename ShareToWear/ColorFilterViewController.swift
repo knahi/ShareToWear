@@ -20,7 +20,10 @@ class ColorFilterViewController: UIViewController {
     @IBOutlet weak var orange: UISwitch!
     @IBOutlet weak var purple: UISwitch!
     @IBOutlet weak var gray: UISwitch!
+    @IBOutlet weak var multicolor: UISwitch!
+    
     @IBOutlet weak var doneButton: UIBarButtonItem!
+    
     
     @IBAction func colorFilterUpdate(_ sender: UISwitch) {
         FilterModel.white = white.isOn
@@ -33,6 +36,7 @@ class ColorFilterViewController: UIViewController {
         FilterModel.orange = orange.isOn
         FilterModel.purple = purple.isOn
         FilterModel.gray = gray.isOn
+        FilterModel.multicolor = multicolor.isOn
     }
    
 
@@ -48,6 +52,7 @@ class ColorFilterViewController: UIViewController {
         orange.isOn = FilterModel.orange
         purple.isOn = FilterModel.purple
         gray.isOn = FilterModel.gray
+        multicolor.isOn = FilterModel.multicolor
         // Do any additional setup after loading the view.
     }
 

@@ -11,9 +11,15 @@ import Firebase
 
 private let reuseIdentifier = "Cell"
 
-class BrowseCollectionViewController: UICollectionViewController {
+class BrowseCollectionViewController: UICollectionViewController{
+    
+
     
     var count: Int = 0
+    
+    func myModalDidFinish(controller: AvailabilityViewController, filter: Bool) {
+        controller.dismiss(animated: true, completion: nil)
+    }
    
 
     func getCount() -> Void {
@@ -22,40 +28,103 @@ class BrowseCollectionViewController: UICollectionViewController {
         var ref: FIRDatabaseReference!
         ref = FIRDatabase.database().reference()
         
+        self.count = 0
+        print("GETTING DATABASE INFO...")
         ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
             let collection = snapshot.value as? NSDictionary
             
             for item in collection!{
-                //self.count += 1
+                var itemSelected:Bool = true
+                
                 let dress = item.value as? NSDictionary
-                if FilterModel.availability{
-                    let available = dress?["availability"]
-                    if (available != nil){
-                        print("available")
-                    }else{
-                        print("nothing here")
-                    }
+                
+                //Filters for price
+                let price = dress?["price"] as! Int
+                if (price <= FilterModel.price){
+                    itemSelected = true
                 }else{
-                    print("availability filter off")
+                    itemSelected = false
+                }
+                //Filters for availability
+                if FilterModel.availability{
+                    print("availability filter on")
+                    let available = dress?["availability"] as! String
+                    if available == "true"{
+                            itemSelected = true
+                    }else{
+                        itemSelected = false
+                    }
+                }
+                //Filters for size
+                let sizeArray = self.getSizeArray()
+                if(sizeArray.isEmpty){
+                    itemSelected = true
+                }else{
+                    for size in sizeArray{
+                        let dressSize = dress?["size"] as! String
+                        if dressSize == size{
+                            itemSelected = true
+                            break
+                        }else{
+                            itemSelected = false
+                        }
+                    }
+                }
+                //Filters for color
+        
+                if itemSelected{
                     self.count += 1
                 }
             } //end of for loop
             
-//            for item in snapshot.children{
-//                //NEXT STEP: FILTERING
-//                print(item)
-//                let dress = item as? NSDictionary
-//                print(dress)
-//                self.count += 1
-//                
-//                
-//            }
-            print("getting database info...")
             print(self.count)
             DispatchQueue.main.async{self.collectionView?.reloadData()}
-            
-            
         })
+    }
+    //returns an array of all sizes filtered for
+    func getSizeArray() -> [String]{
+        //Filters for size
+        var sizeArray = [String] ()
+        if FilterModel.size0{
+            sizeArray.append("0")
+        }
+        if FilterModel.size2{
+            sizeArray.append("2")
+        }
+        if FilterModel.size4{
+            sizeArray.append("4")
+        }
+        if FilterModel.size6{
+            sizeArray.append("6")
+        }
+        if FilterModel.size8{
+            sizeArray.append("8")
+        }
+        if FilterModel.size10{
+            sizeArray.append("10")
+        }
+        if FilterModel.size12{
+            sizeArray.append("12")
+        }
+        if FilterModel.size14{
+            sizeArray.append("14")
+        }
+        if FilterModel.sizeS{
+            sizeArray.append("S")
+        }
+        if FilterModel.sizeXS{
+            sizeArray.append("XS")
+        }
+        if FilterModel.sizeM{
+            sizeArray.append("M")
+        }
+        if FilterModel.sizeL{
+            sizeArray.append("L")
+        }
+        if FilterModel.sizeXL{
+            sizeArray.append("XL")
+        }
+        return sizeArray
     }
     //NOT TRIGGERING WHEN MODAL VIEW DISSAPPEARS
     override func viewDidLoad() {
@@ -63,7 +132,7 @@ class BrowseCollectionViewController: UICollectionViewController {
         FIRApp.configure()
         
         super.viewDidLoad()
-        getCount()
+        //getCount()
         
         // Get a reference to the storage service using the default Firebase App
         let storage = FIRStorage.storage()
@@ -94,6 +163,10 @@ class BrowseCollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        getCount()
     }
 
     override func didReceiveMemoryWarning() {
