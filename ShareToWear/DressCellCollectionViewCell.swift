@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class DressCellCollectionViewCell: UICollectionViewCell {
     
@@ -33,7 +34,7 @@ class DressCellCollectionViewCell: UICollectionViewCell {
             // Data for "images/island.jpg" is returned
             let image = UIImage(data: data!)
             //print (image)
-            if (image != nil) {
+            if (self.dressCell != nil) {
                 print("not nill")
                 self.dressCell.image = image
             }
