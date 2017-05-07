@@ -35,6 +35,7 @@
 		EF5E6F4A1EBBE43000FD0BF3 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5E6F451EBBE43000FD0BF3 /* home.png */; };
 		EF5E6F4B1EBBE43000FD0BF3 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5E6F461EBBE43000FD0BF3 /* Info.png */; };
 		EF5E6F4C1EBBE43000FD0BF3 /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5E6F471EBBE43000FD0BF3 /* MySTW.png */; };
+		EF8E85671EBD064F001F032C /* DressCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E85661EBD064F001F032C /* DressCellCollectionViewCell.swift */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
 		EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB881EA3F52D002F3FEC /* ViewController.swift */; };
 		EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		EF5E6F451EBBE43000FD0BF3 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../Icons/home.png; sourceTree = "<group>"; };
 		EF5E6F461EBBE43000FD0BF3 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Icons/Info.png; sourceTree = "<group>"; };
 		EF5E6F471EBBE43000FD0BF3 /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../Icons/MySTW.png; sourceTree = "<group>"; };
+		EF8E85661EBD064F001F032C /* DressCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AFB881EA3F52D002F3FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
 				EF9AFB881EA3F52D002F3FEC /* ViewController.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
+				EF8E85661EBD064F001F032C /* DressCellCollectionViewCell.swift */,
 				1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */,
 				1681D4031EB17F9200BEEC4D /* UserInfoModel.swift */,
 				1681D3F01EB156E800BEEC4D /* ShareViewController.swift */,
@@ -370,6 +373,7 @@
 				16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */,
 				1681D4041EB17F9200BEEC4D /* UserInfoModel.swift in Sources */,
 				16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */,
+				EF8E85671EBD064F001F032C /* DressCellCollectionViewCell.swift in Sources */,
 				1681D41C1EB19B4900BEEC4D /* DressButtonModel.swift in Sources */,
 				16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */,
 				1681D4201EB1A32000BEEC4D /* DropOffViewController.swift in Sources */,
