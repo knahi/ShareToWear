@@ -52,7 +52,7 @@ class ShareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Use Firebase library to configure APIs
-        FIRApp.configure()
+       // FIRApp.configure()
 
         // Do any additional setup after loading the view.
     }
@@ -60,49 +60,12 @@ class ShareViewController: UIViewController {
     @IBAction func submitPressed(_ sender: UIButton) {
         
         var dressType: String = ""
-//        SubmitInfo.blue = blue.isOn
-//        SubmitInfo.white = white.isOn
-//        SubmitInfo.yellow = yellow.isOn
-//        SubmitInfo.pink = pink.isOn
-//        SubmitInfo.red = red.isOn
-//        SubmitInfo.multicolor = multicolor.isOn
-//        SubmitInfo.black = black.isOn
-//        SubmitInfo.green = green.isOn
-//        SubmitInfo.orange = orange.isOn
-//        SubmitInfo.purple = purple.isOn
-//        SubmitInfo.gray = gray.isOn
-//        
-//        SubmitInfo.size0 = size0.isOn
-//        SubmitInfo.size2 = size2.isOn
-//        SubmitInfo.size4 = size4.isOn
-//        SubmitInfo.size6 = size6.isOn
-//        SubmitInfo.size8 = size8.isOn
-//        SubmitInfo.size10 = size10.isOn
-//        SubmitInfo.size12 = size12.isOn
-//        SubmitInfo.size14 = size14.isOn
-//        SubmitInfo.sizeXS = sizeXS.isOn
-//        SubmitInfo.sizeS = sizeS.isOn
-//        SubmitInfo.sizeM = sizeM.isOn
-//        SubmitInfo.sizeL = sizeL.isOn
-//        SubmitInfo.sizeXL = sizeXL.isOn
-//        
         if rental.isOn{
             dressType = "rental"
         }else if sale.isOn{
             dressType = "sale"
         }
-//
-//        SubmitInfo.dressTitle = dressTitle.text!
-//        
-//        SubmitInfo.userName = userName.text!
-//        
-//        SubmitInfo.bannerWebID = bannerWebID.text!
-//        
-//        SubmitInfo.brand = brand.text!
-//        
-//        SubmitInfo.originalPrice = originalPrice.text!
-//        
-//        SubmitInfo.preferredPrice = preferredPrice.text!
+
         
         //FIREBASE SUBMISSION
         var ref: FIRDatabaseReference
