@@ -133,7 +133,7 @@ class BrowseCollectionViewController: UICollectionViewController{
         
         super.viewDidLoad()
         getCount()
-        getImage()
+        //getImage()
         
         // Get a reference to the storage service using the default Firebase App
         let storage = FIRStorage.storage()
