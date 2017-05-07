@@ -16,7 +16,7 @@ class DressListing{
     var size: String
     var availability: Bool
     var price: Int
-    var ref: FIRDatabaseReference?
+    //var ref: FIRDatabaseReference?
    
     init(color:String, size:String, availability:Bool, price:Int){
         self.color = color
@@ -26,13 +26,13 @@ class DressListing{
     }
     
     //NEED TO FIX THIS
-    init(snapshot: FIRDataSnapshot) {
-        //key = snapshot.key
-        let snapshotValue = snapshot.value as! [String: AnyObject]
-        color = snapshotValue["color"] as! String
-        size = snapshotValue["size"] as! String
-        availability = snapshotValue["availability"] as! Bool
-        price = snapshotValue["price"] as! Int
-        ref = snapshot.ref
-    }
+//    init(snapshot: FIRDataSnapshot) {
+//        //key = snapshot.key
+//        let snapshotValue = snapshot.value as! [String: AnyObject]
+//        color = snapshotValue["color"] as! String
+//        size = snapshotValue["size"] as! String
+//        availability = snapshotValue["availability"] as! Bool
+//        price = snapshotValue["price"] as! Int
+//        ref = snapshot.ref
+//    }
 }

@@ -13,6 +13,7 @@ import SDWebImage
 class DressCellCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var dressCell: UIImageView!
+    @IBOutlet weak var dressName: UILabel!
     
     func getImage() {
 
@@ -29,7 +30,7 @@ class DressCellCollectionViewCell: UICollectionViewCell {
         dressRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
         if error != nil {
             // Uh-oh, an error occurred!
-            print("Image is too big")
+            //print("Image is too big")
         } else {
             // Data for "images/island.jpg" is returned
             let image = UIImage(data: data!)

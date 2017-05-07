@@ -20,7 +20,7 @@ class DressDetailViewController: UIViewController {
     @IBOutlet weak var dressImage: UIImageView!
     @IBOutlet weak var rentButton: UIButton!
     @IBOutlet weak var notAvailableLabel: UILabel!
-    
+    @IBOutlet weak var dressName: UILabel!
     @IBOutlet weak var heartButton: UIButton!
 
     
@@ -32,6 +32,7 @@ class DressDetailViewController: UIViewController {
         priceLabel.text = ""
         availableLabel.text = ""
         dressImage.image = nil
+        dressName.text = FavModel.currentSelection
         
         heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
         
@@ -49,6 +50,8 @@ class DressDetailViewController: UIViewController {
             //for like
             flag = true
             heartButton.setImage(UIImage(named: "like.png"), for: .normal)
+            //let dress = DressListing(color: <#T##String#>, size: <#T##String#>, availability: <#T##Bool#>, price: <#T##Int#>)
+            //FavModel.favorites.append(<#T##newElement: DressListing##DressListing#>)
         }
         else
         {

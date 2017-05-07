@@ -10,5 +10,15 @@ import Foundation
 import UIKit
 
 class FavModel{
+   
     
+    static var color: String = ""
+    static var price: String = ""
+    static var size: String = ""
+    static var available: Bool = true
+    
+    static var currentSelection:String = ""
+    
+    static var favorites = [DressListing]()
+    static var allDresses = [String]()
 }

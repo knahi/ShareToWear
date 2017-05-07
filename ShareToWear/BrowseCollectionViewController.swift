@@ -17,9 +17,9 @@ class BrowseCollectionViewController: UICollectionViewController{
     
     var count: Int = 0
     
-    func myModalDidFinish(controller: AvailabilityViewController, filter: Bool) {
-        controller.dismiss(animated: true, completion: nil)
-    }
+//    func myModalDidFinish(controller: AvailabilityViewController, filter: Bool) {
+//        controller.dismiss(animated: true, completion: nil)
+//    }
    
 
     func getCount() -> Void {
@@ -29,11 +29,14 @@ class BrowseCollectionViewController: UICollectionViewController{
         ref = FIRDatabase.database().reference()
         
         self.count = 0
-        print("GETTING DATABASE INFO...")
+        FavModel.allDresses = [String]()
+        //print("GETTING DATABASE INFO...")
         ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
             let collection = snapshot.value as? NSDictionary
             
             for item in collection!{
+                print(item)
+
                 var itemSelected:Bool = true
                 
                 let dress = item.value as? NSDictionary
@@ -47,7 +50,7 @@ class BrowseCollectionViewController: UICollectionViewController{
                 }
                 //Filters for availability
                 if FilterModel.availability{
-                    print("availability filter on")
+                    //print("availability filter on")
                     let available = dress?["availability"] as! String
                     if available == "true"{
                             itemSelected = true
@@ -57,24 +60,24 @@ class BrowseCollectionViewController: UICollectionViewController{
                 }
                 //Filters for size
                 let sizeArray = self.getSizeArray()
-                if(sizeArray.isEmpty){
-                    itemSelected = true
-                }else{
+                if(!sizeArray.isEmpty){
                     for size in sizeArray{
+                        //print(size)
                         let dressSize = dress?["size"] as! String
                         if dressSize == size{
+                            //print("dress included")
                             itemSelected = true
                             break
                         }else{
+                            //print("dress not included")
                             itemSelected = false
                         }
                     }
                 }
+           
                 //Filters for color
                 let colorArray = self.getColorArray()
-                if(colorArray.isEmpty){
-                    itemSelected = true
-                }else{
+                if(!colorArray.isEmpty){
                     for color in colorArray{
                         let dressColor = dress?["color"] as! String
                         if dressColor == color{
@@ -86,13 +89,16 @@ class BrowseCollectionViewController: UICollectionViewController{
                         }
                     }
                 }
-        
+                
                 if itemSelected{
                     self.count += 1
+                    FavModel.allDresses.append(item.key as! String)
                 }
             } //end of for loop
             
             print(self.count)
+            print(FavModel.allDresses)
+            print(FavModel.allDresses.count)
             DispatchQueue.main.async{self.collectionView?.reloadData()}
         })
     }
@@ -256,14 +262,14 @@ class BrowseCollectionViewController: UICollectionViewController{
         
         let test = DressCellCollectionViewCell()
         test.getImage()
-    
+        
         return cell
     }
 
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("selected cell")
-        print(indexPath.item)
+        //passing the dress information
+        FavModel.currentSelection = FavModel.allDresses[indexPath.item]
         let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "DressInfo")
         self.show(vc as! UIViewController, sender: vc)
     }
