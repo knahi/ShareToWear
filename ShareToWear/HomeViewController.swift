@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
@@ -20,8 +21,10 @@ class HomeViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Use Firebase library to configure APIs
+        FIRApp.configure()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
