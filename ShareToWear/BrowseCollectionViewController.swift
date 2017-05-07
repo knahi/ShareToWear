@@ -180,9 +180,6 @@ class BrowseCollectionViewController: UICollectionViewController{
     }
     //NOT TRIGGERING WHEN MODAL VIEW DISSAPPEARS
     override func viewDidLoad() {
-        
-        // Use Firebase library to configure APIs
-        FIRApp.configure()
 
         super.viewDidLoad()
         
