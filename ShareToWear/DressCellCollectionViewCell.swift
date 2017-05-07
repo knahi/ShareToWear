@@ -14,9 +14,8 @@ class DressCellCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dressCell: UIImageView!
     
     func getImage() {
-    
-        // Use Firebase library to configure APIs
-        FIRApp.configure()
+        
+        print("Got here")
 
         // Get a reference to the storage service using the default Firebase App
         let storage = FIRStorage.storage()
@@ -38,8 +37,5 @@ class DressCellCollectionViewCell: UICollectionViewCell {
             self.dressCell.image = image
         }
         }
-    
-    getImage()
-        
     }
 }
