@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="euC-ih-oYo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="euC-ih-oYo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1749,47 +1749,51 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CJN-B5-44d">
-                                <rect key="frame" x="26" y="94" width="49" height="323"/>
+                                <rect key="frame" x="26" y="94" width="49" height="353"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iwX-ws-4Up">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="59"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="colorFilterUpdate:" destination="a3t-9z-Xju" eventType="valueChanged" id="qqO-7L-Hrc"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RD3-bS-KmV">
-                                        <rect key="frame" x="0.0" y="64.5" width="51" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="59" width="51" height="58.5"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="colorFilterUpdate:" destination="a3t-9z-Xju" eventType="valueChanged" id="r3k-1x-xx1"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qeO-IS-ua7">
-                                        <rect key="frame" x="0.0" y="129" width="51" height="65"/>
+                                        <rect key="frame" x="0.0" y="117.5" width="51" height="59"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="colorFilterUpdate:" destination="a3t-9z-Xju" eventType="valueChanged" id="HBy-L0-GER"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="G7q-p4-jUn">
-                                        <rect key="frame" x="0.0" y="194" width="51" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="176.5" width="51" height="59"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="colorFilterUpdate:" destination="a3t-9z-Xju" eventType="valueChanged" id="4lu-iE-HP9"/>
                                         </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1YQ-NU-tKa">
-                                        <rect key="frame" x="0.0" y="258.5" width="51" height="64.5"/>
+                                        <rect key="frame" x="0.0" y="235.5" width="51" height="58.5"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="colorFilterUpdate:" destination="a3t-9z-Xju" eventType="valueChanged" id="qwM-7S-Esl"/>
                                         </connections>
                                     </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LvM-sd-XY4">
+                                        <rect key="frame" x="0.0" y="294" width="51" height="59"/>
+                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </switch>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2MW-e8-0s2">
-                                <rect key="frame" x="221" y="94" width="49" height="323"/>
+                                <rect key="frame" x="223" y="94" width="49" height="323"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="czT-rZ-5Sf">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="64.5"/>
@@ -1829,34 +1833,40 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-7" translatesAutoresizingMaskIntoConstraints="NO" id="u5L-o9-UMU">
-                                <rect key="frame" x="97" y="79" width="49" height="333"/>
+                                <rect key="frame" x="97" y="79" width="76" height="363"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="White" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8J-Cz-4sR">
-                                        <rect key="frame" x="0.0" y="0.0" width="49" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="66.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="435-2i-LKb">
-                                        <rect key="frame" x="0.0" y="65" width="49" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="59.5" width="76" height="66"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTt-h7-eVC">
-                                        <rect key="frame" x="0.0" y="130.5" width="49" height="72"/>
+                                        <rect key="frame" x="0.0" y="118.5" width="76" height="66.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pink" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpL-KH-CkI">
-                                        <rect key="frame" x="0.0" y="195.5" width="49" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="178" width="76" height="66.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAt-LN-Qaj">
-                                        <rect key="frame" x="0.0" y="261" width="49" height="72"/>
+                                        <rect key="frame" x="0.0" y="237.5" width="76" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multicolor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HE3-ZE-hry">
+                                        <rect key="frame" x="0.0" y="296.5" width="76" height="66.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1864,7 +1874,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="MRd-ff-tgM">
-                                <rect key="frame" x="293" y="79" width="57" height="333"/>
+                                <rect key="frame" x="295" y="79" width="57" height="333"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7f-Ah-aph">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="66.5"/>
@@ -1910,9 +1920,9 @@ We aim to foster community, inclusivity, and sustainability.</string>
                             <constraint firstItem="MRd-ff-tgM" firstAttribute="top" secondItem="Buc-na-fON" secondAttribute="bottom" constant="15" id="Uj0-RG-3yY"/>
                             <constraint firstItem="CJN-B5-44d" firstAttribute="leading" secondItem="736-b1-zRL" secondAttribute="leadingMargin" constant="10" id="Wh1-9p-pOH"/>
                             <constraint firstItem="MRd-ff-tgM" firstAttribute="leading" secondItem="2MW-e8-0s2" secondAttribute="trailing" constant="23" id="Wm4-vn-fYM"/>
-                            <constraint firstItem="LFt-qa-nmJ" firstAttribute="top" secondItem="CJN-B5-44d" secondAttribute="bottom" constant="250" id="gqq-Y1-Keh"/>
-                            <constraint firstItem="2MW-e8-0s2" firstAttribute="leading" secondItem="u5L-o9-UMU" secondAttribute="trailing" constant="75" id="h4G-XL-zU6"/>
-                            <constraint firstItem="LFt-qa-nmJ" firstAttribute="top" secondItem="u5L-o9-UMU" secondAttribute="bottom" constant="255" id="orx-X7-hXD"/>
+                            <constraint firstItem="LFt-qa-nmJ" firstAttribute="top" secondItem="CJN-B5-44d" secondAttribute="bottom" constant="220" id="gqq-Y1-Keh"/>
+                            <constraint firstItem="2MW-e8-0s2" firstAttribute="leading" secondItem="u5L-o9-UMU" secondAttribute="trailing" constant="50" id="h4G-XL-zU6"/>
+                            <constraint firstItem="LFt-qa-nmJ" firstAttribute="top" secondItem="u5L-o9-UMU" secondAttribute="bottom" constant="225" id="orx-X7-hXD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Aqg-hD-O5t">
@@ -1928,6 +1938,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         <outlet property="doneButton" destination="gY5-hi-LHB" id="xG4-R5-HoC"/>
                         <outlet property="gray" destination="HcH-I4-yg7" id="eq2-fD-QGk"/>
                         <outlet property="green" destination="rmg-Sg-kyA" id="qmA-y0-R91"/>
+                        <outlet property="multicolor" destination="LvM-sd-XY4" id="nD3-9y-pnl"/>
                         <outlet property="orange" destination="E36-uH-3NV" id="D8z-u6-BJr"/>
                         <outlet property="pink" destination="G7q-p4-jUn" id="8mo-im-SKn"/>
                         <outlet property="purple" destination="sWb-9O-Cwe" id="MLL-zk-YTQ"/>
