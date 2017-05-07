@@ -32,37 +32,37 @@ class RentReviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = SubmitInfo.name
-        emailLabel.text = SubmitInfo.email
-        if(SubmitInfo.dropOff){
-            deliveryLabel.text = "Drop-Off"
-            buildingLabel.text = SubmitInfo.building
-            roomNumLabel.text = SubmitInfo.roomNum
-        }else if(SubmitInfo.pickUp){
-            deliveryLabel.text = "Pickup"
-            buildingLabel.text = "N/A"
-            roomNumLabel.text = "N/A"
-        }
-        if(DressButton.myButtonPressed == "black"){
-            priceLabel.text = "$15"
-             dressImage.image = UIImage(named: "IMG_2339.jpg")
-            SubmitInfo.dressColor = "black"
-        }
-        if(DressButton.myButtonPressed == "red"){
-            dressImage.image = UIImage(named: "IMG_2379.jpg")
-            priceLabel.text = "$20"
-            SubmitInfo.dressColor = "red"
-        }
-        if(DressButton.myButtonPressed == "blue"){
-            dressImage.image = UIImage(named: "IMG_2395.jpg")
-            priceLabel.text = "$18"
-            SubmitInfo.dressColor = "blue"
-        }
-        if(DressButton.myButtonPressed == "yellow"){
-            dressImage.image = UIImage(named: "IMG_2422.jpg")
-            priceLabel.text = "$25"
-            SubmitInfo.dressColor = "yellow"
-        }
+//        nameLabel.text = SubmitInfo.name
+//        emailLabel.text = SubmitInfo.email
+//        if(SubmitInfo.dropOff){
+//            deliveryLabel.text = "Drop-Off"
+//            buildingLabel.text = SubmitInfo.building
+//            roomNumLabel.text = SubmitInfo.roomNum
+//        }else if(SubmitInfo.pickUp){
+//            deliveryLabel.text = "Pickup"
+//            buildingLabel.text = "N/A"
+//            roomNumLabel.text = "N/A"
+//        }
+//        if(DressButton.myButtonPressed == "black"){
+//            priceLabel.text = "$15"
+//             dressImage.image = UIImage(named: "IMG_2339.jpg")
+//            SubmitInfo.dressColor = "black"
+//        }
+//        if(DressButton.myButtonPressed == "red"){
+//            dressImage.image = UIImage(named: "IMG_2379.jpg")
+//            priceLabel.text = "$20"
+//            SubmitInfo.dressColor = "red"
+//        }
+//        if(DressButton.myButtonPressed == "blue"){
+//            dressImage.image = UIImage(named: "IMG_2395.jpg")
+//            priceLabel.text = "$18"
+//            SubmitInfo.dressColor = "blue"
+//        }
+//        if(DressButton.myButtonPressed == "yellow"){
+//            dressImage.image = UIImage(named: "IMG_2422.jpg")
+//            priceLabel.text = "$25"
+//            SubmitInfo.dressColor = "yellow"
+//        }
         // Do any additional setup after loading the view.
     }
 

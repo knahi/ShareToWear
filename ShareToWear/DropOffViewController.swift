@@ -17,8 +17,8 @@ class DropOffViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBAction func save(_ sender: UIBarButtonItem) {
-        SubmitInfo.building = building.text!
-        SubmitInfo.roomNum = roomNum.text!
+//        SubmitInfo.building = building.text!
+//        SubmitInfo.roomNum = roomNum.text!
         
         if presentingViewController is UITabBarController{
             dismiss(animated: true, completion: nil)

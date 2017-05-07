@@ -15,10 +15,10 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var DropOff: UISwitch!
 
     @IBAction func submitPressed(_ sender: UIButton) {
-        SubmitInfo.name = name.text!
-        SubmitInfo.email = email.text!
-        SubmitInfo.pickUp = pickUP.isOn
-        SubmitInfo.dropOff = DropOff.isOn
+//        SubmitInfo.name = name.text!
+//        SubmitInfo.email = email.text!
+//        SubmitInfo.pickUp = pickUP.isOn
+//        SubmitInfo.dropOff = DropOff.isOn
         
     }
     //present view controller programmatically not working

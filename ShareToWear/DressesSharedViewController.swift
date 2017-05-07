@@ -23,93 +23,93 @@ class DressesSharedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        typeLabel.text = SubmitInfo.type
-        titleLabel.text = SubmitInfo.dressTitle
-        prefPriceLabel.text = SubmitInfo.preferredPrice
-        origPriceLabel.text = SubmitInfo.originalPrice
-        brandLabel.text = SubmitInfo.brand
-        var colorString = ""
-        if SubmitInfo.red{
-            colorString = "Red "
-        }
-        if SubmitInfo.blue{
-            colorString += "Blue "
-        }
-        if SubmitInfo.yellow{
-            colorString += "Yellow "
-        }
-        if SubmitInfo.pink{
-            colorString += "Pink "
-        }
-        if SubmitInfo.white{
-            colorString += "White "
-        }
-        if SubmitInfo.black{
-            colorString += "Black "
-        }
-        if SubmitInfo.green{
-            colorString += "Green "
-        }
-        if SubmitInfo.orange{
-            colorString += "Orange "
-        }
-        if SubmitInfo.purple{
-            colorString += "Purple "
-        }
-        if SubmitInfo.gray{
-            colorString += "Gray "
-        }
-        if SubmitInfo.multicolor{
-            colorString += "Multicolor "
-        }
-        colorLabel.text = colorString
+//        typeLabel.text = SubmitInfo.type
+//        titleLabel.text = SubmitInfo.dressTitle
+//        prefPriceLabel.text = SubmitInfo.preferredPrice
+//        origPriceLabel.text = SubmitInfo.originalPrice
+//        brandLabel.text = SubmitInfo.brand
+//        var colorString = ""
+//        if SubmitInfo.red{
+//            colorString = "Red "
+//        }
+//        if SubmitInfo.blue{
+//            colorString += "Blue "
+//        }
+//        if SubmitInfo.yellow{
+//            colorString += "Yellow "
+//        }
+//        if SubmitInfo.pink{
+//            colorString += "Pink "
+//        }
+//        if SubmitInfo.white{
+//            colorString += "White "
+//        }
+//        if SubmitInfo.black{
+//            colorString += "Black "
+//        }
+//        if SubmitInfo.green{
+//            colorString += "Green "
+//        }
+//        if SubmitInfo.orange{
+//            colorString += "Orange "
+//        }
+//        if SubmitInfo.purple{
+//            colorString += "Purple "
+//        }
+//        if SubmitInfo.gray{
+//            colorString += "Gray "
+//        }
+//        if SubmitInfo.multicolor{
+//            colorString += "Multicolor "
+//        }
+        //colorLabel.text = colorString
         
         //Size
-        if SubmitInfo.size0{
-            sizeLabel.text = "0"
-        }
-        else if SubmitInfo.size2{
-            sizeLabel.text = "2"
-        }
-        else if SubmitInfo.size4 {
-            sizeLabel.text = "4"
-        }
-        else if SubmitInfo.size6{
-            sizeLabel.text = "6"
-        }
-        else if SubmitInfo.size8{
-            sizeLabel.text = "8"
-        }
-        else if SubmitInfo.size10{
-            sizeLabel.text = "10"
-        }
-        else if SubmitInfo.size12{
-            sizeLabel.text = "12"
-        }
-        else if SubmitInfo.size14{
-            sizeLabel.text = "14"
-        }
-        else if SubmitInfo.sizeXS{
-            sizeLabel.text = "XS"
-        }
-        else if SubmitInfo.sizeS{
-            sizeLabel.text = "S"
-        }
-        else if SubmitInfo.sizeM{
-            sizeLabel.text = "M"
-        }
-        else if SubmitInfo.sizeL{
-            sizeLabel.text = "L"
-        }
-        else if SubmitInfo.sizeXL{
-            sizeLabel.text = "XL"
-        }
-        else {
-            sizeLabel.text = ""
-        }
+//        if SubmitInfo.size0{
+//            sizeLabel.text = "0"
+//        }
+//        else if SubmitInfo.size2{
+//            sizeLabel.text = "2"
+//        }
+//        else if SubmitInfo.size4 {
+//            sizeLabel.text = "4"
+//        }
+//        else if SubmitInfo.size6{
+//            sizeLabel.text = "6"
+//        }
+//        else if SubmitInfo.size8{
+//            sizeLabel.text = "8"
+//        }
+//        else if SubmitInfo.size10{
+//            sizeLabel.text = "10"
+//        }
+//        else if SubmitInfo.size12{
+//            sizeLabel.text = "12"
+//        }
+//        else if SubmitInfo.size14{
+//            sizeLabel.text = "14"
+//        }
+//        else if SubmitInfo.sizeXS{
+//            sizeLabel.text = "XS"
+//        }
+//        else if SubmitInfo.sizeS{
+//            sizeLabel.text = "S"
+//        }
+//        else if SubmitInfo.sizeM{
+//            sizeLabel.text = "M"
+//        }
+//        else if SubmitInfo.sizeL{
+//            sizeLabel.text = "L"
+//        }
+//        else if SubmitInfo.sizeXL{
+//            sizeLabel.text = "XL"
+//        }
+//        else {
+//            sizeLabel.text = ""
+//        }
         
-        bannerWebIDLabel.text = SubmitInfo.bannerWebID
-        userNameLabel.text = SubmitInfo.userName
+//        bannerWebIDLabel.text = SubmitInfo.bannerWebID
+//        userNameLabel.text = SubmitInfo.userName
         // Do any additional setup after loading the view.
     }
 

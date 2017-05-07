@@ -1652,6 +1652,9 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LvM-sd-XY4">
                                         <rect key="frame" x="0.0" y="294" width="51" height="59"/>
                                         <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="colorFilterUpdate:" destination="a3t-9z-Xju" eventType="valueChanged" id="Ck2-WK-jYU"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>

@@ -71,6 +71,21 @@ class BrowseCollectionViewController: UICollectionViewController{
                     }
                 }
                 //Filters for color
+                let colorArray = self.getColorArray()
+                if(colorArray.isEmpty){
+                    itemSelected = true
+                }else{
+                    for color in colorArray{
+                        let dressColor = dress?["color"] as! String
+                        if dressColor == color{
+                            itemSelected = true
+                            print(dressColor)
+                            break
+                        }else{
+                            itemSelected = false
+                        }
+                    }
+                }
         
                 if itemSelected{
                     self.count += 1
@@ -125,6 +140,43 @@ class BrowseCollectionViewController: UICollectionViewController{
             sizeArray.append("XL")
         }
         return sizeArray
+    }
+    func getColorArray() -> [String]{
+        var colorArray = [String]()
+        if FilterModel.black{
+            colorArray.append("BLACK")
+        }
+        if FilterModel.blue{
+            colorArray.append("BLUE")
+        }
+        if FilterModel.gray{
+            colorArray.append("GRAY")
+        }
+        if FilterModel.green{
+            colorArray.append("GREEN")
+        }
+        if FilterModel.multicolor{
+            colorArray.append("MULTICOLOR")
+        }
+        if FilterModel.orange{
+            colorArray.append("ORANGE")
+        }
+        if FilterModel.pink{
+            colorArray.append("PINK")
+        }
+        if FilterModel.purple{
+            colorArray.append("PURPLE")
+        }
+        if FilterModel.red{
+            colorArray.append("RED")
+        }
+        if FilterModel.white{
+            colorArray.append("WHITE")
+        }
+        if FilterModel.yellow{
+            colorArray.append("YELLOW")
+        }
+        return colorArray
     }
     //NOT TRIGGERING WHEN MODAL VIEW DISSAPPEARS
     override func viewDidLoad() {
