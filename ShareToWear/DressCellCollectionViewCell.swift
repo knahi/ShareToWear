@@ -14,8 +14,6 @@ class DressCellCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dressCell: UIImageView!
     
     func getImage() {
-        
-        print("Got here")
 
         // Get a reference to the storage service using the default Firebase App
         let storage = FIRStorage.storage()
@@ -28,13 +26,17 @@ class DressCellCollectionViewCell: UICollectionViewCell {
         
         // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
         dressRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
-        if let error = error {
+        if error != nil {
             // Uh-oh, an error occurred!
             print("Image is too big")
         } else {
             // Data for "images/island.jpg" is returned
             let image = UIImage(data: data!)
-            self.dressCell.image = image
+            //print (image)
+            if (image != nil) {
+                print("not nill")
+                self.dressCell.image = image
+            }
         }
         }
     }

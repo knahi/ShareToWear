@@ -128,34 +128,33 @@ class BrowseCollectionViewController: UICollectionViewController{
     }
     //NOT TRIGGERING WHEN MODAL VIEW DISSAPPEARS
     override func viewDidLoad() {
+        
         // Use Firebase library to configure APIs
         FIRApp.configure()
-        
+
         super.viewDidLoad()
-        getCount()
-        let test = DressCellCollectionViewCell()
-        test.getImage()
         
-        // Get a reference to the storage service using the default Firebase App
-        let storage = FIRStorage.storage()
-        
-        // Create a storage reference from our storage service
-        let storageRef = storage.reference()
-        
-        // Create a reference to the file you want to download
-        let dressRef = storageRef.child("DressImages/dress81.JPG")
-        
-        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
-        dressRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
-            if let error = error {
-                // Uh-oh, an error occurred!
-                print("Image is too big")
-            } else {
-                // Data for "images/island.jpg" is returned
-                let image = UIImage(data: data!)
-                //self.viewControl.image = image
-            }
-        }
+       
+//        // Get a reference to the storage service using the default Firebase App
+//        let storage = FIRStorage.storage()
+//        
+//        // Create a storage reference from our storage service
+//        let storageRef = storage.reference()
+//        
+//        // Create a reference to the file you want to download
+//        let dressRef = storageRef.child("DressImages/dress81.JPG")
+//        
+//        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+//        dressRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
+//            if error != nil {
+//                // Uh-oh, an error occurred!
+//                print("Image is too big")
+//            } else {
+//                // Data for "images/island.jpg" is returned
+//                let image = UIImage(data: data!)
+//                //self.viewControl.image = image
+//            }
+//        }
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -205,6 +204,9 @@ class BrowseCollectionViewController: UICollectionViewController{
     
         // Configure the cell
         cell.backgroundColor = UIColor.black
+        
+        let test = DressCellCollectionViewCell()
+        test.getImage()
     
         return cell
     }
