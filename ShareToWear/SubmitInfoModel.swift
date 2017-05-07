@@ -43,7 +43,8 @@ struct SubmitInfo{
             "originalPrice":originalPrice,
             "preferredPrice": preferredPrice,
             "size": size,
-            "colors":color
+            "colors":color,
+            "bannerWebID": bannerWebID
         ]
     }
     

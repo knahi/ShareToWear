@@ -73,7 +73,7 @@ class ShareViewController: UIViewController {
         
         let submitItem = SubmitInfo(type: dressType, dressTitle: dressTitle.text!, userName: userName.text!, bannerWebID: bannerWebID.text!, brand: brand.text!, originalPrice: originalPrice.text!, preferredPrice: preferredPrice.text!, size: getSize(), color: getColorArray())
         
-        let submitItemRef = ref.child("users").child(bannerWebID.text!)
+        let submitItemRef = ref.child("users").child(bannerWebID.text!+"_"+dressTitle.text!)
         submitItemRef.setValue(submitItem.toAnyObject())
     }
     func getColorArray() -> [String]{

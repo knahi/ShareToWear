@@ -23,7 +23,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        // Use Firebase library to configure APIs
+        FIRApp.configure()
+
     }
 
     override func didReceiveMemoryWarning() {
