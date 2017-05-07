@@ -210,14 +210,13 @@ class BrowseCollectionViewController: UICollectionViewController{
     
         return cell
     }
-    
-    
 
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("selected cell")
         print(indexPath.item)
-        //let modalVC = DressDetailViewController.
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "DressInfo")
+        self.show(vc as! UIViewController, sender: vc)
     }
 
     /*

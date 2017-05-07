@@ -36,6 +36,9 @@
 		EF8E856F1EBF9E0F001F032C /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E856A1EBF9E0F001F032C /* home.png */; };
 		EF8E85701EBF9E0F001F032C /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E856B1EBF9E0F001F032C /* Info.png */; };
 		EF8E85711EBF9E0F001F032C /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E856C1EBF9E0F001F032C /* MySTW.png */; };
+		EF8E85741EBFC406001F032C /* Like.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85721EBFC406001F032C /* Like.png */; };
+		EF8E85751EBFC406001F032C /* Unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85731EBFC406001F032C /* Unlike.png */; };
+		EF8E85771EBFC885001F032C /* FavModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E85761EBFC885001F032C /* FavModel.swift */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
 		EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB881EA3F52D002F3FEC /* ViewController.swift */; };
 		EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */; };
@@ -88,6 +91,9 @@
 		EF8E856A1EBF9E0F001F032C /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../Icons/home.png; sourceTree = "<group>"; };
 		EF8E856B1EBF9E0F001F032C /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Icons/Info.png; sourceTree = "<group>"; };
 		EF8E856C1EBF9E0F001F032C /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../Icons/MySTW.png; sourceTree = "<group>"; };
+		EF8E85721EBFC406001F032C /* Like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Like.png; path = ../../Images/Like.png; sourceTree = "<group>"; };
+		EF8E85731EBFC406001F032C /* Unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Unlike.png; path = ../../Images/Unlike.png; sourceTree = "<group>"; };
+		EF8E85761EBFC885001F032C /* FavModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavModel.swift; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AFB881EA3F52D002F3FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
 				EF9AFB881EA3F52D002F3FEC /* ViewController.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
+				EF8E85761EBFC885001F032C /* FavModel.swift */,
 				EF8E85661EBD064F001F032C /* DressCellCollectionViewCell.swift */,
 				1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */,
 				1681D4031EB17F9200BEEC4D /* UserInfoModel.swift */,
@@ -216,6 +223,8 @@
 		EF9AFBA81EA41601002F3FEC /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				EF8E85721EBFC406001F032C /* Like.png */,
+				EF8E85731EBFC406001F032C /* Unlike.png */,
 				EF8E85681EBF9E0F001F032C /* dress.png */,
 				EF8E85691EBF9E0F001F032C /* hearts.png */,
 				EF8E856A1EBF9E0F001F032C /* home.png */,
@@ -295,11 +304,13 @@
 				EF8E856E1EBF9E0F001F032C /* hearts.png in Resources */,
 				EFCEFFF61EB571CC007B0C22 /* 58.png in Resources */,
 				EF8E856F1EBF9E0F001F032C /* home.png in Resources */,
+				EF8E85751EBFC406001F032C /* Unlike.png in Resources */,
 				EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */,
 				EFE9A17D1EB91B720071BC94 /* ShareToWear - 125.jpg in Resources */,
 				EF8E85701EBF9E0F001F032C /* Info.png in Resources */,
 				EF8E856D1EBF9E0F001F032C /* dress.png in Resources */,
 				EF8E85711EBF9E0F001F032C /* MySTW.png in Resources */,
+				EF8E85741EBFC406001F032C /* Like.png in Resources */,
 				EFE9A17C1EB91B720071BC94 /* IMG_2535.jpg in Resources */,
 				EFE9A1791EB91B720071BC94 /* IMG_2379.jpg in Resources */,
 				EFE9A17E1EB91B720071BC94 /* ShareToWear - 151.jpg in Resources */,
@@ -388,6 +399,7 @@
 				1617CC061EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift in Sources */,
 				16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */,
 				1681D3F31EB15F3D00BEEC4D /* SubmitInfoModel.swift in Sources */,
+				EF8E85771EBFC885001F032C /* FavModel.swift in Sources */,
 				1681D4101EB1983700BEEC4D /* DressDetailViewController.swift in Sources */,
 				1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */,
 				1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */,

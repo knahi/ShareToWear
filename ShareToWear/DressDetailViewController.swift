@@ -11,6 +11,7 @@ import UIKit
 class DressDetailViewController: UIViewController {
     
     private let dresses = DressCollection()
+    var flag = false
 
     @IBOutlet weak var colorLabel: UILabel!
     @IBOutlet weak var sizeLabel: UILabel!
@@ -20,41 +21,41 @@ class DressDetailViewController: UIViewController {
     @IBOutlet weak var rentButton: UIButton!
     @IBOutlet weak var notAvailableLabel: UILabel!
     
+    @IBOutlet weak var heartButton: UIButton!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if (DressButton.myButtonPressed == "black"){
-            colorLabel.text = "black"
-            sizeLabel.text = "S"
-            priceLabel.text = "$15"
-            availableLabel.text = "Yes"
-            dressImage.image = UIImage(named: "IMG_2339.jpg")
-        }else if(DressButton.myButtonPressed == "red"){
-            colorLabel.text = "red"
-            sizeLabel.text = "M"
-            priceLabel.text = "$20"
-            availableLabel.text = "Yes"
-            dressImage.image = UIImage(named:"IMG_2379.jpg")
-        }else if(DressButton.myButtonPressed == "blue"){
-            colorLabel.text = "blue"
-            sizeLabel.text = "L"
-            priceLabel.text = "$18"
-            availableLabel.text = "Yes"
-            dressImage.image = UIImage(named: "IMG_2395.jpg")
-        }else{
-            colorLabel.text = "yellow"
-            sizeLabel.text = "6"
-            priceLabel.text = "$25"
-            availableLabel.text = "No"
-            dressImage.image = UIImage(named: "IMG_2422.jpg")
-            rentButton?.isHidden = true
-            notAvailableLabel.text = "Sorry, this dress is not available for rent"
-        }
+        
+        colorLabel.text = ""
+        sizeLabel.text = ""
+        priceLabel.text = ""
+        availableLabel.text = ""
+        dressImage.image = nil
+        
+        heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func changeImage(_ sender: Any) {
+        
+        if (!flag)
+        {
+            //for like
+            flag = true
+            heartButton.setImage(UIImage(named: "like.png"), for: .normal)
+        }
+        else
+        {
+            //for unlike
+            flag = false
+            heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
+        }
     }
     
 
