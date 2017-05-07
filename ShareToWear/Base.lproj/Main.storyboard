@@ -11,143 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Browse View Controller-->
-        <scene sceneID="ec5-k5-4j0">
-            <objects>
-                <viewController id="yTE-IT-Qu7" customClass="BrowseViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sxA-fI-ISg"/>
-                        <viewControllerLayoutGuide type="bottom" id="RVv-mU-7uK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Kyq-2d-dL5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="edU-pr-OE7">
-                                <rect key="frame" x="26" y="50" width="323" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j00-lN-xJd">
-                                        <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
-                                        <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="36" id="aVe-Gc-eG9"/>
-                                        </constraints>
-                                        <state key="normal" title="Size">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwp-B9-aUp">
-                                        <rect key="frame" x="68" y="0.0" width="44" height="30"/>
-                                        <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="ftk-Ac-qcu"/>
-                                        </constraints>
-                                        <state key="normal" title="Color">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFe-ir-k32">
-                                        <rect key="frame" x="144" y="0.0" width="87" height="30"/>
-                                        <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Availability">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqi-zh-jqw">
-                                        <rect key="frame" x="263" y="0.0" width="60" height="30"/>
-                                        <color key="backgroundColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="qta-ix-lWm"/>
-                                        </constraints>
-                                        <state key="normal" title="Price">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sq8-wM-t07">
-                                <rect key="frame" x="26" y="155" width="156" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dress Goes Here" image="IMG_2339.jpg"/>
-                                <connections>
-                                    <action selector="blackDress:" destination="yTE-IT-Qu7" eventType="touchUpInside" id="RVB-qh-hIh"/>
-                                    <segue destination="9Nb-wS-UdI" kind="show" id="ju2-aA-cP0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MY2-YO-fgU">
-                                <rect key="frame" x="198" y="155" width="151" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="IMG_2379.jpg">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="redDress:" destination="yTE-IT-Qu7" eventType="touchUpInside" id="nZX-q3-yCw"/>
-                                    <segue destination="9Nb-wS-UdI" kind="show" id="fXn-x6-fdQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-W9-P57">
-                                <rect key="frame" x="26" y="372" width="156" height="209"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="IMG_2395.jpg">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="blueDress:" destination="yTE-IT-Qu7" eventType="touchUpInside" id="asR-Yg-1sg"/>
-                                    <segue destination="9Nb-wS-UdI" kind="show" id="kqS-nC-N7g"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7by-Qq-lBe">
-                                <rect key="frame" x="198" y="372" width="151" height="209"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="IMG_2422.jpg">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Button">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="18"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="yellowDress:" destination="yTE-IT-Qu7" eventType="touchUpInside" id="mbu-Nj-3G0"/>
-                                    <segue destination="9Nb-wS-UdI" kind="show" id="VCo-pk-CCO"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oct-24-BfB">
-                                <rect key="frame" x="82" y="230" width="240" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="edU-pr-OE7" secondAttribute="trailing" constant="10" id="7P5-Tx-1vG"/>
-                            <constraint firstItem="edU-pr-OE7" firstAttribute="top" secondItem="sxA-fI-ISg" secondAttribute="bottom" constant="30" id="W1q-BF-g7j"/>
-                            <constraint firstItem="edU-pr-OE7" firstAttribute="leading" secondItem="Kyq-2d-dL5" secondAttribute="leadingMargin" constant="10" id="b9e-F0-cyt"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="LDs-hw-PzK"/>
-                    <connections>
-                        <outlet property="blackDress" destination="Sq8-wM-t07" id="vj0-lC-ZlB"/>
-                        <outlet property="redDress" destination="MY2-YO-fgU" id="53t-69-9Ix"/>
-                        <outlet property="viewControl" destination="Oct-24-BfB" id="Pcy-gY-fKE"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7UM-dq-Xh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3670" y="1504"/>
-        </scene>
         <!--Size Filter View Controller-->
         <scene sceneID="H0n-1Q-rcs">
             <objects>
@@ -2900,10 +2763,6 @@ We aim to foster community, inclusivity, and sustainability.</string>
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_2339.jpg" width="720" height="1080"/>
-        <image name="IMG_2379.jpg" width="720" height="1080"/>
-        <image name="IMG_2395.jpg" width="720" height="1080"/>
-        <image name="IMG_2422.jpg" width="720" height="1080"/>
         <image name="Info.png" width="25" height="25"/>
         <image name="MySTW.png" width="25" height="25"/>
         <image name="ShareToWear - 125.jpg" width="4898" height="3265"/>
@@ -2912,7 +2771,4 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <image name="hearts.png" width="25" height="25"/>
         <image name="home.png" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="kqS-nC-N7g"/>
-    </inferredMetricsTieBreakers>
 </document>

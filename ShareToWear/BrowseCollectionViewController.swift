@@ -13,7 +13,7 @@ private let reuseIdentifier = "Cell"
 
 class BrowseCollectionViewController: UICollectionViewController{
     
-
+    
     
     var count: Int = 0
     
@@ -214,6 +214,11 @@ class BrowseCollectionViewController: UICollectionViewController{
     
 
     // MARK: UICollectionViewDelegate
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("selected cell")
+        print(indexPath.item)
+        //let modalVC = DressDetailViewController.
+    }
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
