@@ -11,8 +11,6 @@ import Firebase
 
 class ShareViewController: UIViewController {
     
-    
-
     @IBOutlet weak var rental: UISwitch!
     @IBOutlet weak var sale: UISwitch!
     @IBOutlet weak var dressTitle: UITextField!
@@ -55,6 +53,44 @@ class ShareViewController: UIViewController {
     }
 
     @IBAction func submitPressed(_ sender: UIButton) {
+        DressReview.blue = blue.isOn
+        DressReview.white = white.isOn
+        DressReview.yellow = yellow.isOn
+        DressReview.pink = pink.isOn
+        DressReview.red = red.isOn
+        DressReview.multicolor = multicolor.isOn
+        DressReview.black = black.isOn
+        DressReview.green = green.isOn
+        DressReview.orange = orange.isOn
+        DressReview.purple = purple.isOn
+        DressReview.gray = gray.isOn
+        
+        DressReview.size0 = size0.isOn
+        DressReview.size2 = size2.isOn
+        DressReview.size4 = size4.isOn
+        DressReview.size6 = size6.isOn
+        DressReview.size8 = size8.isOn
+        DressReview.size10 = size10.isOn
+        DressReview.size12 = size12.isOn
+        DressReview.size14 = size14.isOn
+        DressReview.sizeXS = sizeXS.isOn
+        DressReview.sizeS = sizeS.isOn
+        DressReview.sizeM = sizeM.isOn
+        DressReview.sizeL = sizeL.isOn
+        DressReview.sizeXL = sizeXL.isOn
+        
+        if rental.isOn{
+            DressReview.type = "Rental"
+        }else if sale.isOn{
+            DressReview.type = "Sale"
+        }
+        
+        DressReview.dressTitle = dressTitle.text!
+        DressReview.userName = userName.text!
+        DressReview.bannerWebID = bannerWebID.text!
+        DressReview.brand = brand.text!
+        DressReview.originalPrice = originalPrice.text!
+        DressReview.preferredPrice = preferredPrice.text!
         
         var dressType: String = ""
         if rental.isOn{
@@ -63,7 +99,6 @@ class ShareViewController: UIViewController {
             dressType = "sale"
         }
 
-        
         //FIREBASE SUBMISSION
         var ref: FIRDatabaseReference
         ref = FIRDatabase.database().reference()
@@ -142,9 +177,7 @@ class ShareViewController: UIViewController {
         return size
     }
     
-    // I added a Tap Gesture Recognizer to the view
-    // this action is fired by tapping on the view
-    // the effect is that when the keyboard is showing, tapping outside of the keyboard makes it go away
+    // When the keyboard is showing, tapping outside of the keyboard makes it go away
     @IBAction func tapToDismissKeyboard(_ sender: UITapGestureRecognizer) {
         dressTitle.resignFirstResponder() //hide the keyboard
         userName.resignFirstResponder()    //hide the keyboard

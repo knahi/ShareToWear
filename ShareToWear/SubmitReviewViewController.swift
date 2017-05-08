@@ -78,48 +78,47 @@ class SubmitReviewViewController: UIViewController {
         colorLabel.text = colorString
         
         //Size
+        var sizeString = ""
         if DressReview.size0{
-            sizeLabel.text = "0"
+            sizeString += "0 "
         }
         if DressReview.size2{
-            sizeLabel.text = "2"
+            sizeString += "2 "
         }
         if DressReview.size4{
-            sizeLabel.text = "4"
+            sizeString += "4 "
         }
         if DressReview.size6{
-            sizeLabel.text = "6"
+            sizeString += "6 "
         }
         if DressReview.size8{
-            sizeLabel.text = "8"
+            sizeString += "8 "
         }
         if DressReview.size10{
-            sizeLabel.text = "10"
+            sizeString += "10 "
         }
         if DressReview.size12{
-            sizeLabel.text = "12"
+            sizeString += "12 "
         }
         if DressReview.size14{
-            sizeLabel.text = "14"
+            sizeString += "14 "
         }
         if DressReview.sizeXS{
-            sizeLabel.text = "XS"
+            sizeString += "XS "
         }
         if DressReview.sizeS{
-            sizeLabel.text = "S"
+            sizeString += "S "
         }
         if DressReview.sizeM{
-            sizeLabel.text = "M"
+            sizeString += "M "
         }
         if DressReview.sizeL{
-            sizeLabel.text = "L"
+            sizeString += "L "
         }
         if DressReview.sizeXL{
-            sizeLabel.text = "XL"
+            sizeString += "XL "
         }
-        else {
-            sizeLabel.text = " "
-        }
+        sizeLabel.text = sizeString
         
         
         brandLabel.text = DressReview.brand
