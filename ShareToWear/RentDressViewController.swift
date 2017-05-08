@@ -30,11 +30,9 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
         let rentedDress = RentInfo(renterName: name.text!, renterEmail: email.text!, deliveryMethod: FavModel.method, dressName: FavModel.currentSelection, building: FavModel.building, roomNumber: FavModel.roomNum)
         let rentedDressRef = ref.child("rentals").child(FavModel.currentSelection)
         rentedDressRef.setValue(rentedDress.toAnyObject())
-        
-//        let submitItem = SubmitInfo(type: dressType, dressTitle: dressTitle.text!, userName: userName.text!, bannerWebID: bannerWebID.text!, brand: brand.text!, originalPrice: originalPrice.text!, preferredPrice: preferredPrice.text!, size: getSize(), color: getColorArray())
-//        
-//        let submitItemRef = ref.child("users").child(bannerWebID.text!+"_"+dressTitle.text!)
-//        submitItemRef.setValue(submitItem.toAnyObject())
+
+        let dressRef = ref.child("dresses").child(FavModel.currentSelection).child("availability")
+        dressRef.setValue("false")
     }
     //present view controller programmatically not working
 //    @IBAction func dropOffSwitch(_ sender: Any) {
