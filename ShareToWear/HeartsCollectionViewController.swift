@@ -60,10 +60,18 @@ class HeartsCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = UIColor.black
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeartsCell", for: indexPath) as? HeartsCollectionViewCell else{
+            fatalError("Can't get cell of the right kind")
+        }
+        cell.backgroundColor = UIColor.white
     
         // Configure the cell
+        
+        let dressName = String(FavModel.favorites[indexPath.row]) + ".JPG"
+        
+        if (UIImage(named: dressName) != nil) {
+            cell.configureCell(UIImage(named: dressName)!)
+        }
     
         return cell
     }

@@ -102,7 +102,6 @@
 		EF8E861E1EC0D746001F032C /* dress60.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85C21EC0D745001F032C /* dress60.JPG */; };
 		EF8E861F1EC0D746001F032C /* dress61.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85C31EC0D745001F032C /* dress61.JPG */; };
 		EF8E86201EC0D746001F032C /* dress62.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85C41EC0D745001F032C /* dress62.JPG */; };
-		EF8E86211EC0D746001F032C /* dress63 .JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85C51EC0D745001F032C /* dress63 .JPG */; };
 		EF8E86221EC0D746001F032C /* dress64.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85C61EC0D745001F032C /* dress64.JPG */; };
 		EF8E86231EC0D746001F032C /* dress65.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85C71EC0D745001F032C /* dress65.JPG */; };
 		EF8E86241EC0D746001F032C /* dress66.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85C81EC0D745001F032C /* dress66.JPG */; };
@@ -132,6 +131,8 @@
 		EF8E863C1EC0D746001F032C /* dress90.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85E01EC0D746001F032C /* dress90.JPG */; };
 		EF8E863D1EC0D746001F032C /* dress91.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85E11EC0D746001F032C /* dress91.JPG */; };
 		EF8E863E1EC0D746001F032C /* dress92.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E85E21EC0D746001F032C /* dress92.JPG */; };
+		EF8E87B01EC0F68F001F032C /* dress63.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E87AF1EC0F68F001F032C /* dress63.JPG */; };
+		EF8E886A1EC0FDD0001F032C /* HeartsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E88691EC0FDD0001F032C /* HeartsCollectionViewCell.swift */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
 		EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB881EA3F52D002F3FEC /* ViewController.swift */; };
 		EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */; };
@@ -250,7 +251,6 @@
 		EF8E85C21EC0D745001F032C /* dress60.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress60.JPG; path = "../../Dress Images/dress60.JPG"; sourceTree = "<group>"; };
 		EF8E85C31EC0D745001F032C /* dress61.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress61.JPG; path = "../../Dress Images/dress61.JPG"; sourceTree = "<group>"; };
 		EF8E85C41EC0D745001F032C /* dress62.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress62.JPG; path = "../../Dress Images/dress62.JPG"; sourceTree = "<group>"; };
-		EF8E85C51EC0D745001F032C /* dress63 .JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "dress63 .JPG"; path = "../../Dress Images/dress63 .JPG"; sourceTree = "<group>"; };
 		EF8E85C61EC0D745001F032C /* dress64.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress64.JPG; path = "../../Dress Images/dress64.JPG"; sourceTree = "<group>"; };
 		EF8E85C71EC0D745001F032C /* dress65.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress65.JPG; path = "../../Dress Images/dress65.JPG"; sourceTree = "<group>"; };
 		EF8E85C81EC0D745001F032C /* dress66.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress66.JPG; path = "../../Dress Images/dress66.JPG"; sourceTree = "<group>"; };
@@ -280,6 +280,8 @@
 		EF8E85E01EC0D746001F032C /* dress90.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress90.JPG; path = "../../Dress Images/dress90.JPG"; sourceTree = "<group>"; };
 		EF8E85E11EC0D746001F032C /* dress91.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress91.JPG; path = "../../Dress Images/dress91.JPG"; sourceTree = "<group>"; };
 		EF8E85E21EC0D746001F032C /* dress92.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress92.JPG; path = "../../Dress Images/dress92.JPG"; sourceTree = "<group>"; };
+		EF8E87AF1EC0F68F001F032C /* dress63.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress63.JPG; path = "../Dress Images/dress63.JPG"; sourceTree = SOURCE_ROOT; };
+		EF8E88691EC0FDD0001F032C /* HeartsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AFB881EA3F52D002F3FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -411,7 +413,7 @@
 				EF8E85C21EC0D745001F032C /* dress60.JPG */,
 				EF8E85C31EC0D745001F032C /* dress61.JPG */,
 				EF8E85C41EC0D745001F032C /* dress62.JPG */,
-				EF8E85C51EC0D745001F032C /* dress63 .JPG */,
+				EF8E87AF1EC0F68F001F032C /* dress63.JPG */,
 				EF8E85C61EC0D745001F032C /* dress64.JPG */,
 				EF8E85C71EC0D745001F032C /* dress65.JPG */,
 				EF8E85C81EC0D745001F032C /* dress66.JPG */,
@@ -486,6 +488,7 @@
 				EF8E85861EC0D712001F032C /* DressImages */,
 				EF8E85841EC0094A001F032C /* SharedViewController.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
+				EF8E88691EC0FDD0001F032C /* HeartsCollectionViewCell.swift */,
 				EF8E85761EBFC885001F032C /* FavModel.swift */,
 				EF8E85661EBD064F001F032C /* DressCellCollectionViewCell.swift */,
 				1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */,
@@ -624,6 +627,7 @@
 				EF8E85FE1EC0D746001F032C /* dress28.JPG in Resources */,
 				EF8E85E61EC0D746001F032C /* dress4.JPG in Resources */,
 				EF8E861E1EC0D746001F032C /* dress60.JPG in Resources */,
+				EF8E87B01EC0F68F001F032C /* dress63.JPG in Resources */,
 				EF8E85FD1EC0D746001F032C /* dress27.JPG in Resources */,
 				EF8E863B1EC0D746001F032C /* dress89.JPG in Resources */,
 				EF8E863C1EC0D746001F032C /* dress90.JPG in Resources */,
@@ -659,7 +663,6 @@
 				EF8E86091EC0D746001F032C /* dress39.JPG in Resources */,
 				EF8E85831EBFED0F001F032C /* MySTW.png in Resources */,
 				EF8E86231EC0D746001F032C /* dress65.JPG in Resources */,
-				EF8E86211EC0D746001F032C /* dress63 .JPG in Resources */,
 				EF8E86201EC0D746001F032C /* dress62.JPG in Resources */,
 				EF8E85F71EC0D746001F032C /* dress21.JPG in Resources */,
 				EF8E85F31EC0D746001F032C /* dress17.JPG in Resources */,
@@ -784,6 +787,7 @@
 				1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */,
 				1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */,
 				16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */,
+				EF8E886A1EC0FDD0001F032C /* HeartsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

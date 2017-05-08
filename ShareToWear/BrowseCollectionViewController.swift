@@ -96,7 +96,7 @@ class BrowseCollectionViewController: UICollectionViewController{
             } //end of for loop
             
             //print(self.count)
-            //print(FavModel.allDresses)
+            print(FavModel.allDresses)
             //print(FavModel.allDresses.count)
             DispatchQueue.main.async{self.collectionView?.reloadData()}
         })
@@ -239,9 +239,7 @@ class BrowseCollectionViewController: UICollectionViewController{
         // Configure the cell
         cell.backgroundColor = UIColor.black
         
-        let dressName = "dress" + String(indexPath.row + 1) + ".JPG"
-        print(dressName)
-        //var dressImages: [UIImage] = []
+        let dressName = String(FavModel.allDresses[indexPath.row]) + ".JPG"
         
         if (UIImage(named: dressName) != nil) {
             cell.configureCell(UIImage(named: dressName)!)

@@ -76,9 +76,12 @@ class DressDetailViewController: UIViewController {
         ref = FIRDatabase.database().reference()
         
         ref.child("dresses").child(FavModel.currentSelection).observeSingleEvent(of: .value, with: { (snapshot) in
-        
+            
             let dress = snapshot.value as? NSDictionary
-            print(dress)
+            
+            let name = String(String(FavModel.currentSelection) + ".JPG")
+            self.dressImage.image = UIImage(named: name!)
+            
             let color = dress?["color"] as! String
             self.colorLabel.text = color
             let size = dress?["size"] as! String

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class FavModel{
    
@@ -21,4 +22,8 @@ class FavModel{
     
     static var favorites = [String]()
     static var allDresses = [String]()
+    
+//    var dressImageDictionary: [String:String] = [
+//        
+//    ]
 }
