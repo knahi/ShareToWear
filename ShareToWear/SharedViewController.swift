@@ -1,14 +1,15 @@
 //
-//  DressesSharedViewController.swift
+//  SharedViewController.swift
 //  ShareToWear
 //
-//  Created by Lily Taub on 4/18/17.
+//  Created by Kayla Nahi on 5/7/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
-class DressesSharedViewController: UIViewController {
+class SharedViewController: UIViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var prefPriceLabel: UILabel!
@@ -23,32 +24,17 @@ class DressesSharedViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-//    override func numberOfSections(in tableView: UITableView) -> Int{
-//        return 1
-//    }
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentfier: "DressListingCell", for: indexPath) as? DressListingCell else{
-//            fatalError("Can't get cell of the right kind")
-//        }
-//        
-//        // Configure the cell...
-//
-//        let sharedDresses = UserInfo.dressesShared[indexPath.row]
-//        print(sharedDresses)
-//        cell.configureCell(sharedDresses: sharedDresses)
-//
-//        return cell
-//    }
     
 
     /*

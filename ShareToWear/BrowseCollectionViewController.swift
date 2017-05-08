@@ -188,29 +188,6 @@ class BrowseCollectionViewController: UICollectionViewController{
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        
-       
-//        // Get a reference to the storage service using the default Firebase App
-//        let storage = FIRStorage.storage()
-//        
-//        // Create a storage reference from our storage service
-//        let storageRef = storage.reference()
-//        
-//        // Create a reference to the file you want to download
-//        let dressRef = storageRef.child("DressImages/dress81.JPG")
-//        
-//        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
-//        dressRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
-//            if error != nil {
-//                // Uh-oh, an error occurred!
-//                print("Image is too big")
-//            } else {
-//                // Data for "images/island.jpg" is returned
-//                let image = UIImage(data: data!)
-//                //self.viewControl.image = image
-//            }
-//        }
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -255,13 +232,36 @@ class BrowseCollectionViewController: UICollectionViewController{
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DressCellCollection", for: indexPath) as? DressCellCollectionViewCell else{
+            fatalError("Can't get cell of the right kind")
+        }
     
         // Configure the cell
         cell.backgroundColor = UIColor.black
         
-        let test = DressCellCollectionViewCell()
-        test.getImage()
+        //print(indexPath) //.row
+        
+        // Get a reference to the storage service using the default Firebase App
+        let storage = FIRStorage.storage()
+        
+        // Create a storage reference from our storage service
+        let storageRef = storage.reference()
+        
+        // Create a reference to the file you want to download
+        let dressName = "DressImages/dress" + String(indexPath.row) + ".JPG"
+        let dressRef = storageRef.child(dressName)
+        
+        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+        dressRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
+            if error != nil {
+                // Uh-oh, an error occurred!
+                print(error)
+            } else {
+                // Data for "DressImages/dress#.jpg" is returned
+                let image = UIImage(data: data!)
+                cell.configureCell(image!)
+            }
+        }
         
         return cell
     }
