@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../Dress Images/dress63.JPG">
+      location = "group:ShareToWear/HeartsCollectionViewCell.swift">
    </FileRef>
    <FileRef
       location = "group:ShareToWear.xcodeproj">
