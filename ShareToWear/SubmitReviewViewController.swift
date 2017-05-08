@@ -37,10 +37,95 @@ class SubmitReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //PULL FROM DATABASE HERE
+        typeLabel.text = DressReview.type
+        dressTitleLabel.text = DressReview.dressTitle
+        userNameLabel.text = DressReview.userName
+        bannerwebIDLabel.text = DressReview.bannerWebID
+        var colorString = ""
+        if DressReview.red{
+            colorString = "Red "
+        }
+        if DressReview.blue{
+            colorString += "Blue "
+        }
+        if DressReview.yellow{
+            colorString += "Yellow "
+        }
+        if DressReview.pink{
+            colorString += "Pink "
+        }
+        if DressReview.white{
+            colorString += "White "
+        }
+        if DressReview.black{
+            colorString += "Black "
+        }
+        if DressReview.green{
+            colorString += "Green "
+        }
+        if DressReview.orange{
+            colorString += "Orange "
+        }
+        if DressReview.purple{
+            colorString += "Purple "
+        }
+        if DressReview.gray{
+            colorString += "Gray "
+        }
+        if DressReview.multicolor{
+            colorString += "Multicolor "
+        }
+        colorLabel.text = colorString
         
-
-        // Do any additional setup after loading the view.
+        //Size
+        if DressReview.size0{
+            sizeLabel.text = "0"
+        }
+        if DressReview.size2{
+            sizeLabel.text = "2"
+        }
+        if DressReview.size4{
+            sizeLabel.text = "4"
+        }
+        if DressReview.size6{
+            sizeLabel.text = "6"
+        }
+        if DressReview.size8{
+            sizeLabel.text = "8"
+        }
+        if DressReview.size10{
+            sizeLabel.text = "10"
+        }
+        if DressReview.size12{
+            sizeLabel.text = "12"
+        }
+        if DressReview.size14{
+            sizeLabel.text = "14"
+        }
+        if DressReview.sizeXS{
+            sizeLabel.text = "XS"
+        }
+        if DressReview.sizeS{
+            sizeLabel.text = "S"
+        }
+        if DressReview.sizeM{
+            sizeLabel.text = "M"
+        }
+        if DressReview.sizeL{
+            sizeLabel.text = "L"
+        }
+        if DressReview.sizeXL{
+            sizeLabel.text = "XL"
+        }
+        else {
+            sizeLabel.text = " "
+        }
+        
+        
+        brandLabel.text = DressReview.brand
+        originalPriceLabel.text = DressReview.originalPrice
+        preferredPriceLabel.text = DressReview.preferredPrice
+        
     }
 
     override func didReceiveMemoryWarning() {
