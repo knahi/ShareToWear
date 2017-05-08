@@ -17,8 +17,16 @@ class FavModel{
     static var size: String = ""
     static var available: Bool = true
     
+    //currently selected dress
     static var currentSelection:String = ""
     
+    //list of favorited dresses
     static var favorites = [String]()
+    
+    //list of all dresses displayed in Browse view
     static var allDresses = [String]()
+    
+    //Dress Drop-off Info
+    static var building: String = ""
+    static var roomNum: String = ""
 }

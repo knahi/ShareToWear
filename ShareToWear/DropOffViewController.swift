@@ -17,8 +17,8 @@ class DropOffViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBAction func save(_ sender: UIBarButtonItem) {
-//        SubmitInfo.building = building.text!
-//        SubmitInfo.roomNum = roomNum.text!
+        FavModel.building = building.text!
+        FavModel.roomNum = roomNum.text!
         //let dateString = datePicker.date as! String
         print(timePicker.date)
         print(datePicker.date)

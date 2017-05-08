@@ -96,7 +96,7 @@ class BrowseCollectionViewController: UICollectionViewController{
             } //end of for loop
             
             //print(self.count)
-            //print(FavModel.allDresses)
+            print(FavModel.allDresses)
             //print(FavModel.allDresses.count)
             DispatchQueue.main.async{self.collectionView?.reloadData()}
         })
