@@ -30,6 +30,9 @@ class HeartsCollectionViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    override func viewDidAppear(_ animated: Bool) {
+       self.collectionView?.reloadData()
+    }
 
     /*
     // MARK: - Navigation
@@ -51,16 +54,9 @@ class HeartsCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print("in collectionView function")
-        
-        UserInfo.favorites.append(DressListing(color: "red", size: "M", availability: true, price: 20))
-        UserInfo.favorites.append(DressListing(color: "blue", size: "L", availability: true, price: 18))
-        UserInfo.favorites.append(DressListing(color: "yellow", size: "6", availability: false, price:25))
-        UserInfo.favorites.append(DressListing(color: "green", size: "4", availability: false, price: 12))
-        UserInfo.favorites.append(DressListing(color: "orange", size: "S", availability: true, price: 22))
-        
-     
+        print(FavModel.favorites)
         // #warning Incomplete implementation, return the number of items
-        return UserInfo.favorites.count
+        return FavModel.favorites.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -74,12 +70,15 @@ class HeartsCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDelegate
 
-    /*
+    
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+        FavModel.currentSelection = FavModel.favorites[indexPath.item]
+        let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "DressInfo")
+        self.show(vc as! UIViewController, sender: vc)
         return true
     }
-    */
+ 
 
     /*
     // Uncomment this method to specify if the specified item should be selected

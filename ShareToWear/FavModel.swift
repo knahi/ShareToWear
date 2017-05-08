@@ -19,6 +19,6 @@ class FavModel{
     
     static var currentSelection:String = ""
     
-    static var favorites = [DressListing]()
+    static var favorites = [String]()
     static var allDresses = [String]()
 }

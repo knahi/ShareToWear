@@ -19,7 +19,10 @@ class DropOffViewController: UIViewController {
     @IBAction func save(_ sender: UIBarButtonItem) {
 //        SubmitInfo.building = building.text!
 //        SubmitInfo.roomNum = roomNum.text!
-        
+        //let dateString = datePicker.date as! String
+        print(timePicker.date)
+        print(datePicker.date)
+        //print(dateString)
         if presentingViewController is UITabBarController{
             dismiss(animated: true, completion: nil)
         }else if let owningNavController =

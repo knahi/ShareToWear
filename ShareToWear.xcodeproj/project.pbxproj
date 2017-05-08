@@ -185,6 +185,7 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
+				16663F1C1EC0C7BE00F8D159 /* DressRentalModel.swift */,
 				1617CC311EBABBB900FA5A57 /* BrowseCollectionViewController.swift */,
 				1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */,
 				16348D891EB6341E005D5817 /* GoogleService-Info.plist */,
@@ -382,6 +383,7 @@
 				EFB7F3AD1EB23D0700EA2E02 /* BrowseDressListing.swift in Sources */,
 				EF8E85851EC0094B001F032C /* SharedViewController.swift in Sources */,
 				1681D3F51EB1664C00BEEC4D /* SubmitReviewViewController.swift in Sources */,
+				16663F1D1EC0C7BE00F8D159 /* DressRentalModel.swift in Sources */,
 				1681D3F11EB156E800BEEC4D /* ShareViewController.swift in Sources */,
 				167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */,
 				1681D4221EB1A90E00BEEC4D /* RentReviewViewController.swift in Sources */,
