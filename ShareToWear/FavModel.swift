@@ -27,7 +27,12 @@ class FavModel{
     //list of all dresses displayed in Browse view
     static var allDresses = [String]()
     
-    //Dress Drop-off Info
+    //Dress Rental Info
+    static var method: String = ""
+    static var renterName:String = ""
+    static var renterEmail: String = ""
     static var building: String = ""
     static var roomNum: String = ""
+    static var date: String = ""
+    static var time: String = ""
 }

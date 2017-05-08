@@ -16,18 +16,18 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var DropOff: UISwitch!
 
     @IBAction func submitPressed(_ sender: UIButton) {
-
+        FavModel.renterEmail = email.text!
+        FavModel.renterName = name.text!
         
         //FIREBASE SUBMISSION
         var ref: FIRDatabaseReference
         ref = FIRDatabase.database().reference()
-        var method: String = ""
         if pickUP.isOn{
-            method = "Pick Up"
+            FavModel.method = "Pick Up"
         }else{
-            method = "Drop-off"
+            FavModel.method = "Drop-off"
         }
-        let rentedDress = RentInfo(renterName: name.text!, renterEmail: email.text!, deliveryMethod: method, dressName: FavModel.currentSelection, building: FavModel.building, roomNumber: FavModel.roomNum)
+        let rentedDress = RentInfo(renterName: name.text!, renterEmail: email.text!, deliveryMethod: FavModel.method, dressName: FavModel.currentSelection, building: FavModel.building, roomNumber: FavModel.roomNum)
         let rentedDressRef = ref.child("rentals").child(FavModel.currentSelection)
         rentedDressRef.setValue(rentedDress.toAnyObject())
         
