@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+// I DONT THINK WE NEED THIS FILE ANYMORE
+
+
 class UserInfo{
     
     //static var sharedCollection = [dressShared]()

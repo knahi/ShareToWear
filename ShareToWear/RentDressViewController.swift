@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RentDressViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name: UITextField!
@@ -19,6 +20,14 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
 //        SubmitInfo.email = email.text!
 //        SubmitInfo.pickUp = pickUP.isOn
 //        SubmitInfo.dropOff = DropOff.isOn
+        
+        var ref: FIRDatabaseReference
+        ref = FIRDatabase.database().reference()
+        
+       // let submitItem = SubmitInfo(type: dressType, dressTitle: dressTitle.text!, userName: userName.text!, bannerWebID: bannerWebID.text!, brand: brand.text!, originalPrice: originalPrice.text!, preferredPrice: preferredPrice.text!, size: getSize(), color: getColorArray())
+        
+        //let submitItemRef = ref.child("users").child(bannerWebID.text!+"_"+dressTitle.text!)
+        //submitItemRef.setValue(submitItem.toAnyObject())
         
     }
     //present view controller programmatically not working

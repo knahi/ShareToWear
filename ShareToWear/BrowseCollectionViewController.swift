@@ -35,7 +35,6 @@ class BrowseCollectionViewController: UICollectionViewController{
             let collection = snapshot.value as? NSDictionary
             
             for item in collection!{
-                print(item)
 
                 var itemSelected:Bool = true
                 
@@ -49,7 +48,7 @@ class BrowseCollectionViewController: UICollectionViewController{
                     itemSelected = false
                 }
                 //Filters for availability
-                if FilterModel.availability{
+                if (itemSelected && FilterModel.availability){
                     //print("availability filter on")
                     let available = dress?["availability"] as! String
                     if available == "true"{
@@ -60,7 +59,7 @@ class BrowseCollectionViewController: UICollectionViewController{
                 }
                 //Filters for size
                 let sizeArray = self.getSizeArray()
-                if(!sizeArray.isEmpty){
+                if(itemSelected && !sizeArray.isEmpty){
                     for size in sizeArray{
                         //print(size)
                         let dressSize = dress?["size"] as! String
@@ -77,12 +76,11 @@ class BrowseCollectionViewController: UICollectionViewController{
            
                 //Filters for color
                 let colorArray = self.getColorArray()
-                if(!colorArray.isEmpty){
+                if(itemSelected && !colorArray.isEmpty){
                     for color in colorArray{
                         let dressColor = dress?["color"] as! String
                         if dressColor == color{
                             itemSelected = true
-                            print(dressColor)
                             break
                         }else{
                             itemSelected = false
@@ -91,14 +89,15 @@ class BrowseCollectionViewController: UICollectionViewController{
                 }
                 
                 if itemSelected{
+                    //print(item)
                     self.count += 1
                     FavModel.allDresses.append(item.key as! String)
                 }
             } //end of for loop
             
-            print(self.count)
-            print(FavModel.allDresses)
-            print(FavModel.allDresses.count)
+            //print(self.count)
+            //print(FavModel.allDresses)
+            //print(FavModel.allDresses.count)
             DispatchQueue.main.async{self.collectionView?.reloadData()}
         })
     }
@@ -222,6 +221,7 @@ class BrowseCollectionViewController: UICollectionViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        print("appeared")
         getCount()
     }
 

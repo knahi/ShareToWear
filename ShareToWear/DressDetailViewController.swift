@@ -7,16 +7,17 @@
 //
 
 import UIKit
+import Firebase
 
 class DressDetailViewController: UIViewController {
     
     private let dresses = DressCollection()
-    var flag = false
+    //var flag = false
 
     @IBOutlet weak var colorLabel: UILabel!
     @IBOutlet weak var sizeLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var availableLabel: UILabel!
+    @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var dressImage: UIImageView!
     @IBOutlet weak var rentButton: UIButton!
     @IBOutlet weak var notAvailableLabel: UILabel!
@@ -30,14 +31,21 @@ class DressDetailViewController: UIViewController {
         colorLabel.text = ""
         sizeLabel.text = ""
         priceLabel.text = ""
-        availableLabel.text = ""
+        brandLabel.text = ""
         dressImage.image = nil
         dressName.text = FavModel.currentSelection
+        print(FavModel.favorites.contains(FavModel.currentSelection))
+        if(FavModel.favorites.contains(FavModel.currentSelection)){
+            print("making heart button")
+            heartButton.setImage(UIImage(named: "like.png"), for: .normal)
+        }else{
+            heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
+        }
         
-        heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
-        
+        getDressDetails()
+  
     }
-
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -45,22 +53,52 @@ class DressDetailViewController: UIViewController {
 
     @IBAction func changeImage(_ sender: Any) {
         
-        if (!flag)
+        if (!FavModel.favorites.contains(FavModel.currentSelection))
         {
             //for like
-            flag = true
             heartButton.setImage(UIImage(named: "like.png"), for: .normal)
-            //let dress = DressListing(color: <#T##String#>, size: <#T##String#>, availability: <#T##Bool#>, price: <#T##Int#>)
-            //FavModel.favorites.append(<#T##newElement: DressListing##DressListing#>)
+            FavModel.favorites.append(FavModel.currentSelection)
+            print(FavModel.favorites)
         }
         else
         {
             //for unlike
-            flag = false
             heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
+            let updatedFavs = FavModel.favorites.filter{$0 != FavModel.currentSelection}
+            FavModel.favorites = updatedFavs
+            print(FavModel.favorites)
         }
     }
-    
+    func getDressDetails() -> Void {
+        
+        //Database setup
+        var ref: FIRDatabaseReference!
+        ref = FIRDatabase.database().reference()
+        
+        ref.child("dresses").child(FavModel.currentSelection).observeSingleEvent(of: .value, with: { (snapshot) in
+        
+            let dress = snapshot.value as? NSDictionary
+            print(dress)
+            let color = dress?["color"] as! String
+            self.colorLabel.text = color
+            let size = dress?["size"] as! String
+            self.sizeLabel.text = size
+            let price = dress?["price"] as! Int
+            self.priceLabel.text = "$ \(price)"
+            let brand = dress?["brand"] as! String
+            self.brandLabel.text = brand
+            let available = dress?["availability"] as! String
+            if !(available == "true"){
+                self.notAvailableLabel.text = "Sorry, this dress is not available"
+                self.rentButton.isHidden = true
+            }
+            //DispatchQueue.main.async{self.collectionView?.reloadData()}
+        
+        
+            
+        })
+    }
+
 
     /*
     // MARK: - Navigation
