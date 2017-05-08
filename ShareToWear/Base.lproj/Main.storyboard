@@ -2019,21 +2019,27 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                                                 <subviews>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aB2-4l-TP4">
                                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ULc-sL-Vm4">
                                                                         <rect key="frame" x="0.0" y="51" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CCV-Kv-VTJ">
                                                                         <rect key="frame" x="0.0" y="102" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vLx-hV-hSy">
                                                                         <rect key="frame" x="0.0" y="153" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xJw-ki-g34">
                                                                         <rect key="frame" x="0.0" y="204" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WDa-bU-7M7">
                                                                         <rect key="frame" x="0.0" y="255" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
@@ -2106,18 +2112,23 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                                                 <subviews>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hCg-Y6-dNx">
                                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xy0-eE-eDT">
                                                                         <rect key="frame" x="0.0" y="51" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eax-fO-10w">
                                                                         <rect key="frame" x="0.0" y="102" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qcW-dK-xA2">
                                                                         <rect key="frame" x="0.0" y="153" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C9a-io-ZYY">
                                                                         <rect key="frame" x="0.0" y="204" width="51" height="31"/>
+                                                                        <color key="onTintColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
