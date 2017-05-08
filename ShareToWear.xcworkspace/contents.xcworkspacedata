@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Dress Images/dress63.JPG">
+   </FileRef>
+   <FileRef
       location = "group:ShareToWear.xcodeproj">
    </FileRef>
    <FileRef

@@ -1185,20 +1185,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="20" id="fJw-Kk-pm3">
-                            <size key="itemSize" width="100" height="100"/>
+                            <size key="itemSize" width="67" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="reM-Cf-b1n">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeartsCell" id="reM-Cf-b1n" customClass="HeartsCollectionViewCell" customModule="ShareToWear" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-id-3m9">
+                                            <rect key="frame" x="0.0" y="0.0" width="67" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="67" id="9la-UD-kiH"/>
+                                                <constraint firstAttribute="height" constant="100" id="X1n-WU-9qX"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="nf9-id-3m9" firstAttribute="top" secondItem="reM-Cf-b1n" secondAttribute="top" id="JQZ-PB-K3y"/>
+                                    <constraint firstItem="nf9-id-3m9" firstAttribute="leading" secondItem="reM-Cf-b1n" secondAttribute="leading" id="wPC-xy-vlG"/>
+                                </constraints>
                                 <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="dressCell" destination="nf9-id-3m9" id="47e-05-2Ns"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -1364,7 +1380,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="alg-rU-mof">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="67" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1377,12 +1393,19 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8T-pv-xaV">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n8T-pv-xaV">
+                                            <rect key="frame" x="0.0" y="0.0" width="67" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="67" id="Y5m-6p-Za0"/>
+                                                <constraint firstAttribute="height" constant="100" id="kFS-9r-Mp5"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="n8T-pv-xaV" firstAttribute="leading" secondItem="0SO-oV-FgQ" secondAttribute="leading" id="13T-MC-dFm"/>
+                                    <constraint firstItem="n8T-pv-xaV" firstAttribute="top" secondItem="0SO-oV-FgQ" secondAttribute="top" id="Ohk-2E-Vt4"/>
+                                </constraints>
                                 <size key="customSize" width="150" height="150"/>
                                 <connections>
                                     <outlet property="dressCell" destination="n8T-pv-xaV" id="ZgD-lx-4Ey"/>
