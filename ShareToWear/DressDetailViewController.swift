@@ -87,6 +87,7 @@ class DressDetailViewController: UIViewController {
             let size = dress?["size"] as! String
             self.sizeLabel.text = size
             let price = dress?["price"] as! Int
+            FavModel.price = String(price)
             self.priceLabel.text = "$ \(price)"
             let brand = dress?["brand"] as! String
             self.brandLabel.text = brand
@@ -95,7 +96,6 @@ class DressDetailViewController: UIViewController {
                 self.notAvailableLabel.text = "Sorry, this dress is not available"
                 self.rentButton.isHidden = true
             }
-            //DispatchQueue.main.async{self.collectionView?.reloadData()}
         
         
             

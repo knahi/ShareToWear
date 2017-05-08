@@ -1255,7 +1255,7 @@
         <scene sceneID="UeQ-Is-vaw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ToO-v9-jdH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My STW" image="MySTW.png" id="T7s-Vb-5kR"/>
+                    <tabBarItem key="tabBarItem" title="My STW" image="mySTW.png" selectedImage="mySTW.png" id="T7s-Vb-5kR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5q-IP-APy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1884,7 +1884,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <scene sceneID="pCQ-5h-zMQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GDM-TK-nl6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home.png" selectedImage="home.png" id="kjT-CA-fyi"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home.png" selectedImage="Home.png" id="kjT-CA-fyi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qsI-HC-bSj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -2479,7 +2479,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -2528,7 +2528,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfx-BX-lbD">
                                 <rect key="frame" x="37" y="1323" width="25" height="21"/>
@@ -2549,7 +2549,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2687,7 +2687,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <scene sceneID="uti-4t-7gI">
             <objects>
                 <navigationController title="Hearts" automaticallyAdjustsScrollViewInsets="NO" id="UP9-eB-Zl0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hearts" image="hearts.png" id="6Oa-he-bfo"/>
+                    <tabBarItem key="tabBarItem" title="Hearts" image="Hearts.png" selectedImage="Hearts.png" id="6Oa-he-bfo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tKW-kZ-nw2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -2706,7 +2706,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <scene sceneID="6e3-aE-9QR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g9A-Dk-BX1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Browse" image="dress.png" selectedImage="dress.png" id="Qu3-Wd-1yg"/>
+                    <tabBarItem key="tabBarItem" title="Browse" image="Dress.png" selectedImage="Dress.png" id="Qu3-Wd-1yg"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bAq-GG-lQw">
@@ -2727,8 +2727,8 @@ We aim to foster community, inclusivity, and sustainability.</string>
             <objects>
                 <viewController id="S4N-00-ZZk" customClass="SharedViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sAs-8U-qq1"/>
-                        <viewControllerLayoutGuide type="bottom" id="z6o-1I-Pg3"/>
+                        <viewControllerLayoutGuide type="top" id="1Zc-Nw-yvJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ofb-Se-BbT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="P6s-Ei-N7D">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="1500"/>
@@ -2766,12 +2766,12 @@ We aim to foster community, inclusivity, and sustainability.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Dress.png" width="25" height="25"/>
+        <image name="Hearts.png" width="25" height="25"/>
+        <image name="Home.png" width="25" height="25"/>
         <image name="Info.png" width="25" height="25"/>
-        <image name="MySTW.png" width="25" height="25"/>
         <image name="ShareToWear - 125.jpg" width="4898" height="3265"/>
         <image name="ShareToWear - 151.jpg" width="4898" height="3265"/>
-        <image name="dress.png" width="25" height="25"/>
-        <image name="hearts.png" width="25" height="25"/>
-        <image name="home.png" width="25" height="25"/>
+        <image name="mySTW.png" width="25" height="25"/>
     </resources>
 </document>
