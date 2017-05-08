@@ -32,7 +32,8 @@ class RentReviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Use this to get dress image
-        let dressName = FavModel.currentSelection
+        let dressName = String(FavModel.currentSelection) + ".JPG"
+        dressImage.image = UIImage(named: dressName)
         
         //filling in labels
         nameLabel.text = FavModel.renterName

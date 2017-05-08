@@ -28,7 +28,6 @@ class SharedViewController: UIViewController {
     }
     @IBAction func submitted(_ sender: UIButton) {
         let id = bannerWebID.text!
-        
         getShared(ID: id)
     }
     

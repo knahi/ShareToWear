@@ -44,7 +44,6 @@
 		162A0D511EC10AA9009BE33E /* dress3.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CF51EC10AA9009BE33E /* dress3.JPG */; };
 		162A0D521EC10AA9009BE33E /* dress39.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CF61EC10AA9009BE33E /* dress39.JPG */; };
 		162A0D531EC10AA9009BE33E /* dress57.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CF71EC10AA9009BE33E /* dress57.JPG */; };
-		162A0D541EC10AA9009BE33E /* dress63.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CF81EC10AA9009BE33E /* dress63.JPG */; };
 		162A0D551EC10AA9009BE33E /* dress74.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CF91EC10AA9009BE33E /* dress74.JPG */; };
 		162A0D561EC10AA9009BE33E /* dress82.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CFA1EC10AA9009BE33E /* dress82.JPG */; };
 		162A0D571EC10AA9009BE33E /* dress91.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CFB1EC10AA9009BE33E /* dress91.JPG */; };
@@ -103,11 +102,6 @@
 		162A0D8C1EC10AA9009BE33E /* dress79.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D301EC10AA9009BE33E /* dress79.JPG */; };
 		162A0D8D1EC10AA9009BE33E /* dress1.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D311EC10AA9009BE33E /* dress1.JPG */; };
 		162A0D8E1EC10AA9009BE33E /* dress51.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D321EC10AA9009BE33E /* dress51.JPG */; };
-		162A0D941EC10B68009BE33E /* Dress.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D8F1EC10B68009BE33E /* Dress.png */; };
-		162A0D951EC10B68009BE33E /* Hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D901EC10B68009BE33E /* Hearts.png */; };
-		162A0D961EC10B68009BE33E /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D911EC10B68009BE33E /* Home.png */; };
-		162A0D971EC10B68009BE33E /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D921EC10B68009BE33E /* Info.png */; };
-		162A0D981EC10B68009BE33E /* mySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D931EC10B68009BE33E /* mySTW.png */; };
 		162A0D9B1EC10EC6009BE33E /* Like.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D991EC10EC6009BE33E /* Like.png */; };
 		162A0D9C1EC10EC6009BE33E /* Unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D9A1EC10EC6009BE33E /* Unlike.png */; };
 		162A0D9E1EC118A8009BE33E /* RentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A0D9D1EC118A8009BE33E /* RentedViewController.swift */; };
@@ -139,7 +133,15 @@
 		EF8E85811EBFED0F001F032C /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E857C1EBFED0F001F032C /* home.png */; };
 		EF8E85821EBFED0F001F032C /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E857D1EBFED0F001F032C /* Info.png */; };
 		EF8E85831EBFED0F001F032C /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E857E1EBFED0F001F032C /* MySTW.png */; };
-		EF8E886A1EC0FDD0001F032C /* HeartsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E88691EC0FDD0001F032C /* HeartsCollectionViewCell.swift */; };
+		EF8E89321EC11B82001F032C /* dress63.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EF8E89311EC11B82001F032C /* dress63.JPG */; };
+		EF8E89381EC11B96001F032C /* dress.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E89331EC11B96001F032C /* dress.png */; };
+		EF8E89391EC11B96001F032C /* hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E89341EC11B96001F032C /* hearts.png */; };
+		EF8E893A1EC11B96001F032C /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E89351EC11B96001F032C /* home.png */; };
+		EF8E893B1EC11B96001F032C /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E89361EC11B96001F032C /* Info.png */; };
+		EF8E893C1EC11B96001F032C /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8E89371EC11B96001F032C /* MySTW.png */; };
+		EF8E893F1EC11BEE001F032C /* DressesSharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E893D1EC11BEE001F032C /* DressesSharedViewController.swift */; };
+		EF8E89401EC11BEE001F032C /* DressRentalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */; };
+		EF8E89421EC11D22001F032C /* HeartsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E89411EC11D22001F032C /* HeartsCollectionViewCell.swift */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
 		EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB881EA3F52D002F3FEC /* ViewController.swift */; };
 		EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */; };
@@ -151,11 +153,6 @@
 		EFCEFFF61EB571CC007B0C22 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFEF1EB571CC007B0C22 /* 58.png */; };
 		EFCEFFF71EB571CC007B0C22 /* 60.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFF01EB571CC007B0C22 /* 60.png */; };
 		EFCEFFF81EB571CC007B0C22 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = EFCEFFF11EB571CC007B0C22 /* 80.png */; };
-		EFE9A1781EB91B720071BC94 /* IMG_2339.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1711EB91B720071BC94 /* IMG_2339.jpg */; };
-		EFE9A1791EB91B720071BC94 /* IMG_2379.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1721EB91B720071BC94 /* IMG_2379.jpg */; };
-		EFE9A17A1EB91B720071BC94 /* IMG_2395.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1731EB91B720071BC94 /* IMG_2395.jpg */; };
-		EFE9A17B1EB91B720071BC94 /* IMG_2422.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1741EB91B720071BC94 /* IMG_2422.jpg */; };
-		EFE9A17C1EB91B720071BC94 /* IMG_2535.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1751EB91B720071BC94 /* IMG_2535.jpg */; };
 		EFE9A17D1EB91B720071BC94 /* ShareToWear - 125.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1761EB91B720071BC94 /* ShareToWear - 125.jpg */; };
 		EFE9A17E1EB91B720071BC94 /* ShareToWear - 151.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFE9A1771EB91B720071BC94 /* ShareToWear - 151.jpg */; };
 /* End PBXBuildFile section */
@@ -198,7 +195,6 @@
 		162A0CF51EC10AA9009BE33E /* dress3.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress3.JPG; path = "../../Dress Images old/dress3.JPG"; sourceTree = "<group>"; };
 		162A0CF61EC10AA9009BE33E /* dress39.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress39.JPG; path = "../../Dress Images old/dress39.JPG"; sourceTree = "<group>"; };
 		162A0CF71EC10AA9009BE33E /* dress57.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress57.JPG; path = "../../Dress Images old/dress57.JPG"; sourceTree = "<group>"; };
-		162A0CF81EC10AA9009BE33E /* dress63.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress63.JPG; path = "../../Dress Images old/dress63.JPG"; sourceTree = "<group>"; };
 		162A0CF91EC10AA9009BE33E /* dress74.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress74.JPG; path = "../../Dress Images old/dress74.JPG"; sourceTree = "<group>"; };
 		162A0CFA1EC10AA9009BE33E /* dress82.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress82.JPG; path = "../../Dress Images old/dress82.JPG"; sourceTree = "<group>"; };
 		162A0CFB1EC10AA9009BE33E /* dress91.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress91.JPG; path = "../../Dress Images old/dress91.JPG"; sourceTree = "<group>"; };
@@ -257,11 +253,6 @@
 		162A0D301EC10AA9009BE33E /* dress79.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress79.JPG; path = "../../Dress Images old/dress79.JPG"; sourceTree = "<group>"; };
 		162A0D311EC10AA9009BE33E /* dress1.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress1.JPG; path = "../../Dress Images old/dress1.JPG"; sourceTree = "<group>"; };
 		162A0D321EC10AA9009BE33E /* dress51.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress51.JPG; path = "../../Dress Images old/dress51.JPG"; sourceTree = "<group>"; };
-		162A0D8F1EC10B68009BE33E /* Dress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dress.png; path = ../../Images/Dress.png; sourceTree = "<group>"; };
-		162A0D901EC10B68009BE33E /* Hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hearts.png; path = ../../Images/Hearts.png; sourceTree = "<group>"; };
-		162A0D911EC10B68009BE33E /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Home.png; path = ../../Images/Home.png; sourceTree = "<group>"; };
-		162A0D921EC10B68009BE33E /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Images/Info.png; sourceTree = "<group>"; };
-		162A0D931EC10B68009BE33E /* mySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mySTW.png; path = ../../Images/mySTW.png; sourceTree = "<group>"; };
 		162A0D991EC10EC6009BE33E /* Like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Like.png; path = ../../Images/Like.png; sourceTree = "<group>"; };
 		162A0D9A1EC10EC6009BE33E /* Unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Unlike.png; path = ../../Images/Unlike.png; sourceTree = "<group>"; };
 		162A0D9D1EC118A8009BE33E /* RentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentedViewController.swift; sourceTree = "<group>"; };
@@ -296,7 +287,15 @@
 		EF8E857D1EBFED0F001F032C /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Icons/Info.png; sourceTree = "<group>"; };
 		EF8E857E1EBFED0F001F032C /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../Icons/MySTW.png; sourceTree = "<group>"; };
 		EF8E85841EC0094A001F032C /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
-		EF8E88691EC0FDD0001F032C /* HeartsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF8E89311EC11B82001F032C /* dress63.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress63.JPG; path = "../../Dress Images/dress63.JPG"; sourceTree = "<group>"; };
+		EF8E89331EC11B96001F032C /* dress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dress.png; path = ../../Icons/dress.png; sourceTree = "<group>"; };
+		EF8E89341EC11B96001F032C /* hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hearts.png; path = ../../Icons/hearts.png; sourceTree = "<group>"; };
+		EF8E89351EC11B96001F032C /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../Icons/home.png; sourceTree = "<group>"; };
+		EF8E89361EC11B96001F032C /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Icons/Info.png; sourceTree = "<group>"; };
+		EF8E89371EC11B96001F032C /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../Icons/MySTW.png; sourceTree = "<group>"; };
+		EF8E893D1EC11BEE001F032C /* DressesSharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesSharedViewController.swift; sourceTree = "<group>"; };
+		EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressRentalModel.swift; sourceTree = "<group>"; };
+		EF8E89411EC11D22001F032C /* HeartsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9AFB881EA3F52D002F3FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -310,11 +309,6 @@
 		EFCEFFEF1EB571CC007B0C22 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
 		EFCEFFF01EB571CC007B0C22 /* 60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 60.png; sourceTree = "<group>"; };
 		EFCEFFF11EB571CC007B0C22 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
-		EFE9A1711EB91B720071BC94 /* IMG_2339.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2339.jpg; path = ../Images/IMG_2339.jpg; sourceTree = "<group>"; };
-		EFE9A1721EB91B720071BC94 /* IMG_2379.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2379.jpg; path = ../Images/IMG_2379.jpg; sourceTree = "<group>"; };
-		EFE9A1731EB91B720071BC94 /* IMG_2395.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2395.jpg; path = ../Images/IMG_2395.jpg; sourceTree = "<group>"; };
-		EFE9A1741EB91B720071BC94 /* IMG_2422.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2422.jpg; path = ../Images/IMG_2422.jpg; sourceTree = "<group>"; };
-		EFE9A1751EB91B720071BC94 /* IMG_2535.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2535.jpg; path = ../Images/IMG_2535.jpg; sourceTree = "<group>"; };
 		EFE9A1761EB91B720071BC94 /* ShareToWear - 125.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ShareToWear - 125.jpg"; path = "../Images/ShareToWear - 125.jpg"; sourceTree = "<group>"; };
 		EFE9A1771EB91B720071BC94 /* ShareToWear - 151.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ShareToWear - 151.jpg"; path = "../Images/ShareToWear - 151.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -334,11 +328,6 @@
 		1681D3F61EB17BA400BEEC4D /* Dresses */ = {
 			isa = PBXGroup;
 			children = (
-				EFE9A1711EB91B720071BC94 /* IMG_2339.jpg */,
-				EFE9A1721EB91B720071BC94 /* IMG_2379.jpg */,
-				EFE9A1731EB91B720071BC94 /* IMG_2395.jpg */,
-				EFE9A1741EB91B720071BC94 /* IMG_2422.jpg */,
-				EFE9A1751EB91B720071BC94 /* IMG_2535.jpg */,
 				EFE9A1761EB91B720071BC94 /* ShareToWear - 125.jpg */,
 				EFE9A1771EB91B720071BC94 /* ShareToWear - 151.jpg */,
 			);
@@ -363,7 +352,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		EF8E85861EC0D712001F032C /* DressImages */ = {
+		EF8E88781EC112AF001F032C /* DressImages */ = {
 			isa = PBXGroup;
 			children = (
 				162A0CD71EC10AA9009BE33E /* dress9.JPG */,
@@ -399,7 +388,7 @@
 				162A0CF51EC10AA9009BE33E /* dress3.JPG */,
 				162A0CF61EC10AA9009BE33E /* dress39.JPG */,
 				162A0CF71EC10AA9009BE33E /* dress57.JPG */,
-				162A0CF81EC10AA9009BE33E /* dress63.JPG */,
+				EF8E89311EC11B82001F032C /* dress63.JPG */,
 				162A0CF91EC10AA9009BE33E /* dress74.JPG */,
 				162A0CFA1EC10AA9009BE33E /* dress82.JPG */,
 				162A0CFB1EC10AA9009BE33E /* dress91.JPG */,
@@ -485,13 +474,16 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
-				162A0D9D1EC118A8009BE33E /* RentedViewController.swift */,
+				EF8E893D1EC11BEE001F032C /* DressesSharedViewController.swift */,
+				EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */,
 				1617CC311EBABBB900FA5A57 /* BrowseCollectionViewController.swift */,
 				1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */,
+				EF8E89411EC11D22001F032C /* HeartsCollectionViewCell.swift */,
 				16348D891EB6341E005D5817 /* GoogleService-Info.plist */,
 				1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */,
 				1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */,
 				1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */,
+				EF8E88781EC112AF001F032C /* DressImages */,
 				1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */,
 				EF8E85781EBFEC79001F032C /* DressReviewModel.swift */,
 				EFB7F3AC1EB23D0700EA2E02 /* BrowseDressListing.swift */,
@@ -501,10 +493,8 @@
 				EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */,
 				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
 				EF9AFB881EA3F52D002F3FEC /* ViewController.swift */,
-				EF8E85861EC0D712001F032C /* DressImages */,
 				EF8E85841EC0094A001F032C /* SharedViewController.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
-				EF8E88691EC0FDD0001F032C /* HeartsCollectionViewCell.swift */,
 				EF8E85761EBFC885001F032C /* FavModel.swift */,
 				EF8E85661EBD064F001F032C /* DressCellCollectionViewCell.swift */,
 				1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */,
@@ -531,13 +521,13 @@
 		EF9AFBA81EA41601002F3FEC /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				EF8E89331EC11B96001F032C /* dress.png */,
+				EF8E89341EC11B96001F032C /* hearts.png */,
+				EF8E89351EC11B96001F032C /* home.png */,
+				EF8E89361EC11B96001F032C /* Info.png */,
+				EF8E89371EC11B96001F032C /* MySTW.png */,
 				162A0D991EC10EC6009BE33E /* Like.png */,
 				162A0D9A1EC10EC6009BE33E /* Unlike.png */,
-				162A0D8F1EC10B68009BE33E /* Dress.png */,
-				162A0D901EC10B68009BE33E /* Hearts.png */,
-				162A0D911EC10B68009BE33E /* Home.png */,
-				162A0D921EC10B68009BE33E /* Info.png */,
-				162A0D931EC10B68009BE33E /* mySTW.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -609,7 +599,6 @@
 				162A0D4B1EC10AA9009BE33E /* dress67.JPG in Resources */,
 				162A0D3C1EC10AA9009BE33E /* dress50.JPG in Resources */,
 				162A0D6F1EC10AA9009BE33E /* dress85.JPG in Resources */,
-				EFE9A17A1EB91B720071BC94 /* IMG_2395.jpg in Resources */,
 				162A0D7C1EC10AA9009BE33E /* dress64.JPG in Resources */,
 				162A0D5D1EC10AA9009BE33E /* dress27.JPG in Resources */,
 				162A0D5F1EC10AA9009BE33E /* dress60.JPG in Resources */,
@@ -618,9 +607,8 @@
 				162A0D351EC10AA9009BE33E /* dress75.JPG in Resources */,
 				162A0D6C1EC10AA9009BE33E /* dress49.JPG in Resources */,
 				162A0D851EC10AA9009BE33E /* dress88.JPG in Resources */,
-				162A0D981EC10B68009BE33E /* mySTW.png in Resources */,
 				162A0D411EC10AA9009BE33E /* dress48.JPG in Resources */,
-				EFE9A17B1EB91B720071BC94 /* IMG_2422.jpg in Resources */,
+				EF8E89321EC11B82001F032C /* dress63.JPG in Resources */,
 				162A0D731EC10AA9009BE33E /* dress6.JPG in Resources */,
 				EFCEFFF71EB571CC007B0C22 /* 60.png in Resources */,
 				162A0D611EC10AA9009BE33E /* dress17.JPG in Resources */,
@@ -652,12 +640,10 @@
 				EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */,
 				EF8E85821EBFED0F001F032C /* Info.png in Resources */,
 				162A0D6B1EC10AA9009BE33E /* dress43.JPG in Resources */,
-				162A0D941EC10B68009BE33E /* Dress.png in Resources */,
 				162A0D721EC10AA9009BE33E /* dress28.JPG in Resources */,
 				EFE9A17D1EB91B720071BC94 /* ShareToWear - 125.jpg in Resources */,
 				162A0D401EC10AA9009BE33E /* dress87.JPG in Resources */,
 				162A0D391EC10AA9009BE33E /* dress25.JPG in Resources */,
-				162A0D961EC10B68009BE33E /* Home.png in Resources */,
 				EF8E85801EBFED0F001F032C /* hearts.png in Resources */,
 				162A0D8B1EC10AA9009BE33E /* dress29.JPG in Resources */,
 				162A0D511EC10AA9009BE33E /* dress3.JPG in Resources */,
@@ -667,16 +653,15 @@
 				162A0D691EC10AA9009BE33E /* dress2.JPG in Resources */,
 				162A0D5C1EC10AA9009BE33E /* dress23.JPG in Resources */,
 				162A0D8E1EC10AA9009BE33E /* dress51.JPG in Resources */,
-				EFE9A17C1EB91B720071BC94 /* IMG_2535.jpg in Resources */,
 				EF8E85811EBFED0F001F032C /* home.png in Resources */,
-				162A0D971EC10B68009BE33E /* Info.png in Resources */,
-				EFE9A1791EB91B720071BC94 /* IMG_2379.jpg in Resources */,
 				162A0D331EC10AA9009BE33E /* dress9.JPG in Resources */,
 				162A0D7D1EC10AA9009BE33E /* dress16.JPG in Resources */,
 				162A0D471EC10AA9009BE33E /* dress86.JPG in Resources */,
 				162A0D751EC10AA9009BE33E /* dress71.JPG in Resources */,
 				162A0D701EC10AA9009BE33E /* dress92.JPG in Resources */,
 				162A0D7B1EC10AA9009BE33E /* dress5.JPG in Resources */,
+				EF8E89381EC11B96001F032C /* dress.png in Resources */,
+				EF8E893C1EC11B96001F032C /* MySTW.png in Resources */,
 				162A0D8A1EC10AA9009BE33E /* dress12.JPG in Resources */,
 				162A0D791EC10AA9009BE33E /* dress35.JPG in Resources */,
 				162A0D3F1EC10AA9009BE33E /* dress58.JPG in Resources */,
@@ -685,11 +670,12 @@
 				162A0D8D1EC10AA9009BE33E /* dress1.JPG in Resources */,
 				EFE9A17E1EB91B720071BC94 /* ShareToWear - 151.jpg in Resources */,
 				162A0D5A1EC10AA9009BE33E /* dress26.JPG in Resources */,
+				EF8E893A1EC11B96001F032C /* home.png in Resources */,
 				162A0D381EC10AA9009BE33E /* dress14.JPG in Resources */,
 				162A0D7A1EC10AA9009BE33E /* dress80.JPG in Resources */,
-				EFE9A1781EB91B720071BC94 /* IMG_2339.jpg in Resources */,
 				162A0D3D1EC10AA9009BE33E /* dress10.JPG in Resources */,
 				162A0D841EC10AA9009BE33E /* dress32.JPG in Resources */,
+				EF8E89391EC11B96001F032C /* hearts.png in Resources */,
 				EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */,
 				162A0D661EC10AA9009BE33E /* dress73.JPG in Resources */,
 				162A0D681EC10AA9009BE33E /* dress68.JPG in Resources */,
@@ -706,7 +692,6 @@
 				162A0D6E1EC10AA9009BE33E /* dress62.JPG in Resources */,
 				162A0D451EC10AA9009BE33E /* dress8.JPG in Resources */,
 				EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */,
-				162A0D951EC10B68009BE33E /* Hearts.png in Resources */,
 				162A0D651EC10AA9009BE33E /* dress69.JPG in Resources */,
 				162A0D491EC10AA9009BE33E /* dress54.JPG in Resources */,
 				162A0D831EC10AA9009BE33E /* dress53.JPG in Resources */,
@@ -714,10 +699,10 @@
 				162A0D6D1EC10AA9009BE33E /* dress44.JPG in Resources */,
 				162A0D821EC10AA9009BE33E /* dress18.JPG in Resources */,
 				162A0D421EC10AA9009BE33E /* dress46.JPG in Resources */,
+				EF8E893B1EC11B96001F032C /* Info.png in Resources */,
 				162A0D9B1EC10EC6009BE33E /* Like.png in Resources */,
 				162A0D621EC10AA9009BE33E /* dress83.JPG in Resources */,
 				162A0D7F1EC10AA9009BE33E /* dress33.JPG in Resources */,
-				162A0D541EC10AA9009BE33E /* dress63.JPG in Resources */,
 				162A0D371EC10AA9009BE33E /* dress72.JPG in Resources */,
 				162A0D631EC10AA9009BE33E /* dress55.JPG in Resources */,
 				162A0D781EC10AA9009BE33E /* dress70.JPG in Resources */,
@@ -790,10 +775,12 @@
 				16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */,
 				1681D4041EB17F9200BEEC4D /* UserInfoModel.swift in Sources */,
 				162A0CD41EC0EAC5009BE33E /* SharedViewController.swift in Sources */,
+				EF8E89401EC11BEE001F032C /* DressRentalModel.swift in Sources */,
 				16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */,
 				EF8E85671EBD064F001F032C /* DressCellCollectionViewCell.swift in Sources */,
 				1681D41C1EB19B4900BEEC4D /* DressButtonModel.swift in Sources */,
 				16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */,
+				EF8E89421EC11D22001F032C /* HeartsCollectionViewCell.swift in Sources */,
 				1681D4201EB1A32000BEEC4D /* DropOffViewController.swift in Sources */,
 				EF9AFBA51EA40D56002F3FEC /* MySTWViewController.swift in Sources */,
 				EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */,
@@ -806,13 +793,13 @@
 				162A0D9E1EC118A8009BE33E /* RentedViewController.swift in Sources */,
 				1617CC061EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift in Sources */,
 				16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */,
+				EF8E893F1EC11BEE001F032C /* DressesSharedViewController.swift in Sources */,
 				1681D3F31EB15F3D00BEEC4D /* SubmitInfoModel.swift in Sources */,
 				EF8E85771EBFC885001F032C /* FavModel.swift in Sources */,
 				1681D4101EB1983700BEEC4D /* DressDetailViewController.swift in Sources */,
 				1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */,
 				1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */,
 				16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */,
-				EF8E886A1EC0FDD0001F032C /* HeartsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
