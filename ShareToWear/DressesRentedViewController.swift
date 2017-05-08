@@ -10,8 +10,7 @@ import UIKit
 
 class DressesRentedViewController: UIViewController {
 
-    @IBOutlet weak var dressImage: UIImageView!
-    @IBOutlet weak var infoLabel: UILabel!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

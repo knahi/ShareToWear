@@ -104,6 +104,7 @@
 		162A0D8E1EC10AA9009BE33E /* dress51.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D321EC10AA9009BE33E /* dress51.JPG */; };
 		162A0D9B1EC10EC6009BE33E /* Like.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D991EC10EC6009BE33E /* Like.png */; };
 		162A0D9C1EC10EC6009BE33E /* Unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0D9A1EC10EC6009BE33E /* Unlike.png */; };
+		162A0D9E1EC118A8009BE33E /* RentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A0D9D1EC118A8009BE33E /* RentedViewController.swift */; };
 		16348D8A1EB6341E005D5817 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16348D891EB6341E005D5817 /* GoogleService-Info.plist */; };
 		167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */; };
 		1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */; };
@@ -254,6 +255,7 @@
 		162A0D321EC10AA9009BE33E /* dress51.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress51.JPG; path = "../../Dress Images old/dress51.JPG"; sourceTree = "<group>"; };
 		162A0D991EC10EC6009BE33E /* Like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Like.png; path = ../../Images/Like.png; sourceTree = "<group>"; };
 		162A0D9A1EC10EC6009BE33E /* Unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Unlike.png; path = ../../Images/Unlike.png; sourceTree = "<group>"; };
+		162A0D9D1EC118A8009BE33E /* RentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentedViewController.swift; sourceTree = "<group>"; };
 		16348D891EB6341E005D5817 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesRentedViewController.swift; sourceTree = "<group>"; };
 		1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ShareToWear/HomeViewController.swift; sourceTree = "<group>"; };
@@ -788,6 +790,7 @@
 				EF9AFBA71EA414F3002F3FEC /* AboutViewController.swift in Sources */,
 				EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */,
 				1681D40E1EB1928E00BEEC4D /* DressCollection.swift in Sources */,
+				162A0D9E1EC118A8009BE33E /* RentedViewController.swift in Sources */,
 				1617CC061EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift in Sources */,
 				16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */,
 				EF8E893F1EC11BEE001F032C /* DressesSharedViewController.swift in Sources */,
