@@ -239,28 +239,12 @@ class BrowseCollectionViewController: UICollectionViewController{
         // Configure the cell
         cell.backgroundColor = UIColor.black
         
-        //print(indexPath) //.row
+        let dressName = "dress" + String(indexPath.row + 1) + ".JPG"
+        print(dressName)
+        //var dressImages: [UIImage] = []
         
-        // Get a reference to the storage service using the default Firebase App
-        let storage = FIRStorage.storage()
-        
-        // Create a storage reference from our storage service
-        let storageRef = storage.reference()
-        
-        // Create a reference to the file you want to download
-        let dressName = "DressImages/dress" + String(indexPath.row) + ".JPG"
-        let dressRef = storageRef.child(dressName)
-        
-        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
-        dressRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
-            if error != nil {
-                // Uh-oh, an error occurred!
-                print(error)
-            } else {
-                // Data for "DressImages/dress#.jpg" is returned
-                let image = UIImage(data: data!)
-                cell.configureCell(image!)
-            }
+        if (UIImage(named: dressName) != nil) {
+            cell.configureCell(UIImage(named: dressName)!)
         }
         
         return cell

@@ -24,7 +24,8 @@ class DressCellCollectionViewCell: UICollectionViewCell {
 //        
 //        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
 //        UIGraphicsEndImageContext()
-        print(self.dressCell.bounds)
+        
+//      print(self.dressCell.bounds)
         
         self.dressCell.image = dressImage
         //self.dressCell.contentMode = .scaleAspectFit
