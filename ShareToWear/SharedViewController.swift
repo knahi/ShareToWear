@@ -95,6 +95,13 @@ class SharedViewController: UIViewController {
         })
     }
     
+    // When the keyboard is showing, tapping outside of the keyboard makes it go away
+    @IBAction func tapToDismissKeyboard(_ sender: UITapGestureRecognizer) {
+        bannerWebID.resignFirstResponder() //hide the keyboard
+        
+    }
+
+    
 
     /*
     // MARK: - Navigation

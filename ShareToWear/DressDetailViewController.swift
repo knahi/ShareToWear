@@ -20,9 +20,9 @@ class DressDetailViewController: UIViewController {
     @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var dressImage: UIImageView!
     @IBOutlet weak var rentButton: UIButton!
-    @IBOutlet weak var notAvailableLabel: UILabel!
     @IBOutlet weak var dressName: UILabel!
     @IBOutlet weak var heartButton: UIButton!
+    @IBOutlet weak var notAvailable: UILabel!
 
     
     override func viewDidLoad() {
@@ -93,7 +93,7 @@ class DressDetailViewController: UIViewController {
             self.brandLabel.text = brand
             let available = dress?["availability"] as! String
             if !(available == "true"){
-                self.notAvailableLabel.text = "Sorry, this dress is not available"
+                self.notAvailable.text = "Sorry, this dress is not available"
                 self.rentButton.isHidden = true
             }
         

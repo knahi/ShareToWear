@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="euC-ih-oYo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="euC-ih-oYo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -739,6 +739,12 @@
                                     <action selector="changeImage:" destination="9Nb-wS-UdI" eventType="touchUpInside" id="0RF-ze-B9w"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoP-lE-WfA">
+                                <rect key="frame" x="36" y="612" width="303" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.34509803919999998" green="0.72941176470000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -747,8 +753,11 @@
                             <constraint firstItem="iQL-SC-mry" firstAttribute="top" secondItem="Dif-FJ-MVj" secondAttribute="bottom" constant="20" id="GPc-6z-17P"/>
                             <constraint firstItem="sne-3G-uOE" firstAttribute="leading" secondItem="IdF-yL-Ihf" secondAttribute="leadingMargin" constant="120" id="Iia-z8-NAl"/>
                             <constraint firstItem="iQL-SC-mry" firstAttribute="leading" secondItem="IdF-yL-Ihf" secondAttribute="leadingMargin" constant="120" id="JWR-9Q-BYx"/>
+                            <constraint firstItem="YlC-y7-YOd" firstAttribute="top" secondItem="NoP-lE-WfA" secondAttribute="bottom" constant="10" id="Wa6-NC-NCr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Qag-KJ-CLs" secondAttribute="trailing" constant="50" id="YdY-8R-pO8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NoP-lE-WfA" secondAttribute="trailing" constant="20" id="ZRB-sa-1Bt"/>
                             <constraint firstItem="sne-3G-uOE" firstAttribute="top" secondItem="54w-AR-P9f" secondAttribute="bottom" constant="15" id="dEn-DS-M16"/>
+                            <constraint firstItem="NoP-lE-WfA" firstAttribute="top" secondItem="54w-AR-P9f" secondAttribute="bottom" constant="10" id="e8P-W7-pCL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h6W-wo-4qI" secondAttribute="trailing" constant="10" id="fbH-wI-jrN"/>
                             <constraint firstItem="Qag-KJ-CLs" firstAttribute="top" secondItem="h6W-wo-4qI" secondAttribute="bottom" constant="10" id="gc1-0C-6GM"/>
                             <constraint firstItem="54w-AR-P9f" firstAttribute="top" secondItem="Qag-KJ-CLs" secondAttribute="bottom" constant="15" id="gga-1f-LpB"/>
@@ -759,6 +768,7 @@
                             <constraint firstItem="h6W-wo-4qI" firstAttribute="leading" secondItem="iQL-SC-mry" secondAttribute="trailing" constant="72.5" id="shh-lQ-xwh"/>
                             <constraint firstItem="aMd-bQ-DXe" firstAttribute="top" secondItem="Qag-KJ-CLs" secondAttribute="bottom" constant="15" id="syo-vK-u4P"/>
                             <constraint firstItem="Qag-KJ-CLs" firstAttribute="top" secondItem="iQL-SC-mry" secondAttribute="bottom" constant="10" id="uBm-Hs-Fau"/>
+                            <constraint firstItem="NoP-lE-WfA" firstAttribute="leading" secondItem="IdF-yL-Ihf" secondAttribute="leadingMargin" constant="20" id="vEh-Hk-Yqq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PpH-t7-gdt"/>
@@ -768,6 +778,7 @@
                         <outlet property="dressImage" destination="Qag-KJ-CLs" id="gxI-uo-qlx"/>
                         <outlet property="dressName" destination="iQL-SC-mry" id="HPG-IO-q0e"/>
                         <outlet property="heartButton" destination="h6W-wo-4qI" id="JA3-oO-tOQ"/>
+                        <outlet property="notAvailable" destination="NoP-lE-WfA" id="sAL-JP-IqY"/>
                         <outlet property="priceLabel" destination="caF-HB-El3" id="jpR-5U-YOL"/>
                         <outlet property="rentButton" destination="sne-3G-uOE" id="FMa-gX-4RS"/>
                         <outlet property="sizeLabel" destination="OAY-EL-bIx" id="XBb-fV-xa6"/>
@@ -1277,7 +1288,7 @@
         <scene sceneID="UeQ-Is-vaw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ToO-v9-jdH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My STW" image="mySTW.png" selectedImage="mySTW.png" id="T7s-Vb-5kR"/>
+                    <tabBarItem key="tabBarItem" title="My STW" image="MySTW.png" selectedImage="MySTW.png" id="T7s-Vb-5kR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r5q-IP-APy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1906,7 +1917,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <scene sceneID="pCQ-5h-zMQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GDM-TK-nl6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="Home.png" selectedImage="Home.png" id="kjT-CA-fyi"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" selectedImage="home.png" id="kjT-CA-fyi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qsI-HC-bSj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -2720,7 +2731,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <scene sceneID="uti-4t-7gI">
             <objects>
                 <navigationController title="Hearts" automaticallyAdjustsScrollViewInsets="NO" id="UP9-eB-Zl0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hearts" image="Hearts.png" selectedImage="Hearts.png" id="6Oa-he-bfo"/>
+                    <tabBarItem key="tabBarItem" title="Hearts" image="hearts.png" selectedImage="hearts.png" id="6Oa-he-bfo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tKW-kZ-nw2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -2739,7 +2750,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <scene sceneID="6e3-aE-9QR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g9A-Dk-BX1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Browse" image="Dress.png" selectedImage="Dress.png" id="Qu3-Wd-1yg"/>
+                    <tabBarItem key="tabBarItem" title="Browse" image="dress.png" selectedImage="dress.png" id="Qu3-Wd-1yg"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bAq-GG-lQw">
@@ -2787,6 +2798,10 @@ We aim to foster community, inclusivity, and sustainability.</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="uje-LL-REy" appends="YES" id="vyD-dS-S40"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="bannerWebID" destination="rnt-Qw-ZoK" id="mkS-Wo-ABF"/>
@@ -2794,6 +2809,11 @@ We aim to foster community, inclusivity, and sustainability.</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0f-Xt-8ZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uje-LL-REy">
+                    <connections>
+                        <action selector="tapToDismissKeyboard:" destination="S4N-00-ZZk" id="Tdo-Aw-woR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="921.60000000000002" y="3377.8110944527739"/>
         </scene>
@@ -2801,6 +2821,10 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <scene sceneID="wpC-0X-fE3">
             <objects>
                 <viewController id="wh0-qW-hln" customClass="RentedViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="82e-CG-oTW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lm4-u5-B38"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5vH-Lp-bTK">
                         <rect key="frame" x="0.0" y="0.0" width="344" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2825,6 +2849,7 @@ We aim to foster community, inclusivity, and sustainability.</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <connections>
                         <outlet property="email" destination="df0-pn-EIc" id="wz1-VZ-02P"/>
@@ -2833,16 +2858,16 @@ We aim to foster community, inclusivity, and sustainability.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeX-XT-kaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.8" y="2767.9160419790105"/>
+            <point key="canvasLocation" x="1800" y="2915"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Dress.png" width="25" height="25"/>
-        <image name="Hearts.png" width="25" height="25"/>
-        <image name="Home.png" width="25" height="25"/>
         <image name="Info.png" width="25" height="25"/>
+        <image name="MySTW.png" width="25" height="25"/>
         <image name="ShareToWear - 125.jpg" width="4898" height="3265"/>
         <image name="ShareToWear - 151.jpg" width="4898" height="3265"/>
-        <image name="mySTW.png" width="25" height="25"/>
+        <image name="dress.png" width="25" height="25"/>
+        <image name="hearts.png" width="25" height="25"/>
+        <image name="home.png" width="25" height="25"/>
     </resources>
 </document>
