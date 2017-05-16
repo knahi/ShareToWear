@@ -17,12 +17,15 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBOutlet weak var tableView: UITableView!
     
+    var count:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
         tableView.dataSource = self as! UITableViewDataSource
         tableView.delegate = self as! UITableViewDelegate
+        //tableView.reloadData()
         // Do any additional setup after loading the view.
     }
 
@@ -33,23 +36,52 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
     
     @IBAction func submitted(_ sender: UIButton) {
         let id = bannerWebID.text!
-       //getShared(ID: id)
+        getShared(ID: id)
     }
+    
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dressCell", for: indexPath)
+        
         return cell
     }
     
+        func getShared (ID:String) -> Void{
+            //Database setup
+            var ref: FIRDatabaseReference!
+            ref = FIRDatabase.database().reference()
     
+            ref.child("users").observeSingleEvent(of: .value, with: {(snapshot) in
+    
+                let userCollection = snapshot.value as? NSDictionary
+                for item in userCollection!{
+                    let title = String(describing: item)
+                    let dressSubmission = item.value as? NSDictionary
+                    let bannerwebID = dressSubmission?["bannerWebID"] as! String
+                    let type = dressSubmission?["type"] as! String
+                    let brand = dressSubmission?["brand"] as! String
+                    let userName = dressSubmission?["userName"] as! String
+                    let oPrice = dressSubmission?["originalPrice"] as! String
+                    let pPrice = dressSubmission?["preferredPrice"] as! String
+                    let size = dressSubmission?["size"] as! String
+                    if (ID == bannerwebID){
+                        self.count += 1
+                        let dress = SubmitInfo(type: type, dressTitle: title, userName: userName , bannerWebID: bannerwebID, brand:brand , originalPrice: oPrice, preferredPrice:pPrice , size:size , color: [""])
+                    }
+                }
+                DispatchQueue.main.async{self.tableView?.reloadData()}
+            })
+        }
+
 
     /*
     // MARK: - Navigation
@@ -69,50 +101,4 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
 
 }
 
-//extension UIViewController: UITableViewDataSource, UITableViewDelegate {
-//    var count = 0
-//    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return elements.count
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        // Getting the right element
-//        let element = elements[indexPath.row]
-//
-//        // Trying to reuse a cell
-//        let cellIdentifier = "ElementCell"
-//        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) ?? UITableViewCell(style: .subtitle, reuseIdentifier: cellIdentifier)
-//        
-//        // Adding the right informations
-//        cell.textLabel?.text = element.symbol
-//        cell.detailTextLabel?.text = element.name
-//
-//        // Returning the cell
-//        return cell
-//    }
-//
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//    }
-//    
-//    func getShared (ID:String) -> Void{
-//        //Database setup
-//        var ref: FIRDatabaseReference!
-//        ref = FIRDatabase.database().reference()
-//
-//        ref.child("users").observeSingleEvent(of: .value, with: {(snapshot) in
-//
-//            let userCollection = snapshot.value as? NSDictionary
-//            for item in userCollection!{
-//                let dressSubmission = item.value as? NSDictionary
-//                let bannerwebID = dressSubmission?["bannerWebID"] as! String
-//                if (ID == bannerwebID){
-//                    count += 1
-//                }
-//            }
-//            DispatchQueue.main.async{self.tableView?.reloadData()}
-//        })
-//    }
-//
-//}
+

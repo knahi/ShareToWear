@@ -10,6 +10,12 @@ import UIKit
 
 class SharedTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var dressName: UILabel!
+    
+    func configureCell(dress: SubmitInfo){
+        
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
