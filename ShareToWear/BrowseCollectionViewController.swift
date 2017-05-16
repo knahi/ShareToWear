@@ -16,10 +16,6 @@ class BrowseCollectionViewController: UICollectionViewController{
     
     
     var count: Int = 0
-    
-//    func myModalDidFinish(controller: AvailabilityViewController, filter: Bool) {
-//        controller.dismiss(animated: true, completion: nil)
-//    }
    
 
     func getCount() -> Void {
@@ -30,7 +26,6 @@ class BrowseCollectionViewController: UICollectionViewController{
         
         self.count = 0
         FavModel.allDresses = [String]()
-        //print("GETTING DATABASE INFO...")
         ref.child("dresses").observeSingleEvent(of: .value, with: { (snapshot) in
             let collection = snapshot.value as? NSDictionary
             
@@ -49,7 +44,6 @@ class BrowseCollectionViewController: UICollectionViewController{
                 }
                 //Filters for availability
                 if (itemSelected && FilterModel.availability){
-                    //print("availability filter on")
                     let available = dress?["availability"] as! String
                     if available == "true"{
                             itemSelected = true
@@ -61,14 +55,11 @@ class BrowseCollectionViewController: UICollectionViewController{
                 let sizeArray = self.getSizeArray()
                 if(itemSelected && !sizeArray.isEmpty){
                     for size in sizeArray{
-                        //print(size)
                         let dressSize = dress?["size"] as! String
                         if dressSize == size{
-                            //print("dress included")
                             itemSelected = true
                             break
                         }else{
-                            //print("dress not included")
                             itemSelected = false
                         }
                     }
@@ -89,15 +80,12 @@ class BrowseCollectionViewController: UICollectionViewController{
                 }
                 
                 if itemSelected{
-                    //print(item)
                     self.count += 1
                     FavModel.allDresses.append(item.key as! String)
                 }
             } //end of for loop
             
-            //print(self.count)
-            print(FavModel.allDresses)
-            //print(FavModel.allDresses.count)
+            // takes care of firebase asynchronicity
             DispatchQueue.main.async{self.collectionView?.reloadData()}
         })
     }
@@ -146,6 +134,7 @@ class BrowseCollectionViewController: UICollectionViewController{
         }
         return sizeArray
     }
+    // returns an array of all colors filtered for
     func getColorArray() -> [String]{
         var colorArray = [String]()
         if FilterModel.black{
@@ -183,7 +172,7 @@ class BrowseCollectionViewController: UICollectionViewController{
         }
         return colorArray
     }
-    //NOT TRIGGERING WHEN MODAL VIEW DISSAPPEARS
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -198,7 +187,6 @@ class BrowseCollectionViewController: UICollectionViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        print("appeared")
         getCount()
     }
 

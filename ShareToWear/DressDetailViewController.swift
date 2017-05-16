@@ -5,14 +5,15 @@
 //  Created by Lily Taub on 4/26/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
-
+// Loads detailed dress information from firebase and displays
+// it in labels and a UIImageView
+// handles favoriting and unfavoriting actions
 import UIKit
 import Firebase
 
 class DressDetailViewController: UIViewController {
     
     private let dresses = DressCollection()
-    //var flag = false
 
     @IBOutlet weak var colorLabel: UILabel!
     @IBOutlet weak var sizeLabel: UILabel!
@@ -27,19 +28,12 @@ class DressDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        colorLabel.text = ""
-//        sizeLabel.text = ""
-//        priceLabel.text = ""
-//        brandLabel.text = ""
-//        dressImage.image = nil
+
         if(FavModel.favorites.contains(FavModel.currentSelection)){
             heartButton.setImage(UIImage(named: "like.png"), for: .normal)
         }else{
             heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
         }
-        
-       //self.view.backgroundColor = UIColor(red: 196.0/255.0, green: 213.0/255.0, blue: 239.0/255.0, alpha: 1.0)
         
         getDressDetails()
   
@@ -97,9 +91,6 @@ class DressDetailViewController: UIViewController {
                 self.notAvailable.text = "Sorry, this dress is not available"
                 self.rentButton.isHidden = true
             }
-        
-        
-            
         })
     }
 

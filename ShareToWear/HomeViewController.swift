@@ -5,6 +5,8 @@
 //  Created by Lily Taub on 4/26/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
+// Handles navigation from home page to share and wear pages
+// configures Firebase
 
 import UIKit
 import Firebase
