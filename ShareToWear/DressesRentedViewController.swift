@@ -15,17 +15,7 @@ class DressesRentedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if(SubmitInfo.dressColor == "blue"){
-//        dressImage.image = UIImage(named: "IMG_2395.jpg")
-//        }else if(SubmitInfo.dressColor == "black"){
-//              dressImage.image = UIImage(named: "IMG_2339.jpg")
-//        }else if(SubmitInfo.dressColor == "yellow"){
-//            dressImage.image = UIImage(named: "IMG_2422.jpg")
-//        }else if(SubmitInfo.dressColor == "red"){
-//            dressImage.image = UIImage(named: "IMG_2379.jpg")
-//        }else{
-//            infoLabel.text = "No dresses rented yet!"
-//        }
+
         
         // Do any additional setup after loading the view.
     }

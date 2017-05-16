@@ -10,14 +10,15 @@ import UIKit
 
 class RentReviewViewController: UIViewController {
 
-    @IBOutlet weak var dressImage: UIImageView!
+   @IBOutlet weak var dressImage: UIImageView!
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var deliveryLabel: UILabel!
-    @IBOutlet weak var roomNumLabel: UILabel!
     @IBOutlet weak var buildingLabel: UILabel!
+    @IBOutlet weak var roomNumLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    
     
     @IBAction func done(_ sender: UIBarButtonItem) {
         if presentingViewController is UITabBarController{
@@ -39,7 +40,8 @@ class RentReviewViewController: UIViewController {
         nameLabel.text = FavModel.renterName
         emailLabel.text = FavModel.renterEmail
         deliveryLabel.text = FavModel.method
-        priceLabel.text = FavModel.price
+        dateLabel.text = FavModel.date
+        priceLabel.text = "$ \(FavModel.price)"
         if(FavModel.method == "Pick Up"){
             buildingLabel.text = "N/A"
             roomNumLabel.text = "N/A"

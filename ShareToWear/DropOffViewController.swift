@@ -13,16 +13,20 @@ class DropOffViewController: UIViewController {
     
     @IBOutlet weak var building: UITextField!
     @IBOutlet weak var roomNum: UITextField!
-    @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var datePicker: UIDatePicker!
     
     @IBAction func save(_ sender: UIBarButtonItem) {
         FavModel.building = building.text!
         FavModel.roomNum = roomNum.text!
+        FavModel.date  = String(describing: datePicker.date)
         //let dateString = datePicker.date as! String
-        print(timePicker.date)
+//        let dateFormat = DateFormatter()
+//        dateFormat.dateStyle = .full
+//        let date = dateFormat.string(from: datePicker.date)
+//        print("the date is: \(date)")
+
         print(datePicker.date)
-        //print(dateString)
+        
         if presentingViewController is UITabBarController{
             dismiss(animated: true, completion: nil)
         }else if let owningNavController =

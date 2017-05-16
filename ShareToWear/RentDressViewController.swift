@@ -27,7 +27,7 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
         }else{
             FavModel.method = "Drop-off"
         }
-        let rentedDress = RentInfo(renterName: name.text!, renterEmail: email.text!, deliveryMethod: FavModel.method, dressName: FavModel.currentSelection, building: FavModel.building, roomNumber: FavModel.roomNum)
+        let rentedDress = RentInfo(renterName: name.text!, renterEmail: email.text!, deliveryMethod: FavModel.method, dressName: FavModel.currentSelection, building: FavModel.building, roomNumber: FavModel.roomNum, date: FavModel.date)
         let rentedDressRef = ref.child("rentals").child(FavModel.currentSelection)
         rentedDressRef.setValue(rentedDress.toAnyObject())
 

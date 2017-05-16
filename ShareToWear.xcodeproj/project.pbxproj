@@ -111,6 +111,8 @@
 		162A0DA81EC13D63009BE33E /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0DA31EC13D63009BE33E /* home.png */; };
 		162A0DA91EC13D63009BE33E /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0DA41EC13D63009BE33E /* Info.png */; };
 		162A0DAA1EC13D63009BE33E /* MySTW.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0DA51EC13D63009BE33E /* MySTW.png */; };
+		162A0DB21EC88CEA009BE33E /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0DB11EC88CEA009BE33E /* title.png */; };
+		162A0DB61ECA3C81009BE33E /* title2.png in Resources */ = {isa = PBXBuildFile; fileRef = 162A0DB51ECA3C81009BE33E /* title2.png */; };
 		16348D8A1EB6341E005D5817 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16348D891EB6341E005D5817 /* GoogleService-Info.plist */; };
 		167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */; };
 		1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */; };
@@ -262,6 +264,8 @@
 		162A0DA31EC13D63009BE33E /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../Icons/home.png; sourceTree = "<group>"; };
 		162A0DA41EC13D63009BE33E /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../../Icons/Info.png; sourceTree = "<group>"; };
 		162A0DA51EC13D63009BE33E /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../../Icons/MySTW.png; sourceTree = "<group>"; };
+		162A0DB11EC88CEA009BE33E /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title.png; path = ../../Images/title.png; sourceTree = "<group>"; };
+		162A0DB51ECA3C81009BE33E /* title2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title2.png; path = ../../Images/title2.png; sourceTree = "<group>"; };
 		16348D891EB6341E005D5817 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesRentedViewController.swift; sourceTree = "<group>"; };
 		1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ShareToWear/HomeViewController.swift; sourceTree = "<group>"; };
@@ -521,6 +525,8 @@
 		EF9AFBA81EA41601002F3FEC /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				162A0DB51ECA3C81009BE33E /* title2.png */,
+				162A0DB11EC88CEA009BE33E /* title.png */,
 				162A0DA11EC13D63009BE33E /* dress.png */,
 				162A0DA21EC13D63009BE33E /* hearts.png */,
 				162A0DA31EC13D63009BE33E /* home.png */,
@@ -688,11 +694,13 @@
 				162A0D711EC10AA9009BE33E /* dress15.JPG in Resources */,
 				16348D8A1EB6341E005D5817 /* GoogleService-Info.plist in Resources */,
 				162A0D571EC10AA9009BE33E /* dress91.JPG in Resources */,
+				162A0DB61ECA3C81009BE33E /* title2.png in Resources */,
 				162A0D521EC10AA9009BE33E /* dress39.JPG in Resources */,
 				162A0D6E1EC10AA9009BE33E /* dress62.JPG in Resources */,
 				162A0D451EC10AA9009BE33E /* dress8.JPG in Resources */,
 				EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */,
 				162A0D651EC10AA9009BE33E /* dress69.JPG in Resources */,
+				162A0DB21EC88CEA009BE33E /* title.png in Resources */,
 				162A0D491EC10AA9009BE33E /* dress54.JPG in Resources */,
 				162A0D831EC10AA9009BE33E /* dress53.JPG in Resources */,
 				162A0D561EC10AA9009BE33E /* dress82.JPG in Resources */,

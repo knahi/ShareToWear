@@ -20,7 +20,7 @@ class DressDetailViewController: UIViewController {
     @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var dressImage: UIImageView!
     @IBOutlet weak var rentButton: UIButton!
-    @IBOutlet weak var dressName: UILabel!
+    
     @IBOutlet weak var heartButton: UIButton!
     @IBOutlet weak var notAvailable: UILabel!
 
@@ -28,19 +28,18 @@ class DressDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        colorLabel.text = ""
-        sizeLabel.text = ""
-        priceLabel.text = ""
-        brandLabel.text = ""
-        dressImage.image = nil
-        dressName.text = FavModel.currentSelection
-        print(FavModel.favorites.contains(FavModel.currentSelection))
+//        colorLabel.text = ""
+//        sizeLabel.text = ""
+//        priceLabel.text = ""
+//        brandLabel.text = ""
+//        dressImage.image = nil
         if(FavModel.favorites.contains(FavModel.currentSelection)){
-            print("making heart button")
             heartButton.setImage(UIImage(named: "like.png"), for: .normal)
         }else{
             heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
         }
+        
+       //self.view.backgroundColor = UIColor(red: 196.0/255.0, green: 213.0/255.0, blue: 239.0/255.0, alpha: 1.0)
         
         getDressDetails()
   
@@ -58,7 +57,6 @@ class DressDetailViewController: UIViewController {
             //for like
             heartButton.setImage(UIImage(named: "like.png"), for: .normal)
             FavModel.favorites.append(FavModel.currentSelection)
-            print(FavModel.favorites)
         }
         else
         {
@@ -66,7 +64,6 @@ class DressDetailViewController: UIViewController {
             heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
             let updatedFavs = FavModel.favorites.filter{$0 != FavModel.currentSelection}
             FavModel.favorites = updatedFavs
-            print(FavModel.favorites)
         }
     }
     func getDressDetails() -> Void {
@@ -84,13 +81,17 @@ class DressDetailViewController: UIViewController {
             
             let color = dress?["color"] as! String
             self.colorLabel.text = color
+            
             let size = dress?["size"] as! String
             self.sizeLabel.text = size
+            
             let price = dress?["price"] as! Int
             FavModel.price = String(price)
             self.priceLabel.text = "$ \(price)"
+            
             let brand = dress?["brand"] as! String
             self.brandLabel.text = brand
+            
             let available = dress?["availability"] as! String
             if !(available == "true"){
                 self.notAvailable.text = "Sorry, this dress is not available"

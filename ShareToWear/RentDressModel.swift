@@ -15,15 +15,17 @@ struct RentInfo{
     let dressName: String
     let building: String
     let roomNumber: String
+    let date: String
     
 
-    init(renterName: String, renterEmail: String, deliveryMethod: String, dressName: String, building: String, roomNumber:String){
+    init(renterName: String, renterEmail: String, deliveryMethod: String, dressName: String, building: String, roomNumber:String, date:String){
         self.renterName = renterName
         self.renterEmail = renterEmail
         self.deliveryMethod = deliveryMethod
         self.dressName = dressName
         self.building = building
         self.roomNumber = roomNumber
+        self.date = date
     }
     func toAnyObject() -> Any{
         return [
@@ -32,7 +34,8 @@ struct RentInfo{
             "deliveryMethod": deliveryMethod,
             "dressName": dressName,
             "building": building,
-            "roomNumber": roomNumber
+            "roomNumber": roomNumber,
+            "date": date
         ]
     }
 }

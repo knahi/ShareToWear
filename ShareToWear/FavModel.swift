@@ -34,5 +34,4 @@ class FavModel{
     static var building: String = ""
     static var roomNum: String = ""
     static var date: String = ""
-    static var time: String = ""
 }
