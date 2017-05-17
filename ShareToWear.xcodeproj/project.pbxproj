@@ -132,6 +132,7 @@
 		16868CEE1EAFE8B100ED32C9 /* AvailabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */; };
 		16BDFF541ECBA8E100640E1A /* SharedDressesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDFF531ECBA8E100640E1A /* SharedDressesViewController.swift */; };
 		16BDFF561ECBAB4400640E1A /* SharedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDFF551ECBAB4400640E1A /* SharedTableViewCell.swift */; };
+		16BDFF5A1ECBEA0000640E1A /* RentedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BDFF591ECBEA0000640E1A /* RentedTableViewCell.swift */; };
 		16DF66061EAED3B5006AB387 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF66051EAED3B5006AB387 /* BrowseViewController.swift */; };
 		16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */; };
 		B38A957549643A2DC79D57E4 /* Pods_ShareToWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFE0686243FFF3F8C4134A8 /* Pods_ShareToWear.framework */; };
@@ -287,6 +288,7 @@
 		16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityViewController.swift; sourceTree = "<group>"; };
 		16BDFF531ECBA8E100640E1A /* SharedDressesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedDressesViewController.swift; sourceTree = "<group>"; };
 		16BDFF551ECBAB4400640E1A /* SharedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTableViewCell.swift; sourceTree = "<group>"; };
+		16BDFF591ECBEA0000640E1A /* RentedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentedTableViewCell.swift; sourceTree = "<group>"; };
 		16DF66051EAED3B5006AB387 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeFilterViewController.swift; sourceTree = "<group>"; };
 		3FFE0686243FFF3F8C4134A8 /* Pods_ShareToWear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareToWear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -482,6 +484,7 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
+				16BDFF591ECBEA0000640E1A /* RentedTableViewCell.swift */,
 				16BDFF531ECBA8E100640E1A /* SharedDressesViewController.swift */,
 				EF8E893D1EC11BEE001F032C /* DressesSharedViewController.swift */,
 				EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */,
@@ -787,6 +790,7 @@
 				167DB27C1EA6FC090084D985 /* DressesRentedViewController.swift in Sources */,
 				162A0CD61EC0FD8E009BE33E /* RentDressModel.swift in Sources */,
 				1681D4221EB1A90E00BEEC4D /* RentReviewViewController.swift in Sources */,
+				16BDFF5A1ECBEA0000640E1A /* RentedTableViewCell.swift in Sources */,
 				16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */,
 				1681D4041EB17F9200BEEC4D /* UserInfoModel.swift in Sources */,
 				162A0CD41EC0EAC5009BE33E /* SharedViewController.swift in Sources */,

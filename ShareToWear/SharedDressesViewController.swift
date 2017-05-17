@@ -12,9 +12,7 @@ import Firebase
 class SharedDressesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var bannerWebID: UITextField!
-    
     @IBOutlet weak var submit: UIButton!
-    
     @IBOutlet weak var tableView: UITableView!
     
     var count:Int = 0
@@ -26,7 +24,6 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
         tableView.dataSource = self as! UITableViewDataSource
         tableView.delegate = self as! UITableViewDelegate
     
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
