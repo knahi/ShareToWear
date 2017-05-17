@@ -10,10 +10,17 @@ import UIKit
 
 class SharedTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var dressName: UILabel!
+    @IBOutlet weak var dressTitle: UILabel!
+    @IBOutlet weak var dressType: UILabel!
+    @IBOutlet weak var dressSize: UILabel!
+    @IBOutlet weak var dressBrand: UILabel!
+    
     
     func configureCell(dress: SubmitInfo){
-        
+        dressTitle.text = dress.dressTitle
+        dressType.text = dress.type
+        dressSize.text = dress.size
+        dressBrand.text = dress.brand
     }
     
     override func awakeFromNib() {

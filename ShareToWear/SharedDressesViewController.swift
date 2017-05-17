@@ -18,14 +18,14 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var tableView: UITableView!
     
     var count:Int = 0
+    var dressesShared = [SubmitInfo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         tableView.dataSource = self as! UITableViewDataSource
         tableView.delegate = self as! UITableViewDelegate
-        //tableView.reloadData()
+    
         // Do any additional setup after loading the view.
     }
 
@@ -50,7 +50,14 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "dressCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "dressCell", for: indexPath) as? SharedTableViewCell else{
+            fatalError("Can't get cell of the right kind")
+        }
+        
+        //Configure the cell
+        print(self.dressesShared)
+        let dress = dressesShared[indexPath.row]
+        cell.configureCell(dress: dress)
         
         return cell
     }
@@ -59,12 +66,16 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
             //Database setup
             var ref: FIRDatabaseReference!
             ref = FIRDatabase.database().reference()
+            
+            //resets variables to avoid duplication
+            self.count = 0
+            self.dressesShared = []
     
             ref.child("users").observeSingleEvent(of: .value, with: {(snapshot) in
     
                 let userCollection = snapshot.value as? NSDictionary
                 for item in userCollection!{
-                    let title = String(describing: item)
+                    
                     let dressSubmission = item.value as? NSDictionary
                     let bannerwebID = dressSubmission?["bannerWebID"] as! String
                     let type = dressSubmission?["type"] as! String
@@ -73,9 +84,16 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
                     let oPrice = dressSubmission?["originalPrice"] as! String
                     let pPrice = dressSubmission?["preferredPrice"] as! String
                     let size = dressSubmission?["size"] as! String
+                    let colors = dressSubmission?["colors"]
+                    let title = dressSubmission?["dressTitle"] as! String
                     if (ID == bannerwebID){
+                        //updates count
                         self.count += 1
-                        let dress = SubmitInfo(type: type, dressTitle: title, userName: userName , bannerWebID: bannerwebID, brand:brand , originalPrice: oPrice, preferredPrice:pPrice , size:size , color: [""])
+                        //adds dress to shared dresses array (used to fill in 
+                        //dress cell content
+                        let dress = SubmitInfo(type: type, dressTitle: title, userName: userName , bannerWebID: bannerwebID, brand:brand , originalPrice: oPrice, preferredPrice:pPrice , size:size , color: colors as! [String])
+                        self.dressesShared.append(dress)
+                       
                     }
                 }
                 DispatchQueue.main.async{self.tableView?.reloadData()}
