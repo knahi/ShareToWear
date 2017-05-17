@@ -7,13 +7,14 @@
 //
 // Loads detailed dress information from firebase and displays
 // it in labels and a UIImageView
+//
 // handles favoriting and unfavoriting actions
+
 import UIKit
 import Firebase
 
 class DressDetailViewController: UIViewController {
     
-    private let dresses = DressCollection()
 
     @IBOutlet weak var colorLabel: UILabel!
     @IBOutlet weak var sizeLabel: UILabel!
@@ -70,6 +71,7 @@ class DressDetailViewController: UIViewController {
             
             let dress = snapshot.value as? NSDictionary
             
+            // fills in dress info in detailed view
             let name = String(String(FavModel.currentSelection) + ".JPG")
             self.dressImage.image = UIImage(named: name!)
             

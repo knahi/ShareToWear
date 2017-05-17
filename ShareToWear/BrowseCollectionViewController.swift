@@ -5,6 +5,8 @@
 //  Created by Lily Taub on 5/3/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
+//  handles the display of dresses in the browse view
+//
 
 import UIKit
 import Firebase
@@ -12,12 +14,11 @@ import Firebase
 private let reuseIdentifier = "Cell"
 
 class BrowseCollectionViewController: UICollectionViewController{
-    
-    
-    
+
     var count: Int = 0
    
-
+    //gets the number of dresses to be displayed in the collection view (according
+    //to filter values)
     func getCount() -> Void {
 
         //Database setup
@@ -30,9 +31,7 @@ class BrowseCollectionViewController: UICollectionViewController{
             let collection = snapshot.value as? NSDictionary
             
             for item in collection!{
-
                 var itemSelected:Bool = true
-                
                 let dress = item.value as? NSDictionary
                 
                 //Filters for price
@@ -91,7 +90,6 @@ class BrowseCollectionViewController: UICollectionViewController{
     }
     //returns an array of all sizes filtered for
     func getSizeArray() -> [String]{
-        //Filters for size
         var sizeArray = [String] ()
         if FilterModel.size0{
             sizeArray.append("0")
@@ -182,8 +180,6 @@ class BrowseCollectionViewController: UICollectionViewController{
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -208,14 +204,12 @@ class BrowseCollectionViewController: UICollectionViewController{
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         print("in collection view cell num function")
-        // #warning Incomplete implementation, return the number of items
         return self.count
     }
 
@@ -229,6 +223,7 @@ class BrowseCollectionViewController: UICollectionViewController{
         
         let dressName = String(FavModel.allDresses[indexPath.row]) + ".JPG"
         
+        //add dress image to cell
         if (UIImage(named: dressName) != nil) {
             cell.configureCell(UIImage(named: dressName)!)
         }
@@ -237,6 +232,8 @@ class BrowseCollectionViewController: UICollectionViewController{
     }
 
     // MARK: UICollectionViewDelegate
+    
+    //handles click event on collection view cell (dress image)
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //passing the dress information
         FavModel.currentSelection = FavModel.allDresses[indexPath.item]

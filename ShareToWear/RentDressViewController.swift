@@ -5,6 +5,8 @@
 //  Created by Lily Taub on 4/26/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
+// handles input to the dress rental form
+//
 
 import UIKit
 import Firebase
@@ -15,6 +17,7 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var pickUP: UISwitch!
     @IBOutlet weak var DropOff: UISwitch!
 
+    // adds data to firebase when submit button pressed
     @IBAction func submitPressed(_ sender: UIButton) {
         FavModel.renterEmail = email.text!
         FavModel.renterName = name.text!
@@ -34,12 +37,6 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
         let dressRef = ref.child("dresses").child(FavModel.currentSelection).child("availability")
         dressRef.setValue("false")
     }
-    //present view controller programmatically not working
-//    @IBAction func dropOffSwitch(_ sender: Any) {
-//        let modalVC = DropOffViewController()
-//        present(modalVC, animated: true, completion: nil)
-//        
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,9 +49,7 @@ class RentDressViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    // I added a Tap Gesture Recognizer to the view
-    // this action is fired by tapping on the view
-    // the effect is that when the keyboard is showing, tapping outside of the keyboard makes it go away
+    // hides keyboard when screen tapped
     @IBAction func tapToDismissKeyboard(_ sender: UITapGestureRecognizer) {
         name.resignFirstResponder() //hide the keyboard
         email.resignFirstResponder()    //hide the keyboard

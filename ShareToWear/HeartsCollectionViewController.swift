@@ -5,6 +5,7 @@
 //  Created by Lily Taub on 5/2/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
+// handles the display of dresses in the "hearts" views
 
 import Firebase
 import UIKit
@@ -22,13 +23,10 @@ class HeartsCollectionViewController: UICollectionViewController {
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     override func viewDidAppear(_ animated: Bool) {
        self.collectionView?.reloadData()
@@ -47,15 +45,11 @@ class HeartsCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("in collectionView function")
-        print(FavModel.favorites)
-        // #warning Incomplete implementation, return the number of items
         return FavModel.favorites.count
     }
 
@@ -69,6 +63,7 @@ class HeartsCollectionViewController: UICollectionViewController {
         
         let dressName = String(FavModel.favorites[indexPath.row]) + ".JPG"
         
+        // adds dress image to cell
         if (UIImage(named: dressName) != nil) {
             cell.configureCell(UIImage(named: dressName)!)
         }
@@ -79,7 +74,7 @@ class HeartsCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDelegate
 
     
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
+    // handles click event on collection view cell (dress)
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
         FavModel.currentSelection = FavModel.favorites[indexPath.item]
         let vc : AnyObject! = self.storyboard!.instantiateViewController(withIdentifier: "DressInfo")

@@ -5,6 +5,7 @@
 //  Created by Lily Taub on 4/27/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
+// handles the displaying of dress rental info in the dress rental review page
 
 import UIKit
 
@@ -20,6 +21,7 @@ class RentReviewViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
+    //navigates back to parent view controller
     @IBAction func done(_ sender: UIBarButtonItem) {
         if presentingViewController is UITabBarController{
             dismiss(animated: true, completion: nil)
@@ -49,11 +51,6 @@ class RentReviewViewController: UIViewController {
             buildingLabel.text = FavModel.building
             roomNumLabel.text = FavModel.roomNum
         }
-        
-        
-
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

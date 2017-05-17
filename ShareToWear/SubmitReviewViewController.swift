@@ -5,12 +5,12 @@
 //  Created by Lily Taub on 4/26/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
+// displays information about dress submission in submission review page
 
 import UIKit
 
 class SubmitReviewViewController: UIViewController {
     
-    //var collection = [dressShared]()
 
     @IBOutlet weak var done: UIBarButtonItem!
     @IBOutlet weak var typeLabel: UILabel!
@@ -23,6 +23,7 @@ class SubmitReviewViewController: UIViewController {
     @IBOutlet weak var originalPriceLabel: UILabel!
     @IBOutlet weak var preferredPriceLabel: UILabel!
    
+    //naviages back to parent view
     @IBAction func donePressed(_ sender: UIBarButtonItem) {
         
         if presentingViewController is UITabBarController{
@@ -35,12 +36,14 @@ class SubmitReviewViewController: UIViewController {
         }
     }
     
+    //fills in labels with dress submission info
     override func viewDidLoad() {
         super.viewDidLoad()
         typeLabel.text = DressReview.type
         dressTitleLabel.text = DressReview.dressTitle
         userNameLabel.text = DressReview.userName
         bannerwebIDLabel.text = DressReview.bannerWebID
+        //color
         var colorString = ""
         if DressReview.red{
             colorString = "Red "
@@ -133,9 +136,7 @@ class SubmitReviewViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        //tabBarController?.selectedIndex = 0
         _ = navigationController?.popToRootViewController(animated: true)
-//        self.navigationController?.popToViewController(, animated: true)
     }
     
 

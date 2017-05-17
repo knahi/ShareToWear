@@ -5,14 +5,15 @@
 //  Created by Lily Taub on 4/25/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
-
+//  responds to availability filter being activated by updating
+//  availability value in the FilterModel
 import UIKit
 
 class AvailabilityViewController: UIViewController {
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var availability: UISwitch!
     
-    
+    //updates availability value in Filter Model
     @IBAction func availabilityUpdate(_ sender: UISwitch) {
         FilterModel.availability = availability.isOn
     }
@@ -28,8 +29,8 @@ class AvailabilityViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-     //delegate.myModalDidFinish(self, pie: pieLabel.text!)
     
+    //navigates back to browse view
     @IBAction func done(_ sender: UIBarButtonItem) {
         if presentingViewController is UITabBarController{
             dismiss(animated: true, completion: nil)
@@ -45,7 +46,6 @@ class AvailabilityViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("going back to browse view")
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

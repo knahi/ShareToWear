@@ -5,7 +5,7 @@
 //  Created by Kayla Nahi on 5/7/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
-
+// holds information about dress submissions and dress rentals
 import Foundation
 import UIKit
 

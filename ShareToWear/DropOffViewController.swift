@@ -5,6 +5,7 @@
 //  Created by Lily Taub on 4/26/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
+// handles information entered in drop off form
 
 import UIKit
 
@@ -15,18 +16,14 @@ class DropOffViewController: UIViewController {
     @IBOutlet weak var roomNum: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
     
+    // adds dress drop off info to the FavModel (which, in addition to other things, holds dress drop 
+    // off info)
     @IBAction func save(_ sender: UIBarButtonItem) {
         FavModel.building = building.text!
         FavModel.roomNum = roomNum.text!
         FavModel.date  = String(describing: datePicker.date)
-        //let dateString = datePicker.date as! String
-//        let dateFormat = DateFormatter()
-//        dateFormat.dateStyle = .full
-//        let date = dateFormat.string(from: datePicker.date)
-//        print("the date is: \(date)")
-
-        print(datePicker.date)
         
+        //navigates back to parent view
         if presentingViewController is UITabBarController{
             dismiss(animated: true, completion: nil)
         }else if let owningNavController =
@@ -48,13 +45,10 @@ class DropOffViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

@@ -31,12 +31,11 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
         // Dispose of any resources that can be recreated.
     }
     
+    //calls getShared after user enters their bannerweb ID and submits
     @IBAction func submitted(_ sender: UIButton) {
         let id = bannerWebID.text!
         getShared(ID: id)
     }
-    
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -90,7 +89,6 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
                         //dress cell content
                         let dress = SubmitInfo(type: type, dressTitle: title, userName: userName , bannerWebID: bannerwebID, brand:brand , originalPrice: oPrice, preferredPrice:pPrice , size:size , color: colors as! [String])
                         self.dressesShared.append(dress)
-                       
                     }
                 }
                 DispatchQueue.main.async{self.tableView?.reloadData()}
