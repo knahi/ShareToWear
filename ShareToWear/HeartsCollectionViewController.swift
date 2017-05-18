@@ -30,6 +30,12 @@ class HeartsCollectionViewController: UICollectionViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
        self.collectionView?.reloadData()
+
+        // adds share to wear logo to navigation bar
+        let image = UIImage(named: "titleLogo.png")
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = imageView
     }
 
     /*

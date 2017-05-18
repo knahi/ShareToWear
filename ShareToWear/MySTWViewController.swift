@@ -20,7 +20,15 @@ class MySTWViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        // adds share to wear logo to navigation bar
+        let image = UIImage(named: "titleLogo.png")
+        let imageView = UIImageView(image: image)
+        imageView.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = imageView
+        
+    }
 
     // MARK: - Navigation
 

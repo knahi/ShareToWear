@@ -530,11 +530,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="RCP-Vy-cvJ">
                         <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O1O-wo-VzK">
-                            <rect key="frame" x="115.5" y="7" width="144" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" backgroundImage="title2.png"/>
-                        </button>
                     </navigationItem>
                     <connections>
                         <outlet property="share" destination="5sY-pR-qGy" id="tYZ-TA-ru2"/>
@@ -1316,7 +1311,7 @@
         <scene sceneID="N56-T5-obj">
             <objects>
                 <collectionViewController id="Qf2-bp-gfZ" customClass="HeartsCollectionViewController" customModule="ShareToWear" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Cch-82-WJU">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Cch-82-WJU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1331,7 +1326,7 @@
                                 <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="201" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-id-3m9">
@@ -2913,6 +2908,5 @@ We aim to foster community, inclusivity, and sustainability.</string>
         <image name="dress.png" width="25" height="25"/>
         <image name="hearts.png" width="25" height="25"/>
         <image name="home.png" width="25" height="25"/>
-        <image name="title2.png" width="144" height="42"/>
     </resources>
 </document>
