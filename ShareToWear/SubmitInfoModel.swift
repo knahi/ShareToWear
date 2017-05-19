@@ -7,9 +7,9 @@
 //
 
 import Foundation
-//import UIKit
 
 struct SubmitInfo{
+    //Takes in the information submitted by user, stores submission in an array
     
     let type: String
     let dressTitle:String
@@ -47,20 +47,5 @@ struct SubmitInfo{
             "bannerWebID": bannerWebID
         ]
     }
-    
-    
-    
-    //DRESS RENTAL INFO (NEED TO PUT THIS IN NEW FILE)
-//    static var name:String = ""
-//    static var email:String = ""
-//    static var pickUp:Bool = false
-//    static var dropOff:Bool = false
-//    static var building:String = ""
-//    static var roomNum:String = ""
-//    static var time:String = ""
-//    static var date:String = ""
-//    static var dressColor:String = ""
-    
-    
     
 }

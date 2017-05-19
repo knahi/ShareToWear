@@ -8,6 +8,8 @@
 
 import Foundation
 
+//Model for renting dresses, returns essential information in an array.
+
 struct RentInfo{
     let renterName: String
     let renterEmail: String

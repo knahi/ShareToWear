@@ -8,10 +8,9 @@
 
 import UIKit
 
+//View controller for the size filter
+
 class SizeFilterViewController: UIViewController {
-    
-    //var filters:FilterModel = FilterModel()
-    
 
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var size0: UISwitch!

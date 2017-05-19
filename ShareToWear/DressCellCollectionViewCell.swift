@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class DressCellCollectionViewCell: UICollectionViewCell {
+    //Assigns dress image to cell of the collection view on browse page.
     
     @IBOutlet weak var dressCell: UIImageView!
     

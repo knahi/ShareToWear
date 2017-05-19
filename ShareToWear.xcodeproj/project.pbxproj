@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1617CC061EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */; };
 		1617CC321EBABBB900FA5A57 /* BrowseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1617CC311EBABBB900FA5A57 /* BrowseCollectionViewController.swift */; };
-		162A0CD41EC0EAC5009BE33E /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A0CD31EC0EAC5009BE33E /* SharedViewController.swift */; };
 		162A0CD61EC0FD8E009BE33E /* RentDressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162A0CD51EC0FD8E009BE33E /* RentDressModel.swift */; };
 		162A0D331EC10AA9009BE33E /* dress9.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CD71EC10AA9009BE33E /* dress9.JPG */; };
 		162A0D341EC10AA9009BE33E /* dress19.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 162A0CD81EC10AA9009BE33E /* dress19.JPG */; };
@@ -123,6 +122,7 @@
 		1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */; };
 		1681D4201EB1A32000BEEC4D /* DropOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */; };
 		1681D4221EB1A90E00BEEC4D /* RentReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */; };
+		1685CC4B1ECF770A00A77089 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685CC4A1ECF770A00A77089 /* SharedViewController.swift */; };
 		16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */; };
 		16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */; };
 		16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */; };
@@ -145,7 +145,6 @@
 		EF8E89401EC11BEE001F032C /* DressRentalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */; };
 		EF8E89421EC11D22001F032C /* HeartsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8E89411EC11D22001F032C /* HeartsCollectionViewCell.swift */; };
 		EF9AFB871EA3F52D002F3FEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */; };
-		EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AFB881EA3F52D002F3FEC /* ViewController.swift */; };
 		EF9AFB8C1EA3F52D002F3FEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */; };
 		EF9AFB8E1EA3F52D002F3FEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8D1EA3F52D002F3FEC /* Assets.xcassets */; };
 		EF9AFB911EA3F52D002F3FEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9AFB8F1EA3F52D002F3FEC /* LaunchScreen.storyboard */; };
@@ -161,7 +160,6 @@
 /* Begin PBXFileReference section */
 		1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartsCollectionViewController.swift; sourceTree = "<group>"; };
 		1617CC311EBABBB900FA5A57 /* BrowseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseCollectionViewController.swift; sourceTree = "<group>"; };
-		162A0CD31EC0EAC5009BE33E /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
 		162A0CD51EC0FD8E009BE33E /* RentDressModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentDressModel.swift; sourceTree = "<group>"; };
 		162A0CD71EC10AA9009BE33E /* dress9.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress9.JPG; path = "../../Dress Images old/dress9.JPG"; sourceTree = "<group>"; };
 		162A0CD81EC10AA9009BE33E /* dress19.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dress19.JPG; path = "../../Dress Images old/dress19.JPG"; sourceTree = "<group>"; };
@@ -275,6 +273,7 @@
 		1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentDressViewController.swift; sourceTree = "<group>"; };
 		1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropOffViewController.swift; sourceTree = "<group>"; };
 		1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentReviewViewController.swift; sourceTree = "<group>"; };
+		1685CC4A1ECF770A00A77089 /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
 		16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
@@ -296,12 +295,10 @@
 		EF8E857C1EBFED0F001F032C /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../Icons/home.png; sourceTree = "<group>"; };
 		EF8E857D1EBFED0F001F032C /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Info.png; path = ../../Icons/Info.png; sourceTree = "<group>"; };
 		EF8E857E1EBFED0F001F032C /* MySTW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MySTW.png; path = ../../Icons/MySTW.png; sourceTree = "<group>"; };
-		EF8E85841EC0094A001F032C /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
 		EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressRentalModel.swift; sourceTree = "<group>"; };
 		EF8E89411EC11D22001F032C /* HeartsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF9AFB831EA3F52D002F3FEC /* ShareToWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareToWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF9AFB881EA3F52D002F3FEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF9AFB8B1EA3F52D002F3FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF9AFB8D1EA3F52D002F3FEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF9AFB901EA3F52D002F3FEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -476,6 +473,7 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
+				1685CC4A1ECF770A00A77089 /* SharedViewController.swift */,
 				16BDFF591ECBEA0000640E1A /* RentedTableViewCell.swift */,
 				16BDFF531ECBA8E100640E1A /* SharedDressesViewController.swift */,
 				EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */,
@@ -493,8 +491,6 @@
 				1681D3F61EB17BA400BEEC4D /* Dresses */,
 				EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */,
 				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
-				EF9AFB881EA3F52D002F3FEC /* ViewController.swift */,
-				EF8E85841EC0094A001F032C /* SharedViewController.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
 				16BDFF551ECBAB4400640E1A /* SharedTableViewCell.swift */,
 				EF8E85761EBFC885001F032C /* FavModel.swift */,
@@ -513,7 +509,6 @@
 				EF9AFB8D1EA3F52D002F3FEC /* Assets.xcassets */,
 				EF9AFB8F1EA3F52D002F3FEC /* LaunchScreen.storyboard */,
 				EF9AFB921EA3F52D002F3FEC /* Info.plist */,
-				162A0CD31EC0EAC5009BE33E /* SharedViewController.swift */,
 				162A0CD51EC0FD8E009BE33E /* RentDressModel.swift */,
 			);
 			path = ShareToWear;
@@ -779,7 +774,6 @@
 				1681D4221EB1A90E00BEEC4D /* RentReviewViewController.swift in Sources */,
 				16BDFF5A1ECBEA0000640E1A /* RentedTableViewCell.swift in Sources */,
 				16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */,
-				162A0CD41EC0EAC5009BE33E /* SharedViewController.swift in Sources */,
 				EF8E89401EC11BEE001F032C /* DressRentalModel.swift in Sources */,
 				16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */,
 				EF8E85671EBD064F001F032C /* DressCellCollectionViewCell.swift in Sources */,
@@ -789,7 +783,6 @@
 				EF8E89421EC11D22001F032C /* HeartsCollectionViewCell.swift in Sources */,
 				1681D4201EB1A32000BEEC4D /* DropOffViewController.swift in Sources */,
 				EF9AFBA51EA40D56002F3FEC /* MySTWViewController.swift in Sources */,
-				EF9AFB891EA3F52D002F3FEC /* ViewController.swift in Sources */,
 				EF8E85791EBFEC79001F032C /* DressReviewModel.swift in Sources */,
 				16868CEE1EAFE8B100ED32C9 /* AvailabilityViewController.swift in Sources */,
 				1617CC321EBABBB900FA5A57 /* BrowseCollectionViewController.swift in Sources */,
@@ -803,6 +796,7 @@
 				1681D4101EB1983700BEEC4D /* DressDetailViewController.swift in Sources */,
 				1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */,
 				1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */,
+				1685CC4B1ECF770A00A77089 /* SharedViewController.swift in Sources */,
 				16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

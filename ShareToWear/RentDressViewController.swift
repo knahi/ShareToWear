@@ -6,7 +6,6 @@
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
 // handles input to the dress rental form
-//
 
 import UIKit
 import Firebase

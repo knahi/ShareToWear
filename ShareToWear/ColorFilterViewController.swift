@@ -8,6 +8,8 @@
 
 import UIKit
 
+//View controller for the color filter
+
 class ColorFilterViewController: UIViewController {
     
     @IBOutlet weak var white: UISwitch!

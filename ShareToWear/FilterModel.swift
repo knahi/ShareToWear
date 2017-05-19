@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class FilterModel{
+    //Model for filtering size, color, price and availability on the browse page.
+    
     //sizes
     static var size0:Bool = false
     static var size2:Bool = false

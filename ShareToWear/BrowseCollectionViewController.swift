@@ -17,8 +17,7 @@ class BrowseCollectionViewController: UICollectionViewController{
 
     var count: Int = 0
    
-    //gets the number of dresses to be displayed in the collection view (according
-    //to filter values)
+    //gets the number of dresses to be displayed in the collection view (according to filter values)
     func getCount() -> Void {
 
         //Database setup
@@ -208,8 +207,7 @@ class BrowseCollectionViewController: UICollectionViewController{
     }
 
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("in collection view cell num function")
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         return self.count
     }
 

@@ -11,6 +11,8 @@ import Firebase
 
 class ShareViewController: UIViewController {
     
+    //View that contains the dress submission form.
+    
     @IBOutlet weak var rental: UISwitch!
     @IBOutlet weak var sale: UISwitch!
     @IBOutlet weak var dressTitle: UITextField!
@@ -51,7 +53,8 @@ class ShareViewController: UIViewController {
         super.viewDidLoad()
 
     }
-
+    
+    //Saves the information submitted by user on form.
     @IBAction func submitPressed(_ sender: UIButton) {
         DressReview.blue = blue.isOn
         DressReview.white = white.isOn
@@ -108,6 +111,7 @@ class ShareViewController: UIViewController {
         let submitItemRef = ref.child("users").child(bannerWebID.text!+"_"+dressTitle.text!)
         submitItemRef.setValue(submitItem.toAnyObject())
     }
+    
     func getColorArray() -> [String]{
         var colorArray = [String]()
         if black.isOn{
@@ -192,16 +196,5 @@ class ShareViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

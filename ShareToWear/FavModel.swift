@@ -11,7 +11,7 @@ import UIKit
 import Firebase
 
 class FavModel{
-   
+   //Model for favoriting a dress, and storing essential information about the dress.
     
     static var color: String = ""
     static var price: String = ""

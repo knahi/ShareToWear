@@ -10,5 +10,7 @@ import Foundation
 
 class DressButton{
     
+    //Indicates that dress button has been pushed...
+    
     static var myButtonPressed:String = ""
 }
