@@ -122,7 +122,7 @@
 		1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */; };
 		1681D4201EB1A32000BEEC4D /* DropOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */; };
 		1681D4221EB1A90E00BEEC4D /* RentReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */; };
-		1685CC4B1ECF770A00A77089 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685CC4A1ECF770A00A77089 /* SharedViewController.swift */; };
+		1685CC4D1ECF7FBA00A77089 /* SharedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1685CC4C1ECF7FBA00A77089 /* SharedViewController.swift */; };
 		16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */; };
 		16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */; };
 		16868CE81EAFBA9C00ED32C9 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */; };
@@ -264,7 +264,7 @@
 		162A0DB51ECA3C81009BE33E /* title2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title2.png; path = ../../Images/title2.png; sourceTree = "<group>"; };
 		16348D891EB6341E005D5817 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DressesRentedViewController.swift; sourceTree = "<group>"; };
-		1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ShareToWear/HomeViewController.swift; sourceTree = "<group>"; };
+		1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1681D3F01EB156E800BEEC4D /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitInfoModel.swift; sourceTree = "<group>"; };
 		1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitReviewViewController.swift; sourceTree = "<group>"; };
@@ -273,11 +273,11 @@
 		1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentDressViewController.swift; sourceTree = "<group>"; };
 		1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropOffViewController.swift; sourceTree = "<group>"; };
 		1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentReviewViewController.swift; sourceTree = "<group>"; };
-		1685CC4A1ECF770A00A77089 /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
+		1685CC4C1ECF7FBA00A77089 /* SharedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewController.swift; sourceTree = "<group>"; };
 		16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceFilterViewController.swift; sourceTree = "<group>"; };
 		16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
-		16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityViewController.swift; sourceTree = "<group>"; };
+		16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailabilityViewController.swift; path = ../AvailabilityViewController.swift; sourceTree = "<group>"; };
 		16BDFF531ECBA8E100640E1A /* SharedDressesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedDressesViewController.swift; sourceTree = "<group>"; };
 		16BDFF551ECBAB4400640E1A /* SharedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedTableViewCell.swift; sourceTree = "<group>"; };
 		16BDFF591ECBEA0000640E1A /* RentedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RentedTableViewCell.swift; sourceTree = "<group>"; };
@@ -332,6 +332,73 @@
 			);
 			name = Dresses;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		1685CC4E1ECF807700A77089 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */,
+				EF8E85781EBFEC79001F032C /* DressReviewModel.swift */,
+				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
+				EF8E85761EBFC885001F032C /* FavModel.swift */,
+				162A0CD51EC0FD8E009BE33E /* RentDressModel.swift */,
+				1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */,
+				1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1685CC4F1ECF80EC00A77089 /* Filter View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */,
+				16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */,
+				16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */,
+				16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */,
+			);
+			name = "Filter View Controllers";
+			sourceTree = "<group>";
+		};
+		1685CC501ECF814500A77089 /* Shared and Rented Views */ = {
+			isa = PBXGroup;
+			children = (
+				1685CC4C1ECF7FBA00A77089 /* SharedViewController.swift */,
+				16BDFF591ECBEA0000640E1A /* RentedTableViewCell.swift */,
+				16BDFF531ECBA8E100640E1A /* SharedDressesViewController.swift */,
+				16BDFF551ECBAB4400640E1A /* SharedTableViewCell.swift */,
+				167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */,
+			);
+			name = "Shared and Rented Views";
+			sourceTree = "<group>";
+		};
+		1685CC511ECF819400A77089 /* Rent Form Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */,
+				1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */,
+				1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */,
+			);
+			name = "Rent Form Contollers";
+			sourceTree = "<group>";
+		};
+		1685CC521ECF81B700A77089 /* Submit Form Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */,
+				1681D3F01EB156E800BEEC4D /* ShareViewController.swift */,
+			);
+			name = "Submit Form Controllers";
+			sourceTree = "<group>";
+		};
+		1685CC531ECF81F600A77089 /* Browse Files */ = {
+			isa = PBXGroup;
+			children = (
+				1617CC311EBABBB900FA5A57 /* BrowseCollectionViewController.swift */,
+				1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */,
+				EF8E85661EBD064F001F032C /* DressCellCollectionViewCell.swift */,
+				16DF66051EAED3B5006AB387 /* BrowseViewController.swift */,
+			);
+			name = "Browse Files";
 			sourceTree = "<group>";
 		};
 		1A3ABA9FBCCE6C11BC62CE9F /* Frameworks */ = {
@@ -453,8 +520,6 @@
 		EF9AFB7A1EA3F52D002F3FEC = {
 			isa = PBXGroup;
 			children = (
-				16868CED1EAFE8B100ED32C9 /* AvailabilityViewController.swift */,
-				1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */,
 				EF9AFB851EA3F52D002F3FEC /* ShareToWear */,
 				EF9AFB841EA3F52D002F3FEC /* Products */,
 				304E74428D90901E27D7DE35 /* Pods */,
@@ -473,43 +538,26 @@
 		EF9AFB851EA3F52D002F3FEC /* ShareToWear */ = {
 			isa = PBXGroup;
 			children = (
-				1685CC4A1ECF770A00A77089 /* SharedViewController.swift */,
-				16BDFF591ECBEA0000640E1A /* RentedTableViewCell.swift */,
-				16BDFF531ECBA8E100640E1A /* SharedDressesViewController.swift */,
-				EF8E893E1EC11BEE001F032C /* DressRentalModel.swift */,
-				1617CC311EBABBB900FA5A57 /* BrowseCollectionViewController.swift */,
+				1685CC4E1ECF807700A77089 /* Models */,
+				1681D3EE1EB151B000BEEC4D /* HomeViewController.swift */,
+				1685CC4F1ECF80EC00A77089 /* Filter View Controllers */,
+				1685CC501ECF814500A77089 /* Shared and Rented Views */,
+				1685CC531ECF81F600A77089 /* Browse Files */,
 				1617CC051EB8CE0D00FA5A57 /* HeartsCollectionViewController.swift */,
 				EF8E89411EC11D22001F032C /* HeartsCollectionViewCell.swift */,
 				16348D891EB6341E005D5817 /* GoogleService-Info.plist */,
-				1681D4211EB1A90E00BEEC4D /* RentReviewViewController.swift */,
-				1681D41D1EB1A0D700BEEC4D /* RentDressViewController.swift */,
-				1681D41F1EB1A32000BEEC4D /* DropOffViewController.swift */,
+				1685CC511ECF819400A77089 /* Rent Form Contollers */,
 				EF8E88781EC112AF001F032C /* DressImages */,
-				1681D40F1EB1983700BEEC4D /* DressDetailViewController.swift */,
-				EF8E85781EBFEC79001F032C /* DressReviewModel.swift */,
-				1681D3F41EB1664C00BEEC4D /* SubmitReviewViewController.swift */,
+				1685CC521ECF81B700A77089 /* Submit Form Controllers */,
 				1681D3F61EB17BA400BEEC4D /* Dresses */,
 				EF9AFB861EA3F52D002F3FEC /* AppDelegate.swift */,
-				16868CE71EAFBA9C00ED32C9 /* FilterModel.swift */,
 				EF9AFB8A1EA3F52D002F3FEC /* Main.storyboard */,
-				16BDFF551ECBAB4400640E1A /* SharedTableViewCell.swift */,
-				EF8E85761EBFC885001F032C /* FavModel.swift */,
-				EF8E85661EBD064F001F032C /* DressCellCollectionViewCell.swift */,
-				1681D41B1EB19B4900BEEC4D /* DressButtonModel.swift */,
-				1681D3F01EB156E800BEEC4D /* ShareViewController.swift */,
-				1681D3F21EB15F3D00BEEC4D /* SubmitInfoModel.swift */,
-				167DB27B1EA6FC090084D985 /* DressesRentedViewController.swift */,
-				16DF66051EAED3B5006AB387 /* BrowseViewController.swift */,
-				16DF66071EAED67C006AB387 /* SizeFilterViewController.swift */,
-				16868CE31EAF868000ED32C9 /* ColorFilterViewController.swift */,
-				16868CE51EAF924E00ED32C9 /* PriceFilterViewController.swift */,
 				EF9AFBA81EA41601002F3FEC /* Icons */,
 				EF9AFBA61EA414F3002F3FEC /* AboutViewController.swift */,
 				EF9AFBA41EA40D56002F3FEC /* MySTWViewController.swift */,
 				EF9AFB8D1EA3F52D002F3FEC /* Assets.xcassets */,
 				EF9AFB8F1EA3F52D002F3FEC /* LaunchScreen.storyboard */,
 				EF9AFB921EA3F52D002F3FEC /* Info.plist */,
-				162A0CD51EC0FD8E009BE33E /* RentDressModel.swift */,
 			);
 			path = ShareToWear;
 			sourceTree = "<group>";
@@ -777,6 +825,7 @@
 				EF8E89401EC11BEE001F032C /* DressRentalModel.swift in Sources */,
 				16DF66081EAED67C006AB387 /* SizeFilterViewController.swift in Sources */,
 				EF8E85671EBD064F001F032C /* DressCellCollectionViewCell.swift in Sources */,
+				1685CC4D1ECF7FBA00A77089 /* SharedViewController.swift in Sources */,
 				1681D41C1EB19B4900BEEC4D /* DressButtonModel.swift in Sources */,
 				16BDFF561ECBAB4400640E1A /* SharedTableViewCell.swift in Sources */,
 				16868CE61EAF924E00ED32C9 /* PriceFilterViewController.swift in Sources */,
@@ -796,7 +845,6 @@
 				1681D4101EB1983700BEEC4D /* DressDetailViewController.swift in Sources */,
 				1681D41E1EB1A0D700BEEC4D /* RentDressViewController.swift in Sources */,
 				1681D3EF1EB151B000BEEC4D /* HomeViewController.swift in Sources */,
-				1685CC4B1ECF770A00A77089 /* SharedViewController.swift in Sources */,
 				16868CE41EAF868000ED32C9 /* ColorFilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,8 +21,8 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.dataSource = self as! UITableViewDataSource
-        tableView.delegate = self as! UITableViewDelegate
+        tableView.dataSource = self as UITableViewDataSource
+        tableView.delegate = self as UITableViewDelegate
     
     }
 

@@ -6,7 +6,7 @@
 ////  Copyright © 2017 Kayla Nahi. All rights reserved.
 ////
 //
-//  THIS FILE IS WHERE WE ID THE STORAGE WORK, WILL USE WHEN WE
+//  THIS FILE IS WHERE WE DID THE STORAGE WORK, WILL USE WHEN WE
 //  UPDATE OUR ACCOUNT.
 //
 //import UIKit

@@ -5,13 +5,12 @@
 //  Created by Lily Taub on 5/8/17.
 //  Copyright © 2017 Kayla Nahi. All rights reserved.
 //
-// DON'T NEED THIS FILE
-
+// SAVING THIS FILE FOR REFERENCE TO CREATE LABELS PROGRAMMATICALLY IN THE FUTURE
+/*
 import UIKit
 import Firebase
 
 class SharedViewController: UIViewController {
-
 
     @IBOutlet weak var bannerWebID: UITextField!
     @IBOutlet weak var submit: UIButton!
@@ -101,17 +100,5 @@ class SharedViewController: UIViewController {
         bannerWebID.resignFirstResponder() //hide the keyboard
         
     }
-
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view contr7ller.
-    }
-    */
-
 }
+ */
