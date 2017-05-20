@@ -51,7 +51,6 @@ class SharedDressesViewController: UIViewController, UITableViewDelegate, UITabl
         }
         
         //Configure the cell
-        print(self.dressesShared)
         let dress = dressesShared[indexPath.row]
         cell.configureCell(dress: dress)
         

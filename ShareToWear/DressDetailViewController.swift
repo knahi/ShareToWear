@@ -31,9 +31,9 @@ class DressDetailViewController: UIViewController {
         super.viewDidLoad()
 
         if(FavModel.favorites.contains(FavModel.currentSelection)){
-            heartButton.setImage(UIImage(named: "like.png"), for: .normal)
+            heartButton.setImage(UIImage(named: "Like"), for: .normal)
         }else{
-            heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
+            heartButton.setImage(UIImage(named: "Unlike"), for: .normal)
         }
         
         getDressDetails()
@@ -50,13 +50,13 @@ class DressDetailViewController: UIViewController {
         if (!FavModel.favorites.contains(FavModel.currentSelection))
         {
             //for like
-            heartButton.setImage(UIImage(named: "like.png"), for: .normal)
+            heartButton.setImage(UIImage(named: "Like"), for: .normal)
             FavModel.favorites.append(FavModel.currentSelection)
         }
         else
         {
             //for unlike
-            heartButton.setImage(UIImage(named: "unlike.png"), for: .normal)
+            heartButton.setImage(UIImage(named: "Unlike"), for: .normal)
             let updatedFavs = FavModel.favorites.filter{$0 != FavModel.currentSelection}
             FavModel.favorites = updatedFavs
         }
@@ -95,16 +95,4 @@ class DressDetailViewController: UIViewController {
             }
         })
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
